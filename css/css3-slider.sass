@@ -1,0 +1,156 @@
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+
+body
+  width: 960px
+  margin: 50px auto 0
+  font: 13px/1.5 "Helvetica Neue", Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+a
+  color: inherit
+  text-decoration: none
+
+/* -------------------------------------
+ * Navigation
+ * ------------------------------------- */
+
+#nav
+  margin: 30px 0 15px
+  padding: 5px 10px
+  color: #555
+  font-size: 15px
+  border: 1px solid #6CBDC4
+  float: right
+  label
+    margin-left: 20px
+    cursor: pointer
+    &:hover
+      color: #6CBDC4
+
+/* -------------------------------------
+ * Container
+ * ------------------------------------- */
+
+#container
+  width: 960px
+  float: left
+header
+  color: #fafafa
+  background: #6CBDC4
+  border-bottom: 2px solid #fff
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.1)
+  h1
+    margin: 0
+    padding-left: 10px
+    font-size: 24px
+    line-height: 2
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3)
+
+
+/*------- wrapper -------*/
+
+$width: 958px
+
+#wrapper
+  width: $width
+  margin-top: -2px
+  border: 1px solid #ddd
+  border-top: none
+  position: relative
+  overflow: hidden
+
+input
+  display: none
+
+#slider
+  width: $width * 4
+  transition: 0.6s cubic-bezier(0.770, 0.000, 0.175, 1.000)
+
+.slide
+  width: $width
+  height: 470px
+  float: left
+
+/*------- slide1 -------*/
+
+#slide1:hover .title
+  transform: translateY(430px)
+
+.third
+  width: 310px
+  height: 430px
+  margin: 30px 0 30px 7px
+  position: relative
+  overflow: hidden
+  float: left
+  &:hover .scroll
+    transform: translateX(-310px)
+  &:hover .title
+    transform: translateY(300px) !important
+  &:hover a
+    opacity: 1
+    transform: translate(0px, 0px)
+
+.scroll
+  width: 620px
+  height: 430px
+  transition: 0.3s ease-in-out
+  transform: translateX(0px)
+.left
+  width: 310px
+  height: 430px
+  background: #9BD0D5
+  float: left
+
+$pt: 120px
+
+.right
+  width: 310px
+  height: 430px - $pt
+  padding-top: $pt
+  font-size: 15px
+  line-height: 2
+  background: #E0613F
+  float: left
+  a
+    opacity: 0
+    display: block
+    padding-left: 20px
+    color: #F9EDD0
+    transition: transform 0.3s, opacity 0.3s
+    transform: translate(-10px, 5px)
+    &:hover
+      background: #555
+    @for $i from 1 through 5
+      &:nth-of-type(#{$i})
+        transition-delay: 0.3s + $i*0.1s
+
+// title
+.title
+  width: 310px
+  color: #F9EDD0
+  font-size: 24px
+  text-align: center
+  line-height: 2
+  background: rgba(255, 255, 255, 0.2)
+  transition: 0.2s ease-in-out
+  transform: translateY(300px)
+  position: absolute
+  z-index: 10
+  &:hover
+    color: #333
+
+/*------- other slides -------*/
+
+#slide2,#slide3,#slide4
+  color: #777
+  font-size: 160px
+  text-align: center
+  line-height: 470px
+
+/*------- controller -------*/
+
+@for $i from 1 through 4
+  #trigger#{$i}:checked ~ #wrapper #slider
+    transform: translateX(($i - 1) * -$width)
