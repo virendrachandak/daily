@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>天生一队第三季名单抽取</title>
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy-min.js" charset="utf-8"></script>
+</head>
+<body style="position: relative;">
+<h1 style="text-align: center;">天生一队第三季名单抽取</h1>
+<div id="J_Create" class="create">START</div>
+<table id="J_You" class="you hidden"></table>
+<!-- include assets -->
+<style>
+    body{
+        background: url('bg.jpg') -30px 0 no-repeat;
+        font-family: '微软雅黑';
+    }
+    h1{
+        margin-bottom:40px;
+    }
+    .hidden{
+        display: none;
+    }
+    .create{
+       margin:20px auto;
+       font-size: 25px;
+       text-align: center;
+       padding:20px;
+        background-color: #E2674A;
+        color: #fff;
+        width:200px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .create:hover,.run-start{
+        background-color: #3399CC;
+        color: #fff;
+    }
+    .you {
+        width: 700px;
+        margin: 20px auto 0;
+        border-collapse: collapse;
+        color: #fff;
+        background-color:rgba(0,0,0,0.6);
+        font-size:20px;
+        border-radius:6px;
+        border: 20px solid rgba(0,0,0,0.1);
+    }
+
+    .you td{
+        padding:10px 20px;
+    }
+
+    .you .first-td{
+        font-weight: bold;
+    }
+</style>
+<script>
+    var S = KISSY;
+    var $ = S.Node.all;
+    S.use('gallery/offline/1.0/index',function (S,Offiline) {
+        var a = new Offiline();
+        var timer;
+        var isStart = false;
+
+        $('#J_Create').on('click',function(ev){
+            if(!isStart){
+                timer = setInterval(function(){
+                    run();
+                },50);
+                isStart = true;
+                $(ev.target).addClass('.run-start').text('STOP');
+            }else{
+                clearInterval(timer);
+                isStart = false;
+                $(ev.target).removeClass('.run-start').text('START');
+
+                a.setItem('list',$('#J_You').html());
+            }
+        });
+
+    });
+
+    function getRan(n){
+        return parseInt(Math.random() * n, 10);
+    }
+
+    function run(){
+        $('#J_You').show();
+        //队长
+        var captains = ['风驰','清羽','十渡','季扎','七念','云谦','长天'];
+        //正式男员工
+        var boys = ['承玉','鱼相','莫争','黑三','棪木','紫英','自寒','剑平','阿克','渐飞','石霸','飞长','筱谷','伯方','卢石','淘杰','子竹','常胤','玉门','云休','凤寻'];
+        //外包和女孩
+        var epibolys = ['姜峰','高瞻','许金灿','肖涛','冰琼','水澜','水儿'];
+        var LEN = boys.length, t;
+        var box = document.getElementById('J_You');
+        var _html = '';
+        var data = boys;
+
+        //洗牌 + dom渲染
+        for (var i = 0; i < 21; ++i) {
+            //洗牌
+            var random = parseInt(Math.random() * (LEN - i), 10);
+            t = boys[LEN - i - 1];
+            boys[LEN - i - 1] = boys[random];
+            boys[random] = t;
+
+            data = S.filter(data,function(v,k){
+                return k != random;
+            });
+
+            //dom渲染
+            if (i % 3 == 0) {
+
+                var captainIndex = getRan(captains.length);
+
+
+                _html += '<tr class="tr' + parseInt(i / 3) + '"><td class="first-td">' + captains[captainIndex] + '队</td>';
+
+                captains = S.filter(captains,function(v,k){
+                    return k != captainIndex;
+                })
+
+                var epibolyIndex = getRan(epibolys.length);
+                _html += '<td>'+epibolys[epibolyIndex]+'</td>';
+
+                epibolys = S.filter(epibolys,function(v,k){
+                    return k != epibolyIndex;
+                })
+            }
+            _html += '<td>' + boys[LEN - i - 1] + '</td>';
+
+        }
+        box.innerHTML = _html;
+
+        var $box = $(box);
+        var trs = $box.all('tr');
+        trs = S.makeArray(trs);
+        S.each(data,function(name){
+            var r = getRan(trs.length);
+            $(trs[r]).append('<td>' + name + '</td>');
+            trs = S.filter(trs,function(v,k){
+                return k != r;
+            })
+        });
+    }
+
+</script>
+</body>
+</html>
