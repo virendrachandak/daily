@@ -42,3 +42,4 @@
   [Open Source Hardware](http://en.wikipedia.org/wiki/Open-source_hardware)
   [Raspberry Pi官网](http://www.raspberrypi.org/)
   [Open Source Hardwar Association](http://www.oshwa.org/)
+deprecated
