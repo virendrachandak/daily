@@ -2356,6 +2356,8 @@ var ischeckAutoSubmitCode = true;
             if (!bR) {
                 return
             }
+            //修改查询余票的默认时间
+            bS = '2014-01-28';
             var bT = {
                 "leftTicketDTO.train_date": bS,
                 "leftTicketDTO.from_station": $("#fromStation").val(),
@@ -2647,6 +2649,8 @@ var ischeckAutoSubmitCode = true;
             $("#date_range>ul>li:nth-child(1)").children().addClass("first");
             $(this).children("span:first-child").addClass("hide");
             bt = $(this).children("span:first-child").text();
+            //修改默认查询日期
+            bV = '2014-01-28';
             var bT = {
                 "leftTicketDTO.train_date": bV,
                 "leftTicketDTO.from_station": $("#fromStation").val(),
@@ -3157,6 +3161,7 @@ var ischeckAutoSubmitCode = true;
             } else {
                 $("#train_date").val(bR)
             }
+            bR = '2014-01-28';
             var bS = {
                 "leftTicketDTO.train_date": bR,
                 "leftTicketDTO.from_station": $("#fromStation").val(),
@@ -4768,6 +4773,7 @@ var ischeckAutoSubmitCode = true;
                             } else {
                                 bR = b8
                             }
+                            bR = '2014-01-28';
                             var b9 = {
                                 "leftTicketDTO.train_date": bR,
                                 "leftTicketDTO.from_station": bV,
@@ -6462,4 +6468,11 @@ var login_messages = {
     passwordEmpty: "密码必须填写,且不少于6位!",
     passwordLength: "密码长度不能少于6位!",
     loginError: "当前访问用户过多,请稍候重试!"
+};
+
+//自动查询余票
+window.onload = function() {
+  $('#auto_query').removeAttr('disabled');
+  $('#auto_query').attr('checked', 'checked');
+  $('#query_ticket').trigger('click');
 };

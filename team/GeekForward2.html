@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>GeekForward2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h3 id="-geek-forward-">“天生一队”第三期—-《Geek Forward》</h3>
+<blockquote>
+<p>基于开源硬件的前端工程师自由编程大赛</p>
+</blockquote>
+<h3 id="-">大赛说明</h3>
+<ol>
+<li>大赛目的：激发工程师的GEEK精神，享受编程带来的乐趣和刺激，了解科技前沿产品，增强团队合作</li>
+<li><p>大赛主题：基于开源硬件的自由编程大赛</p>
+<blockquote>
+<p>开源硬件：包括但不限于raspberry pi</p>
+</blockquote>
+</li>
+<li><p>大赛详情：</p>
+<ol>
+<li><p>参赛人员：全体FEM（除了小马）</p>
+<blockquote>
+<p>小马将作为主持人、监督者和最终评委参与整个大赛进程</p>
+</blockquote>
+</li>
+<li><p>组织形式：按照4个人一组的小组形式基于开源硬件平台实现特定创意<br>据统计，FEM共有33人，P6同学有8人，以这8个人为组长组队。</p>
+<blockquote>
+<p>小组划分细则详见：分组细则.md。分组过程只有队长和主持人参与。</p>
+</blockquote>
+</li>
+<li><p>时间：2014年x月x日—x月x日共3个月时间<br>时间安排详情请见：时间安排详情.md</p>
+</li>
+<li><p>大赛流程：</p>
+<ol>
+<li>组队、大赛筹备（购买硬件设备，组织预定场地）；</li>
+<li><p>熟悉开源硬件平台，选择小组要实现的创意；并做好具体的小组分工，给出任<br>务计划表；(<strong>1、2共<b style="color:red">一周</b>时间</strong>)</p>
+<blockquote>
+<p> 大赛组委会提供的示例创意列表：<a href="https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html">https://linuxtoy.org/archives/cool-ideas-for-raspberry-pi.html</a><br> 开源硬件基本知识：文档和相关培训（候选人：九十、鱼相、筱谷、凌恒等）</p>
+</blockquote>
+</li>
+<li><p>小组每周需提交工作报告到work平台，一次迟交或者缺交者给黄牌，累计两次<br>给红牌，取消该组4名成员的参赛资格；周报内容主要包括本周进展，遇到的<br>问题，以及相关的知识积累沉淀。</p>
+</li>
+<li>每个月进行沉淀总结，在ata圈子或者小组work平台上发表相关文章，每月评<br>选优秀小组和优秀个人，分别奖励xxx和xxx。（想办法印一些t恤或者笔记本，<br>或者相关的创意小东西，如日历、贴纸等）（<strong>共两次，3、4共<b style="color:red">两个月</b>时间</strong>）</li>
+<li><b style="color:red">两周</b>rush code时间，确保创意已经实现并且可运<br>行，为大赛做好演讲demo和演讲PPT，两周后必须提交demo和PPT，迟交或者未<br>交，以及未达到大赛参评标准的小组取消参评资格。</li>
+<li>大赛总结和现场颁奖。<br>大赛奖励：<ul>
+<li>一队最佳小组，在最终评奖时现场决定，奖品为：xxxx<br>具体评奖规则为：现场观众投票成绩（占总成绩30%），评委投票决定（占总成绩<br>40%），日常活跃度和社区贡献值（占总成绩30%）；</li>
+<li>最佳贡献个人，大赛截止日期前决定，共三名，奖品为：xxx。<br>具体评奖规则为：在ata圈子里发表文章以及获赞、被收藏的数量。</li>
+<li>优秀小组长：小组发表文章最多，活跃度最高的小组。奖品为：xxx。<br>具体评奖规则为：小组所有成员在ata圈子里发表文章以及获赞、被收藏的数量。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>资金预算：</p>
+<ol>
+<li>组队准备阶段：开源硬件，暂定raspberry pi，淘宝价格约275-375元。取中<br>间值325。每个小组一个，共8个，（<b style="color:red">总价不超过2600元</b>）。</li>
+<li>分组活动：场地预约，需要容纳10-20人。（<b style="color:red">0元</b>）</li>
+<li>每月的奖品：t恤，贴纸，笔记本（不是电脑），预算估计不超过1000元。发<br>不完的可以在颁奖时发给所有人作为参赛纪念。</li>
+<li>大赛总结和颁奖：<br>  最佳小组：蓝牙音箱每人一个（约150-200元），共600-800元。<br>  最佳贡献个人：蓝牙音箱一个（共3个，价格同上），共450-600元。<br>  优秀小组长：移动硬盘一个（约500元）<br>  上述奖品总计约（<b style="color:red">1550-1900元</b>）<br>  颁奖现场的食品和饮料预计约200元。<br>预算总额为：<b style="color:red">5700元封顶</b>。</li>
+</ol>
+</li>
+<li><p>分组细则：（只有主持人和队长参加）</p>
+<ol>
+<li>采用竞拍方式进行，主持人为小马<ol>
+<li>队长名单：鱼相、长天、紫英、赫门、渐飞、石霸、常胤、十渡；（共8人）</li>
+<li>队员名单：七念、风驰、清羽、承玉、昊川、棪木、伯方、自寒、<br>水澜、莫争、卢石、阿克、淘杰、筱谷、云翮、圆影、九十、善繁、肖涛、<br>金灿、行空、凤寻、执经、幽零；（共24人）</li>
+</ol>
+</li>
+<li>每个队长手里有1000总额的筹码，每次主持人随机从队员名单中抓阄出一名来<br>进行竞拍，队长写好竞拍金额纸条交给主持人，主持人根据金额宣布竞拍获胜<br>者并公布拍得金额。<ol>
+<li>队长每次必须竞拍，可以为0，每次加价至少50。即只允许0、50、100这<br>样的出价。</li>
+<li>队长之间不能相互偷看出价。</li>
+<li>竞拍的最高金额有两人或以上相同时，首先看个人手里筹码的余额，余额<br>少竞得（因为余额多的人有“财力”可以在下一轮竞得自己想要的队员）；<br>如果出现余额也相同的情况，则黑白配或者划拳，赢的人竞得。</li>
+<li>每队必须有4名队员。</li>
+<li>竞得者筹码减去刚刚使用的竞价金额。</li>
+<li>主持人每次竞拍结束后将该名队员的名单贴在组长名字后面。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p style="display: none"><br>### 清羽给的意见<br>需要优化，再强调下技术上的点，颁奖怎么做得好玩，和业务的结合，有哪些好的创意可以用树莓派实现等等。<br></p>
+
+<h3 id="update-20140109">update@20140109</h3>
+<ol>
+<li>队长和分组修改<br>从原来的8个组修改为5个组，组长采用自主报名方式产生。<br>每个小组发一台树莓派设备作为比赛配置。由团队统一采购。（约5x300=1500元左右）<br>补充：报名采取先到先得策略。超过5人取前5人，不足5人则通过指定产生。<br>采购设备的经费由两部分组成：每个组组长出100元，共500元，其余费用(约1000元)则由公司报销。</li>
+<li>比赛过程中的激励措施和成本控制<br>为了有效与我们的业务相结合并且鼓励工程师们头脑风暴和创意实现，我们会特别设立<br>突出贡献奖，共5名，奖励给表现最为突出，在这次比赛中对团队贡献最大（包括知识<br>积累，促进大家对开源硬件的理解等）的5名队员。由大赛组委会在颁奖大会前结束coding<br>时根据队员们平常的表现来评出。奖品为每人200元以内的数码奖品（充电宝、电子相<br>框等）在颁奖大会上统一送出。（约1000元）<blockquote>
+<p>   需注意：如果有团队因为没有按时完成可运行的demo或者收到红牌失去参加颁奖评选的资格，则该组成员全部失去获奖资格？这条可能过于严厉，灵活运用吧</p>
+</blockquote>
+</li>
+<li>其余规则不变。</li>
+</ol>
+<p>经过修改后的成本预计共需:</p>
+<ol>
+<li>硬件设备费用：每组300X5组 - 5X100(每组组长贡献100元)=1000元；</li>
+<li>突出贡献奖：每人200元X5=1000元；</li>
+<li>最佳小组：蓝牙音箱每人一个（约150元）X(6-7人) = 900 — 1050元。</li>
+<li>优秀小组长：移动硬盘一个（约500元）。除此之外，所有硬件设备在赛后归小组内自行分<br>配。</li>
+<li>颁奖现场：给所有参与人员发送树莓派相关的logo贴纸、笔记本等（约500元，可能选择贴纸或者定制的日历，笔记本太贵了共32个人，每人预算约20元，算650元）。加上水果、饮料（共200元，两箱饮料约100元，一百元水果），共需约850元。</li>
+</ol>
+<p>以上共计约1000+1000+1050+500+850 = 4400元。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
