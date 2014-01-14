@@ -171,4 +171,119 @@ NodeFox可以查询多台MySql数据库。ITier可以查询多个数据库（不
 
 ---
 ###	第２章：模块机制
+<b style="color:red">More detail to be read</b>
+
+编写Nodejs模块。
+
+**从本地安装nodejs模块**
+
+只需要为NPM指定package.json文件所在的位置即可（可以为包含package.json的存档文件，或者URL地址，或者目录下有package.json文件的目录位置）。具体命令为：
+
+```javascript
+npm install <tarball file>
+npm install <tarball url>
+npm install <folder>
+```
+
+**从非官方源安装**
+
+通过镜像源安装，在执行命令时，添加`--registry=http://registry.url`即可。例如：
+
+```javascript
+npm install underscore --registry=http://registry.url
+```
+
+**npm钩子命令**
+
+C/C++模块需要编译后才能使用。package.json中scripts字段的提出就是让包在安装或者卸载等过程中提供钩子机制，例如：
+
+```javascript
+"scripts": {
+	"preinstall": "preinstall.js",
+    "install": "install.js",
+    "uninstall": "uninstall.js",
+    "test": "test.js"
+}
+```
+
+上述"scripts"的四个字段分别制定了安装、卸载和测试过程中node程序调用的相应脚本文件。
+
+**发布包**
+
+命令为：`npm publish <folder>`
+
+**管理包权限**
+
+命令为：`npm owner ls xxx_module`
+
+#### 分析包
+
+分析当前目录下是否引入想要的包，运行命令：`npm ls`查看当前路径下通过模块路径找到的所有包并生成依赖树。
+
+#### 局域NPM
+
+NPM的服务器和客户端都是开源的，可以通过源代码搭建自己的仓库。
+
+#### npm潜在问题
+
+引入CPAN社区的Kwalitee风格。
+
+>	"Kwalitee" is something that looks like quality, sounds like quality, but is not quite quality.
+
+### 前后端公用模块
+
+CommonJS是为后端JavaScript指定的规范，不完全适合前端的应用场景。因此，有了AMD（Asynchronous Module Definition,即“异步模块定义”）规范。
+AMD的github地址为:[https://github.com/amdjs/amdjs-api/wiki/AMD](https://github.com/amdjs/amdjs-api/wiki/AMD)
+除此之外，还有玉伯定义的CMD规范和KISSY的KMD规范。
+
+#### AMD规范
+
+AMD规范是CommonJS模块规范的延伸，其模块定义为：`define(id?, dependencies?, factory);`
+
+>	即id和依赖是可选项。
+
+例如一个简单的模块为：
+```javascript
+define(function() {
+	var exports = {};
+    exports.sayHello = function() {
+    	alert("Hello from module: ' + module.id);
+    };
+    return exports;
+});
+```
+#### CMD规范
+
+与AMD的主要区别在于模块和依赖引入。AMD需要在声明模块是指定所有依赖，通过形参传递到模块内容中。
+
+```javascript
+define(['dep1', 'dep2'], function(dep1, dep2) {
+	return function () {};
+});
+```
+
+#### 兼容多种模块规范
+
+```javascript
+;(function(name, definition) {
+	// 检测上下文环境是否为AMD或CMD
+    var hasDefine = typeof define === 'function',
+    	// 检查上下文环境是否为Node
+        hasExports = typeof module !== 'undefined' && module.exports;
+        
+    if (hasDefine) {
+    	// AMD环境或CMD环境
+        define(definition);
+    } else if (hasExports) {
+    	// 定义为普通Node模块
+        module.exports = definition();
+    } else {
+    	// 将模块的执行结果挂在window变量中，在浏览器中this指向window对象
+        this[name] = definition();
+    }
+})('hello', function() {
+	var hello = function () {};
+    return hello;
+})    
+```
 
