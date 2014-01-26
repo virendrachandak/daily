@@ -285,3 +285,7 @@
     +   DHCP是应用层协议
         >   OSI的七层模型分别为：物理层、数据链路层(ARP)、网络层(IP、ICMP)、传输层（TCP，UDP）、会话层、表示层和应用层( HTTP，HTTPS，FTP，TELNET，SSH，SMTP，POP3，DHCP，DNS)，更多OSI信息，参考[wikipedia链接](http://en.wikipedia.org/wiki/OSI_model)
 2.  
+
+update@20140125
+---
+应用层、表示层、会话层、传输层、网络层、数据链路层+物理层

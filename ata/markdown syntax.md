@@ -1,4 +1,4 @@
-Markdown语法
+Markdown语法[1/2]
 ---
 > 原文地址:<http://daringfireball.net/projects/markdown/syntax>
 
@@ -80,9 +80,87 @@ Markdown语法
 
 ### 块元素
 ##### 段落和换行
-*	段落是由一个或多个换行符分隔开的一个活多个连续的句子。（空行就是看起来是空的一行，没有任何内容，只有空白或者缩进）。普通段落不需要使用空格或者制表符（tab）来缩进。
-*	
+*	段落是由一个或多个换行符分隔开的一行或多行连续文字。（空行就是看起来是空的一行，没有任何内容，只有空白或者缩进）。普通段落不需要使用空格或者制表符（tab）来缩进。
+*	“一到多行连续文字”意味着markdown支持“硬包裹”段落。这是markdown与大部分其他文字HTML转换器的显著不同（包括**Movable Type**的“转换换行符”选项，该功能会将所有段落的换行符转换成`<br>`标签）。
+>	Movable Type:博客程序，具体可参考[Movable Type 是如何被 WordPress 超越的?](http://dbanotes.net/review/movable_type_wordpress_story.html)以及[Wordpress 和 Movable Type 的比较](http://www.ruanyifeng.com/blog/2007/04/wordpress_vs_movable_type.html)
+*	而使用Markdown插入`<br>`标签，只需要在一行后面加上一个或者多个空格，然后回车就可以了。
+*	确实，这样做比直接使用`<br>`要费力，但是简单的“使用`<br>`标签换行”规则并不适用于Markdown。Markdown的邮件风格[引用](http://daringfireball.net/projects/markdown/syntax#blockquote)和多行段落[列表项](http://daringfireball.net/projects/markdown/syntax#list)在硬换行下工作得更好，看起来也更美观。
 
+### 头部
+*	Markdown支持两种风格的头部:[Setext](http://docutils.sourceforge.net/mirror/setext.html)和[atx](http://www.aaronsw.com/2002/atx/)。
+*	Setext风格的头部使用等号下划线的形式表示一级头部，短横线表示二级头部。例如：
+
+```javascript
+这是一级头部
+===========
+这是二级头部
+-----------
+```
+*	`=`号和`-`号数目没有限制。
+
+*	Atx风格头部是在每行开头使用1-6个井号（`#`）标明，分别对应1-6级头部。例如：
+
+```
+# 一级头部
+## 二级头部
+### 三级头部
+```
+
+*	可以根据自己的审美在行末加上或者不加相应的`#`号。行末`#`号的数目也不强制与行头的`#`号数目相同。（即行头的`#`号数目决定了这一行是几级头部）。例如：
+
+```
+# 一级头部 #
+## 二级头部 ####
+### 三级头部 ###
+```
+
+### 引用
+*	Markdown使用邮件风格的`>`号字符表示引用的文字。熟悉在邮件中引用文字的读者应该知道怎样在markdown里创建引用。为了文字排版的美观最好在引用文字的每一行开头都加上`>`字符：
+
+```
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> 
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing
+```
+
+*	markdown允许你偷懒，只在每一个硬换行的段落前加上`>`字符。例如：
+
+```
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+```
+
+*	引用支持嵌套（即在引用中使用引用），只要在加上一层`>`，例如：
+
+```
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+```
+
+*	引用可以包含markdown元素，包括头部，列表和代码块，例如：
+
+```
+> ## This is a header.
+> 
+> 1.   This is the first list item.
+> 2.   This is the second list item.
+> 
+> Here's some example code:
+> 
+>     return shell_exec("echo $input | $markdown_script");
+```
+
+*	所有好编辑器都支持邮件风格的引用。例如BBEdit支持为选中的文字增加“引用层级”。
 
 ### 参考资料
 1.	[英文原文](http://daringfireball.net/projects/markdown/syntax)
