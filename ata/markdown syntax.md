@@ -162,6 +162,419 @@ id sem consectetuer libero luctus adipiscing.
 
 *	所有好编辑器都支持邮件风格的引用。例如BBEdit支持为选中的文字增加“引用层级”。
 
+<hr>
+
+### Part 2
+
+### 列表
+
+*	markdown支持有序列表和无需列表。
+*	无序列表使用星号（`*`）、加号（`+`）和短横线（`-`）表示，这三种符号可以互换。例如：
+
+```javascript
+* Red
+* Green
+* Blue
+```
+
+*	等同于：
+
+```javascript
++ Red
++ Green
++ Blue
+```
+
+*	也等同于：
+
+```javascript
+- Red
+- Green
+- Blue
+```
+
+* markdown的有序列表使用数字加逗号表示，如下：
+
+```javascript
+1.	Bird
+2.	McHale
+3.	Parish
+```
+
+*	<b style="color:red;font-weight:1.1em;">重要：</b>请注意markdown中表示有序列表的数字大小对markdown实际输出的HTML没有影响。上面示例markdown输出的HTML内容为：
+
+```html
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+
+```
+
+*	因此，上面的markdown也可以写成：
+
+```
+1.	Bird
+1.	McHale
+1.	Parish
+```
+
+*	或者：
+
+```
+3.	Bird
+1.	McHale
+8.	Parish
+```
+
+*	上面的markdown都会输出完全相同的HTML内容。重点是，你可以使用有序的数字来输出有序markdown列表，这样输出的HTML列表数字也会是有序的。如果你想偷懒的话，也可以不适用有序的数字。
+*	不过，如果想要偷懒的话，请记住第一个数字仍然需要从1开始。markdown未来或许会支持从任意数字开始列表。
+*	列表标记通常从左边开始，可以使用最多3个空格缩进。列表标记后必须跟一个或多个空格，或者一个制表符。
+*	要使得列表美观，可以使用悬挂缩进来包裹列表项，例如：
+
+```javascript
+*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+```
+
+*	当然，也可以偷懒写成：
+
+```javascript
+*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.
+```
+
+*	如果列表项采用了空行进行分隔的话，markdown会在HTML输出中加上`<p>`标签。例如：
+
+```javascript
+* Bird
+* Magic
+```
+
+*	会输出成：
+
+```html
+<ul>
+<li>Bird</li>
+<li>Magic</li>
+</ul>
+
+```
+
+*	而下面的markdown
+
+```markdown
+* Bird
+
+* Magic
+```
+
+*	则会输出为：
+
+```html
+<ul>
+<li><p>Bird</p></li>
+<li><p>Magic</p></li>
+</ul>
+
+```
+
+*	列表项可以有多个段落组成。列表相中的每个连续段落必须使用4个空格或者一个制表符来缩进。例如：
+
+```markdown
+1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+
+```
+
+*	可以缩进每行来保持美观，同样的，也可以偷懒，写成：
+
+```markdown
+*   This is a list item with two paragraphs.
+
+    This is the second paragraph in the list item. You're
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.
+
+*   Another item in the same list.
+```
+
+*	要在列表项里加上引用的话，需要在引用的`>`分隔符前加上缩进，例如：
+
+```markdown
+*   A list item with a blockquote:
+
+    > This is a blockquote
+    > inside a list item.
+```
+
+*	要在列表项里加上代码块的话，需要对代码块使用两倍缩进--8个空格或者两个制表符：
+
+```markdown
+*   A list item with a code block:
+
+        <code goes here>
+```
+
+*	值得指出的有可能会意外地触发有序列表输出，例如写成下面这样：
+
+```markdown
+1986. What a grea season.
+```
+
+*	换句话说，在行头的数字句号空格序列会被markdown输出成有序列表。可以使用反斜杠`\\`转义来避免这种情况：
+
+```
+1986\. What a great season.
+```
+
+### 代码块
+
+*	预格式化的代码块用于书写编程语言或者标记语言源代码。代码块不会被格式化成普通段落，还是会被正常的解析。markdown使用`<pre>`和`<code>`标签来包裹代码块。
+
+```markdown
+This is a normal paragraph:
+	
+    This is a code block.
+```
+
+*	markdown会生成以下内容：
+
+```html
+<p>This is a normal paragraph:</p>
+
+<pre><code>This is a code block.
+</code></pre>
+```
+
+*	代码块的每一行都会减少一个缩进，例如下面的markdown内容：
+
+```markdown
+Here is an example of AppleScript:
+
+    tell application "Foo"
+        beep
+    end tell
+```
+
+*	会输出为：
+
+```html
+<p>Here is an example of AppleScript:</p>
+
+<pre><code>tell application "Foo"
+    beep
+end tell
+</code></pre>
+```
+
+*	代码块会在没有缩进的那一行或者文章结束处终止
+
+*	代码块里的`&`符号以及尖角括号`<`和`>`会被自动转换成html实体。这样可以轻松的使用markdown包含html源代码--只需要粘贴并且缩进就可以了，markdown会处理`&`和尖括号的自动转义过程。例如下面的html代码：
+
+```html
+<div class="footer">
+	&copy; 2004 Foo Corporation
+</div>
+```
+
+*	会变为：
+```html
+<pre><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+```
+
+*	代码块不会处理常规的markdown语法。例如，代码块里的星号只是星号。因此，也可以使用代码块来轻松地展示和书写markdown自己的语法。
+
+### 水平标尺
+
+*	可以使用3个或以上短斜杠，星号或者下划线来输出水平标尺标签`<hr>`。只要你愿意，可以在这些符号中加上空格。例如以下markdown：
+
+```markdown
+* * *
+***
+*****
+- - -
+_________________________
+```
+
+### span元素
+##### 链接
+
+*	markdown支持两种风格的链接：内联和引用。
+
+*	两种风格的链接都需要使用方括号`[]`。
+
+*	要创建一个内联链接，需要在链接文字的方括号后面加上一对括号`()`。在括号里是链接指向的URL地址，以及可选的链接title值，title值用引号包围。例如：
+
+```markdown
+This is [an example](http://example.com/ "Title") inline link.
+
+[This link](http://example.net/) has no title attribute.
+```
+
+*	会输出成：
+
+```html
+<p>This is <a href="http://example.com/" title="Title">
+an example</a> inline link.</p>
+
+<p><a href="http://example.net/">This link</a> has no
+title attribute.</p>
+```
+
+*	如果需要引用相同服务器上的本地资源，可以使用相对路径：
+
+```markdown
+See my [About](/about/) page for details.  
+```
+
+*	引用型的链接会加上一组方括号，在方括号里放上用于标识链接的标记内容：
+
+```markdown
+This is [an example][id] reference-style link.
+```
+
+*	两组方括号之间可以选择性地加上一个空格：
+
+```markdown
+This is [an example] [id] reference-style link.
+```
+
+*	然后，可以在文档里的任何地方加上表示的内容，例如：
+
+```markdown
+[id]:http://www.example.com/ "Optional title here"
+```
+
+*	也就是：
+
+	*	包含链接标识符的方括号（可以选择性地在左边加上最多三个空格来缩进）；
+    *	加上一个冒号；
+    *	一个活多个空格（或者制表符）；
+    *	链接的URL地址；
+    *	可以选择加上链接的title属性，使用双引号或者单引号，或者使用括号包围。
+   
+*	以下三个链接的定义是相同的：
+
+```markdown
+[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+```
+
+*	<b style="color:red; font-weight: bold; font-size: 1.1em">注意：</b>Markdown.p. 1.0.1有一个bug，不会解析使用单引号括起来的title值。
+
+*	链接的URL值也可以使用尖括号包围，例如：
+
+```markdown
+[id]: <http://example.com/>  "Optional Title Here"
+```
+
+*	还可以将title属性写在新的一行并且使用多余的空格或者制表符来填满，这样在链接比较长时会比较好看，例如：
+
+```markdown
+[id]: http://example.com/longish/path/to/resource/here
+    "Optional Title Here"
+```
+
+*	链接的定义只在markdown处理时使用，输出的HTML内容中不会包含链接定义。
+
+*	链接定义名称可以包含字母，数字，空格和标点符号--但是不区分大小写。例如，下面的链接是相同的：
+
+```markdown
+[link text][a]
+[link text][A]
+```
+
+*	隐性链接名称快捷方式可以允许用户省略掉链接名称，这种情况下链接会使用链接文字作为链接名称。使用空的方括号--例如，要将"google"连接到google.com，可以写成这样：
+
+```markdown
+[google][]
+```
+
+*	然后加上链接定义：
+
+```markdown
+[google]: http://www.google.com/ncr
+```
+
+*	因为链接名支持空格，因此，对于包含多个词的链接文字来说也同样适用，例如：
+
+```markdown
+Visit [Daring Fireball][] for more information.
+```
+
+*	链接定义为：
+
+```markdown
+[Daring Fireball]: http://daringfireball.net/
+```
+
+*	链接定义可以放在markdown文件的任何地方。例如：
+
+```markdown
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+```
+
+*	适用隐式链接名可以写成：
+
+```markdown
+I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        "Google"
+  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+  [msn]:    http://search.msn.com/    "MSN Search"
+```
+
+*	以上markdown会输出相同的HTML内容：
+
+```html
+<p>I get 10 times more traffic from <a href="http://google.com/"
+title="Google">Google</a> than from
+<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
+or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+```
+
+*	而相应的使用markdown内联链接的写法为：
+
+```markdown
+I get 10 times more traffic from [Google](http://google.com/ "Google")
+than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
+[MSN](http://search.msn.com/ "MSN Search").
+```
+
+*	引用型链接的优点不在于容易书写，而是更加可读。例如上面的例子，使用引用型链接段落只有81个字符；而使用内联型链接有176个字符。
+
+*	引用型链接更加接近浏览器的输出。通过将与标记语言相关的元数据从段落中移出来，可以在文章里轻松地加上不影响阅读的链接内容。
+
+### 强调
+
+
+
+
 ### 参考资料
 1.	[英文原文](http://daringfireball.net/projects/markdown/syntax)
 2.	[block-level elements](https://developer.mozilla.org/en-US/docs/HTML/Block-level_elements)
