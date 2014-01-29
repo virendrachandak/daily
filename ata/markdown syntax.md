@@ -572,8 +572,195 @@ than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
 
 ### 强调
 
+*	markdown会将星号`*`和下划线`_`作为强调的标志。使用`*`和`_`包围的文字将会被生成为HTML的`<em>`标签。两个`*`和`_`包裹的文字将会被生成为HTML的`<strong>`标签。例如下面的输入：
 
+```markdown
+*single asterisk*
+_single underscores_
+**double asterisks**
+__double underscores__
+```
 
+*	将会生成为如下HTML内容：
+
+```html
+<em>single asterisks</em>
+<em>single underscores</em>
+<strong>double asterisks</strong>
+<strong>double underscores</strong>
+```
+
+*	可以自由选择你喜欢的markdown风格，唯一的约束在于必须使用相同的字符来包裹一段文字。
+
+*	强调可以在文字中间使用，例如：
+
+```
+un*frigging*believable
+```
+
+*	但是如果在`*`或者`_`开头结尾都有空格的话，它们将会被解析成对应的符号。
+
+*	要在期望生成星号和下划线的地方避免被生成强调符号，可以使用反斜杠来转义，例如：
+
+```markdown
+\*this text is surrounded by literal asterisks\*
+```
+
+### 代码
+
+*	要标记一段代码，可以使用<b style="color:red; font-size: 1.1em; font-weight: bold">`</b>。与预格式化过的代码块不同，代码span指的是在普通段落中的代码。例如：
+
+```
+Use the `printf()` function.
+```
+
+*	将会生成：
+
+```html
+<p>Use the <code>printf()</code> function.</p>
+```
+
+*	要在代码span里加入<b style="color:red; font-size: 1.1em; font-weight: bold">`` ` ``</b>符号，可以在句子开头和结尾使用多个<b style="color:red; font-size: 1.1em; font-weight: bold">`</b>符号。例如：
+
+```markdown
+``There is a literal backtick (`) here.``
+```
+
+*	生成的html内容为：
+
+```html
+<p><code>There is a literal backtick (`) here.</code></p>
+```
+
+*	包裹代码span的重音号(<b style="color:red">`</b>)分隔符可以包含空格--分别在开头和结尾处。这样可以在代码span前后加上重音号。例如：
+
+```markdown
+A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+```
+
+*	生成的HTML内容为：
+
+```html
+<p>A single backtick in a code span: <code>`</code></p>
+
+<p>A backtick-delimited string in a code span: <code>`foo`</code></p>
+```
+
+*	在代码span里，and符号（`&`)和尖括号都会被自动编码成HTML试题，这样可以轻松地加入HTML标签。markdown会将：
+
+```markdown
+Please don't use any `<blink>` tags.
+```
+
+*	自动转换成：
+
+```html
+<p>Please don't use any <code>&lt;blink&gt;</code> tags.</p>
+```
+
+* 还可以写成：
+
+```markdown
+`&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+```
+
+* 将会生成：
+
+```html
+<p><code>&amp;#8212;</code> is the decimal-encoded
+equivalent of <code>&amp;mdash;</code>.</p>
+```
+
+### 图片
+
+* 不得不承认，在普通文本格式文档里插入图片的语法很难设计。
+
+* markdown使用的图片语法是为了表示和链接一样的语法，有两种风格：内联和引用。
+
+* 内联图片语法如下所示：
+
+```html
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+```
+
+* 即：
+  * 感叹号`!`;
+  * 加上一组方括号，以及图片的`alt`属性文本内容；
+  * 加上一组圆括号，包含图片的URL地址或者相对路径，以及用单引号或者双引号括起来的“title属性值。
+
+* 引用风格的图片语法如下所示：
+
+```markdown
+![Alt text][id]
+```
+
+* 其中`id`是预定义的图片引用名称。图片引用的定义语法与链接引用相同：
+
+```markdown
+[id]:url/to/image "Optional title attribute"
+```
+
+* markdown还有规定图片尺寸的语法，如果很重要的话可以通过html中`img`标签的`style`属性来规定图片的尺寸大小。
+
+###　其他
+
+##### 自动链接
+* markdown支持快捷方式风格的URL和邮件链接自动创建；只需要在URL和邮件地址上包裹尖括号即可。也就是说如果想创建一个链接内容和URL地址相同而且可以点击的链接，可以写成这样：
+
+```markdown
+<http://example.com>
+```
+
+* markdown会自动转换成：
+
+```html
+<a href="http://example.com">http://example.com</a>
+```
+
+* 邮件地址自动链接话也是同样的语法，除了markdown也会进行一些十进制和直流机制实体编码随机化来避免邮箱地址受到垃圾邮件的骚扰。例如，markdown会将：
+
+```markdown
+<address@example.com>
+```
+
+* 转换成：
+
+```html
+<a href="&#x6D;&#x61;i&#x6C;&#x74;&#x6F;:&#x61;&#x64;&#x64;&#x72;&#x65;
+&#115;&#115;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;
+&#109;">&#x61;&#x64;&#x64;&#x72;&#x65;&#115;&#115;&#64;&#101;&#120;&#x61;
+&#109;&#x70;&#x6C;e&#x2E;&#99;&#111;&#109;</a>
+```
+
+* 在浏览器中会被渲染成一个可以点击的邮箱地址*`address@example.com`*。
+
+##### 反斜杠转义
+
+* markdown允许使用反斜杠转义来生成那些在markdown格式化语法里有特殊意义的字符串。例如，如果想给某个词加上星号，而不是HTML的`<em>`标签，可以在星号前面使用反斜杠。例如：
+
+```markdown
+\*literal asterisks\*
+```
+
+* markdown提供以下字符的反斜杠转义：
+
+```markdown
+\   反斜杠
+`   重音符
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  圆括号
+#   井号
++   加号
+-   减号（短横线）
+.   点号
+!   感叹号
+```
 
 ### 参考资料
 1.	[英文原文](http://daringfireball.net/projects/markdown/syntax)
