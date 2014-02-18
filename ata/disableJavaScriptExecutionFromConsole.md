@@ -49,5 +49,32 @@ with((window&&window.console && window.console._commandLineAPI) || {}) {
 
 ![](http://kspace.in/blog/wp-content/uploads/2013/02/ChromeTools.png)
 
+### IE下禁止从控制台执行代码
+
+```javascript
+(function(){
+    var  _eval       = eval,
+          evalError  = document.__IE_DEVTOOLBAR_CONSOLE_EVAL_ERROR,
+          flag       = false;
+ 
+    Object.defineProperty( document, "__IE_DEVTOOLBAR_CONSOLE_EVAL_ERROR", {
+	get : function(){
+		return evalError;
+	},
+	set : function(v){
+		flag = !v;
+                evalError = v;
+	}
+    });
+ 
+    eval = function(){
+	if( flag ){
+		throw "";
+        }
+        return _eval.apply( this, arguments );
+    };
+})();
+```
+
 ### 参考资料
 1.  [原文](http://kspace.in/blog/2013/02/22/disable-javascript-execution-from-console/)
