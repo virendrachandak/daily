@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>你可能不知道的transition知识点</title>
+    <style>
+#test {
+    height: 500px;
+    border: 1px solid;
+}
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+window.onload = function() {
+    var div = document.getElementById('test');
+    div.style.width = '500px';
+    div.style.transition = 'all 2s ease';
+};
+    </script>
+</body>
+</html>
