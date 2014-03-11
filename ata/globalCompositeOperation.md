@@ -187,3 +187,4 @@ draw();
 
 ### 参考资料
 1.  [MDN](https://developer.mozilla.org/samples/canvas-tutorial/6_1_canvas_composite.html)
+2.  [http://msdn.microsoft.com/en-us/library/ie/ff974909(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/ie/ff974909(v=vs.85).aspx)
