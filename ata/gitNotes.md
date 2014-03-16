@@ -409,5 +409,160 @@ $ git log --pretty=format:"%h %s" --graph
 * 11d191e Merge branch ’defunkt’ into local
 ```
 
+**限制日志输出**
+
+`-n`其中`n`指定了输出的日志数。还可以根据时间来输出日志，使用`--since`和`--until`选项。例如，查看最近两周的提交列表：
+
+`git log --since=2.weeks`
+
+限制日志输出的选项如下表所示：
+
+```
+Option            Description
+-p                Show the patch introduced with each commit.
+--stat            Show statistics for files modified in each commit.
+--shortstat       Display only the changed/insertions/deletions line from the –stat command.
+--name-only       Show the list of files modified after the commit information
+--name-status     Show the list of files affected with added/modified/deleted information as well.
+--abbrev-commit   Show only the first few characters of the SHA-1 checksum
+instead of all 40.
+--relative-date   Display the date in a relative format (for example, “2 weeks ago”) instead of using the full date format.
+--graph           Display an ASCII graph of the branch and merge history
+beside the log output.
+--pretty          Show commits in an alternate format. Options include oneline, short, full, fuller, and format (where you specify your own format).
+```
+
+`--author`选项可以搜索指定的author，`--grep`选项可以搜索commit信息中的关键词。
+
+> 注意，如果同时指定`--author`和`--grep`的话，需要在命令后面加上`--all-match`选项。
+
+还可以在`git log`命令后面加上一个文件路径作为过滤器。如果指定文件夹或者文件名，可以限制只输出在这些文件里引入的提交。通常这个选项需要放在最后面，而且需要加上`--`来与其他选项分开。
+
+常用的引用选项如下所示：
+
+```
+Option                Description
+-(n)                  Show only the last n commits
+--since, --after      Limit the commits to those made after the specified date.
+--until, --before     Limit the commits to those made before the specified date.
+--author              Only show commits in which the author entry matches the specified string.
+--committer           Only show commits in which the committer entry matches
+the specified string.
+```
+
+例如，如果想查看Junio Hamano在2008年10月提交，而且没有合并的代码，可以使用这样的命令：
+
+```
+$ git log --pretty="%h:%s" --author=gitster --since="2008-10-01" \
+--before="2008-11-01" --no-merges -- t/
+5610e3b - Fix testcase failure when extended attribute
+acd3b9e - Enhance hold_lock_file_for_{update,append}()
+f563754 - demonstrate breakage of detached checkout wi
+d1a43f2 - reset --hard/read-tree --reset -u: remove un
+51a94af - Fix "checkout --track -b newbranch" on detac
+b0ad11e - pull: allow "git pull origin $something:$cur
+```
+
+**图形化查看工具**
+
+推荐使用msysgit自带的gitk或者使用单独的应用sourcetree。
+
+**修改最近一次提交**
+
+`git commit --amend`可以覆盖掉上次的提交信息。即：
+
+```
+$ git commit -m ’initial commit’
+$ git add forgotten_file
+$ git commit --amend
+```
+
+上面的三条命令只会输出一条commit记录。
+
+**unstage已经放在staging area的文件**
+
+例如，不小心使用`git add *`将所有文件加入了staging area，希望将其中某些文件移出来。可以使用`git reset`命令完成以上任务。
+
+例如：
+
+```
+$ git add .
+$ git status
+# On branch master
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# modified: README.txt
+# modified: benchmarks.rb
+```
+
+如果希望将benchmarks.rb从staging area中移出来(即不在本次修改中提交)，可以使用如下命令：
+
+```
+$ git reset HEAD benchmarks.rb
+benchmarks.rb: locally modified
+$ git status
+# On branch master
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# modified: README.txt
+#
+# Changed but not updated:
+# (use "git add <file>..." to update what will be committed)
+# (use "git checkout -- <file>..." to discard changes in working directory)
+#
+# modified: benchmarks.rb
+```
+
+**撤销对某个文件的修改**
+
+如果希望将某个文件恢复到上次提交时的状态（或者刚开始clone下来的状态）。可以使用`git checkout`命令。
+
+修改后的文件使用`git status`查看如下所示：
+
+
+```
+# Changed but not updated:
+# (use "git add <file>..." to update what will be committed)
+# (use "git checkout -- <file>..." to discard changes in working directory)
+#
+# modified: benchmarks.rb
+```
+
+如果希望丢弃掉所做的修改，可以使用下面的命令：
+
+```
+$ git checkout -- benchmarks.rb
+$ git status
+# On branch master
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# modified: README.txt
+```
+
+该命令实际上复制前一次提交的文件内容覆盖掉当前正在修改的文件内容。因此，除非非常确认，请谨慎操作。记住，Git几乎可以恢复所有操作，例如使用`--amend`覆盖掉的commit信息，分支上所做的删除。但是，如果文件没有提交过的话将不能恢复。
+
+**remote操作**
+
+如何管理remote库（远程库）？远程库即放在网络上的git库。远程库管理包括pull和push数据，添加或删除remote等操作。
+
+**查看当前remote**
+
+使用`git remote`命令。查看较详细的信息，加上`-v`选项。即`git remote -v`。
+
+**添加remote地址**
+
+命令格式为：
+
+`git remote add [shortname] [url]`
+
+**fetch和pull remote库**
+
+命令`git fetch [remote-name]`
+
+如果已经设置了某个分支记录远程分支，可以直接使用`git pull`命令来自动fetch数据。`git pull`命令会自动合并，而`git fetch`不会。
+
 ### 参考资料
 1.  [windows下git core.editor配置--有墙](http://mkadlec99.blogspot.com/2011/07/setting-up-correct-git-config.html)
