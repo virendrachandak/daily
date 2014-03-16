@@ -199,5 +199,215 @@ doc/*.txt # ignore doc/notes.txt, but not doc/server/arch.txt
 
 如果希望在提交时保存更加详细的提交信息，可以在`git commit`命令后加上`-v`选项。
 
+可以通过加上`-m`标志不打开编辑器进行提交。例如：
+
+```
+$ git commit -m "Story 182: Fix benchmarks for speed"
+[master]: created 463dc4f: "Fix benchmarks for speed"
+2 files changed, 3 insertions(+), 0 deletions(-)
+create mode 100644 README
+```
+
+上面的信息包括`[master]`，提交到的分支（为master分支），本次提交的SHA-1校验和`463dc4f`，以及修改、增删等数据。
+
+记住commit只提交在staging area里的内容，任何没有stage的内容仍然保持修改后的状态而没有提交。每次提交都会创建一个快照。
+
+**跳过Staging Area**
+
+`git commit`命令的选项`-a`可以直接跳过`git add`步骤，自动将当前所有在git库中有记录的文件添加到staging area。例如：
+
+```
+$ git status
+# On branch master
+#
+# Changed but not updated:
+#
+# modified: benchmarks.rb
+#
+$ git commit -a -m ’added new benchmarks’
+[master 83e38c7] added new benchmarks
+1 files changed, 5 insertions(+), 0 deletions(-)
+```
+
+**删除文件**
+
+要从git中删除一个文件，需要将它从记录文件（更确切的说是从staging area）中移除并且提交。相关命令为`git rm`。
+
+如果没有用`git rm`命令而是直接删除git中的文件，文件会在`git status`下处于`changed but not updated`状态。例如：
+
+```
+$ rm grit.gemspec
+$ git status
+# On branch master
+#
+# Changed but not updated:
+# (use "git add/rm <file>..." to update what will be committed)
+#
+# deleted: grit.gemspec
+#
+```
+
+如果使用`git rm`命令删除文件，会如下所示：
+
+```
+$ git rm grit.gemspec
+rm ’grit.gemspec’
+$ git status
+# On branch master
+#
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# deleted: grit.gemspec
+```
+
+如果修改过文件并且将它添加到了目录下，必须使用`-f`选项来强制删除。这是为了避免意外删除在快照中没有记录、不能从git中删除的数据。
+
+如果希望将文件保存在工作目录（working tree）而不是staging area（保存区域）中。也就是希望将文件保存在硬盘上，但是不再用git进行记录。这在忘记将某些文件添加到`.gitignore`文件里而不小心添加到git库中时特别有用。这样的情况下，可以使用`--cached`选项，例如：
+
+`git rm --cached readme.txt`
+
+`git rm`命令接受的参数可以使文件、目录或者匹配文件的正则表达式。例如可以这样：
+
+`git rm log/\*.log`
+
+注意`*`前必须使用反斜杠`\`。因为Git除了使用shell文件名扩展，还有自己的文件名扩展。上面的命令会删除`log/`目录下所有扩展名为`.log`的文件。或者，可以使用：`git rm \*~`命令来删除所有以`.`号结尾的文件。
+
+**移动文件**
+
+git的设计类似于linux系统，命令也相似，例如删除使用的是`git rm`，同样，移动和修改文件名也使用的是`git mv`命令。例如：
+
+```
+$ git mv README.txt README
+$ git status
+# On branch master
+# Your branch is ahead of ’origin/master’ by 1 commit.
+#
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# renamed: README.txt -> README
+```
+
+上面的命令等同于:
+
+```
+$ mv README.txt README
+$ git rm README.txt
+$ git add README
+```
+
+**查看提交历史**
+
+使用`git log`命令
+
+示例：
+
+1.  `git clone git://github.com/schacon/simplegit-progit.git`
+2. 使用如下命令： 
+    ```
+    $ git log
+    commit ca82a6dff817ec66f44342007202690a93763949
+    Author: Scott Chacon <schacon@gee-mail.com>
+    Date: Mon Mar 17 21:52:11 2008 -0700
+    changed the verison number
+    commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+    Author: Scott Chacon <schacon@gee-mail.com>
+    Date: Sat Mar 15 16:40:33 2008 -0700
+    removed unnecessary test code
+    commit a11bef06a3f659402fe7563abf99ad00de2209e6
+    Author: Scott Chacon <schacon@gee-mail.com>
+    Date: Sat Mar 15 10:31:28 2008 -0700
+    first commit
+    ```
+
+未加任何选项参数的情况下，`git log`按照时间倒序排列（时间最近的提交最先）。
+
+`git log`支持大量参数来参考各种log内容。下面介绍几个常用的：
+
+`-p`会展示每次提交的修改。`-p -2`会仅显示最近两条记录。
+
+`--stat`选项会显示每次提交的状态概述。例如：
+
+```
+$ git log --stat
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Mon Mar 17 21:52:11 2008 -0700
+changed the verison number
+Rakefile | 2 +-
+1 files changed, 1 insertions(+), 1 deletions(-)
+commit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Sat Mar 15 16:40:33 2008 -0700
+removed unnecessary test code
+lib/simplegit.rb | 5 -----
+1 files changed, 0 insertions(+), 5 deletions(-)
+commit a11bef06a3f659402fe7563abf99ad00de2209e6
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Sat Mar 15 10:31:28 2008 -0700
+first commit
+README | 6 ++++++
+Rakefile | 23 +++++++++++++++++++++++
+lib/simplegit.rb | 25 +++++++++++++++++++++++++
+3 files changed, 54 insertions(+), 0 deletions(-)
+```
+
+`--pretty`选项可以修改log输出的格式。例如：
+
+```
+$ git log --pretty=oneline
+ca82a6dff817ec66f44342007202690a93763949 changed the verison number
+085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code
+a11bef06a3f659402fe7563abf99ad00de2209e6 first commit
+```
+
+`format`可以定制log输出格式。如果希望输出供机器解析使用的日志，这个选项非常有用。例如：
+
+```
+$ git log --pretty=format:"%h - %an, %ar : %s"
+ca82a6d - Scott Chacon, 11 months ago : changed the verison number
+085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code
+a11bef0 - Scott Chacon, 11 months ago : first commit
+```
+
+注意`author`和`commiter`。author是文件的创建者，commiter是最近一次修改者。例如，假设你为某个项目提供了patch，该项目的核心成员应用了这个patch，则两个人都会被署名--你是author，该该项的核心成员是commiter。
+
+format支持的格式如下所示：
+
+```
+Option    Description of Output
+%H        Commit hash
+%h        Abbreviated commit hash
+%T        Tree hash
+%t        Abbreviated tree hash
+%P        Parent hashes
+%p        Abbreviated parent hashes
+%a        Author name
+%a        Author e-mail
+%a        Author date (format respects the date= option)
+%a        Author date, relative
+%c        Committer name
+%c        Committer email
+%c        Committer date
+%c        Committer date, relative
+%s        Subject
+```
+`oneline`和`format`选项对于`--graph`选项特别有用。该选项会添加一个现实分支和合并历史的图标。例如：
+
+```
+$ git log --pretty=format:"%h %s" --graph
+* 2d3acf9 ignore errors from SIGCHLD on trap
+* 5e3ee11 Merge branch ’master’ of git://github.com/dustin/grit
+|\
+| * 420eac9 Added a method for getting the current branch.
+* | 30e367c timeout code and tests
+* | 5a09431 add timeout protection to grit
+* | e1193f8 support for heads with slashes in them
+|/
+* d6016bc require time for xmlschema
+* 11d191e Merge branch ’defunkt’ into local
+```
+
 ### 参考资料
 1.  [windows下git core.editor配置--有墙](http://mkadlec99.blogspot.com/2011/07/setting-up-correct-git-config.html)
