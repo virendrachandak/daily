@@ -564,5 +564,365 @@ $ git status
 
 如果已经设置了某个分支记录远程分支，可以直接使用`git pull`命令来自动fetch数据。`git pull`命令会自动合并，而`git fetch`不会。
 
+`git clone`命令会自动将远程库（remote）添加到origin对应的remote库下。即clone命令默认的远程分支名为`origin`，默认本地分支名为`master`。
+
+**推送到远程分支**
+
+命令格式为`git push [remote-name] [branch-name]`
+
+**检查远程分支**
+
+`git remote show [remote-name]`。例如：`git remote show origin`。
+
+```
+$ git remote show origin
+* remote origin
+URL: git://github.com/schacon/ticgit.git
+Remote branch merged with ’git pull’ while on branch master
+master
+Tracked remote branches
+master
+ticgit
+```
+
+该命令会显示远程库的URL地址以及正在追踪的分支信息。通过该命令可以看到是否在
+远程库的`master`分支上，如果运行`git pull`命令，git会自动从远程库的`master`分支获取（fetch）所有的远程引用并且进行合并。该命令也会列出git拉下来（pull down）的所有远程引用。
+
+这是一种比较简单的情况，如果使用Git较多的话，有可能从`git remote show`命令看到下面的信息：
+
+```
+$ git remote show origin
+* remote origin
+  URL: git@github.com:defunkt/github.git
+  Remote branch merged with ’git pull’ while on branch issues
+    issues
+  Remote branch merged with ’git pull’ while on branch master
+    master
+  New remote branches (next fetch will store in remotes/origin)
+    caching
+  Stale tracking branches (use ’git remote prune’)
+    libwalker
+    walker2
+  Tracked remote branches
+    acl
+    apiv2
+    dashboard2
+    issues
+    master
+    postgres
+  Local branch pushed with ’git push’
+    master:master
+```
+
+该命令会显示在某些分支上运行`git push`时自动推送到哪一个分支。通过该命令也可查看目前服务器上的哪个分支不在本地，以及本地有哪些已经从服务器上移除的分支，以及运行`git pull`命令时自动合并的分支信息。
+
+**删除和重命名远程库**
+
+如果希望重命名一个引用，在较新版本的Git中，可以运行`git remote rename`命令来修改远程库的简称（shortname）。例如，如果希望将`pb`重命名为`paul`，可以运行命令`git remote rename`如下所示：
+
+```
+$ git remote rename pb paul
+$ git remote
+origin
+paul
+```
+
+需要注意的是，重命名本地分支会重命名远程分支。过去引用到`pb/master`的分支会指向`paul/master`分支。
+
+如果希望删除某个分支引用，例如已经从服务器上删除了该分支并且不在希望使用某个镜像，或者某个贡献者不再贡献代码--可以使用`git remote rm`命令：
+
+```
+$ git remote rm paul
+$ git remote
+origin
+```
+
+**打标**
+
+类似于大部分VCS系统，Git也可以将历史中的某个点标记为重要点。一般来说，可以使用该功能来标记发布点（1.0版本等等）。
+
+**列出tag**
+
+列出当前git库的所有tag标记命令为：
+
+```
+$ git tag
+v0.1
+v1.3
+```
+
+`git tag`命令会按照字母顺序列出所有标记。
+
+也可以使用某种模式来搜索标记（tag）。例如Git源码库包含了240多个tag，如果对于
+1.4.2版本序列有兴趣，可以通过下面的命令来查看：
+
+```
+$ git tag -l ’v1.4.2.*’
+v1.4.2.1
+v1.4.2.2
+v1.4.2.3
+v1.4.2.4
+```
+
+**创建tag**
+
+Git使用两种类型的tag：轻量tag（lightweight）和标注tag（annotated）。lightweight tag类似于没有修改的分支--只是指向某个特定提交（commit）的指针。而annotated tag是存储在Git数据库中的完整对象。这样的tag有检查和值，包含了标记器名称、电子邮箱地址、日期信息，以及标记信息，可以使用GNU Privacy Guard（GPG）进行签名和验证。通常推荐创建标记tag以保存所有信息。但是如果因为某些原因只希望保存临时tag而不保存其他信息，可以使用lightweight tag。
+
+**annotated tag**
+
+创建标记tag非常简单，就是在运行`tag`命令时加上`-a`选项。
+
+```
+$ git tag -a v1.4 -m ’my version 1.4’
+$ git tag
+v0.1
+v1.3
+v1.4
+```
+
+`-m`选项用于指定和tag一起存储的标记信息。如果没有为annotated tag指定信息，Git会启动编辑器便于用户输入标记信息。
+
+可以使用`git show`命令查看已经标记的tag数据和提交内容（commit）。
+
+```
+$ git show v1.4
+tag v1.4
+Tagger: Scott Chacon <schacon@gee-mail.com>
+Date: Mon Feb 9 14:45:11 2009 -0800
+my version 1.4
+commit 15027957951b64cf874c3557a0f3547bd83b3ff6
+Merge: 4a447f7... a6b4c97...
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Sun Feb 8 19:02:46 2009 -0800
+Merge branch ’experiment’
+```
+
+**签名tag（signed tag）**
+
+如果有私钥的话，可以使用GPG来为tag签名。只需要使用`-s`选项而不是`-a`选项。
+
+```
+$ git tag -s v1.5 -m ’my signed 1.5 tag’
+You need a passphrase to unlock the secret key for
+user: "Scott Chacon <schacon@gee-mail.com>"
+1024-bit DSA key, ID F721C45A, created 2009-02-09
+```
+
+在该tag上运行`git show`命令可以查看链接的GPG签名：
+
+```
+$ git show v1.5
+tag v1.5
+Tagger: Scott Chacon <schacon@gee-mail.com>
+Date: Mon Feb 9 15:22:20 2009 -0800
+my signed 1.5 tag
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.8 (Darwin)
+iEYEABECAAYFAkmQurIACgkQON3DxfchxFr5cACeIMN+ZxLKggJQf0QYiQBwgySN
+Ki0An2JeAVUCAiJ7Ox6ZEtK+NvZAj82/
+=WryJ
+-----END PGP SIGNATURE-----
+commit 15027957951b64cf874c3557a0f3547bd83b3ff6
+Merge: 4a447f7... a6b4c97...
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Sun Feb 8 19:02:46 2009 -0800
+Merge branch ’experiment’
+```
+
+**轻量tag（lightweight tag）**
+
+另一种标记提交的方法是使用轻量tag（lightweight tag）。这种tag只会在文件里存储提交检查和（commit checksum）而不会保存其他信息。要创建轻量tag，只需要不指定`-a`,`-s`和`-m`选项即可：
+
+```
+$ git tag v1.4-lw
+$ git tag
+v0.1
+v1.3
+v1.4
+v1.4-lw
+v1.5
+```
+
+这种情况下在该tag上运行`git show`命令将只会看到commit内容而没有其他标记信息。
+
+```
+$ git show v1.4-lw
+commit 15027957951b64cf874c3557a0f3547bd83b3ff6
+Merge: 4a447f7... a6b4c97...
+Author: Scott Chacon <schacon@gee-mail.com>
+Date: Sun Feb 8 19:02:46 2009 -0800
+Merge branch ’experiment’
+```
+
+**验证tag**
+
+验证某个已签名的tag，可以使用`git tag -v [tag-name]`命令。该命令会使用GPG来验证签名。需要有签名者的公钥才能正常运行：
+
+```
+$ git tag -v v1.4.2.1
+object 883653babd8ee7ea23e6a5c392bb739348b1eb61
+type commit
+tag v1.4.2.1
+tagger Junio C Hamano <junkio@cox.net> 1158138501 -0700
+GIT 1.4.2.1
+Minor fixes since 1.4.2, including git-mv and git-http with alternates.
+gpg: Signature made Wed Sep 13 02:08:25 2006 PDT using DSA key ID F3119B9A
+gpg: Good signature from "Junio C Hamano <junkio@cox.net>"
+gpg: aka "[jpeg image of size 1513]"
+Primary key fingerprint: 3565 2A26 2040 E066 C9A7 4A7D C0C6 D9A4 F311 9B9A
+```
+
+如果没有签名者的公钥，会得到以下类似信息：
+
+```
+gpg: Signature made Wed Sep 13 02:08:25 2006 PDT using DSA key ID F3119B9A
+gpg: Can’t check signature: public key not found
+error: could not verify the tag ’v1.4.2.1’
+```
+
+**延后标记（tagging later）**
+
+也可以在已经提交过的内容上加tag。假设提交历史如下所示：
+
+```
+$ git log --pretty=oneline
+15027957951b64cf874c3557a0f3547bd83b3ff6 Merge branch ’experiment’
+a6b4c97498bd301d84096da251c98a07c7723e65 beginning write support
+0d52aaab4479697da7686c15f77a3d64d9165190 one more thing
+6d52a271eda8725415634dd79daabbc4d9b6008e Merge branch ’experiment’
+0b7434d86859cc7b8c3d5e1dddfed66ff742fcbc added a commit function
+4682c3261057305bdd616e23b64b0857d832627b added a todo file
+166ae0c4d3f420721acbb115cc33848dfcc2121a started write support
+9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile
+964f16d36dfccde844893cac5b347e7b3d44abbc commit the todo
+8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme
+```
+
+假设我们现在希望忘记项目v1.2的tag标记（即`updated rakefile`提交）。可以在改提交内容后。要标记该次提交，可以在命令后制定提交的检查和值（或者部分检查和值）。
+
+`git tag -a v1.2 9fceb02`
+
+也可以查看已经标记的提交（commit）：
+
+```
+$ git tag
+v0.1
+v1.2
+v1.3
+v1.4
+v1.4-lw
+v1.5
+$ git show v1.2
+tag v1.2
+Tagger: Scott Chacon <schacon@gee-mail.com>
+Date: Mon Feb 9 15:32:16 2009 -0800
+version 1.2
+commit 9fceb02d0ae598e95dc970b74767f19372d61af8
+Author: Magnus Chacon <mchacon@gee-mail.com>
+Date: Sun Apr 27 20:43:35 2008 -0700
+updated rakefile
+...
+```
+
+**分享tag**
+
+默认情况`git push`命令不会将tag信息传输到远程服务器。需要在创建tag后显示将tag推送（push）到共享服务器。该过程类似于共享远程分支，可以使用`git push origin [tagname]`命令。
+
+```
+$ git push origin v1.5
+Counting objects: 50, done.
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (44/44), 4.56 KiB, done.
+Total 44 (delta 18), reused 8 (delta 1)
+To git@github.com:schacon/simplegit.git
+* [new tag] v1.5 -> v1.5
+```
+
+如果有许多tag希望一次推送到服务器，可以在`git push`命令后使用`-tags`选项。这样可以将所有已存的tag推送到远程服务器。
+
+```
+$ git push origin --tags
+Counting objects: 50, done.
+Compressing objects: 100% (38/38), done.
+Writing objects: 100% (44/44), 4.56 KiB, done.
+Total 44 (delta 18), reused 8 (delta 1)
+To git@github.com:schacon/simplegit.git
+* [new tag] v0.1 -> v0.1
+* [new tag] v1.2 -> v1.2
+* [new tag] v1.4 -> v1.4
+* [new tag] v1.4-lw -> v1.4-lw
+* [new tag] v1.5 -> v1.5
+```
+
+这样，其他人从git库clone或者pull内容时也可以获取所有的tag。
+
+**git tag建议和技巧**
+
+**自动补全**
+
+如果使用bash shell，可以使用其自带的自动补全脚本。下载Git源代码，查看`contrib/completion`目录，在该目录下应该有一个名为`git-completion.bash`的文件。将该文件复制到home目录下并将其添加到`.bashrc`文件：
+
+`source ~/.git-completion.bash`
+
+如果希望在安装git时自动为所有用户设置bash shell自动补全，在mac系统下可以将该脚本复制到`/opt/local/etc/bash_completion`目录；在linux系统下，复制到`/etc/bash_completion.d/`目录。bash在启动时会自动加载这些目录下的脚本。
+
+如果使用windows和Git Bash，即安装msysGit的默认git bash，已经预先配置了自动完成功能。
+
+在输入Git命令时按tag键会返回一系列可以选择的建议：
+
+```
+git co<tab><tab>
+commit config
+```
+
+自动补全也可用于选项。例如：
+
+```
+$ git log --s<tab>
+--shortstat --since= --src-prefix= --stat --summary
+```
+
+**git别名(aliases)**
+
+如果只输入部分命令的话，Git不会自动解析。如果不希望在每次输入Git命令时输入完整的命令，可以使用`git config`为每条命令分别设置对应的别名(alias)。例如下面的示例：
+
+```
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+```
+
+alias配置类似于bash的别名，可以减轻很多输入工作，例如配置:
+
+```
+git config --global alias.unstage 'reset HEAD --'
+```
+
+> 注意：需要使用单引号`'`而不是短音符`\``。
+
+这样下面的两个命令是相等的。
+
+```
+git unstage fileA
+git reset HEAD fileA
+```
+
+也可以配置查看最近一条log记录的alias：
+
+```
+git config --global alias.last 'log -1 HEAD'
+```
+
+可以看出alias配置会在运行git命令时使用alias单引号里的内容替代alias的内容。除此之外，`git alias`也可以用于配置运行外部命令的短命令。例如，gitk命令（msysGit自带的默认图形查看器）。
+
+```
+git config --global alias.visual '!gitk'
+```
+
+通过上面的配置，运行`git visual`命令相当于运行了`gitk`命令。
+
+> 别忘了，查看当前所有配置，可以使用命令`git config --global -l`命令。
+
 ### 参考资料
 1.  [windows下git core.editor配置--有墙](http://mkadlec99.blogspot.com/2011/07/setting-up-correct-git-config.html)
