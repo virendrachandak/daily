@@ -476,7 +476,7 @@ $(function() {
 
 ### 更多资源
 
-本文只讲解了JavaScripthi的皮毛，如果想继续深入，可以参考：
+本文只讲解了JavaScript测试的皮毛，如果想继续深入，可以参考：
 
 * [演讲资料](http://lanyrd.com/2012/full-frontal/sztqh/)
 * [Grunt，帮助自动化测试流程以及其他许多事情的工具](http://gruntjs.com/)
