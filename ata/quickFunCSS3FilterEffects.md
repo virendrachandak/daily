@@ -1,0 +1,35 @@
+找点乐子：CSS3滤镜特效
+---
+
+>  本文内容只支持webkit浏览器，如有不支持，请自己google相应兼容解决方案。
+>  本文适合你打开浏览器和我一起操作，enjoy前端的乐趣。
+
+使用google chrome打开[google](http://www.google.com)，按住`ctr+shift+i`打开开发者工具的检查工具（web inspector），找到`body`元素，在右侧的`style`中的`element.style`中输入`-webkit-filter:blur(2px);`，当然，也可以输入更大的值。但是0（即不模糊）和负数就看不到效果了。效果如下：
+
+![](http://gtms04.alicdn.com/tps/i4/T1BsVlFUXXXXczMsYP-1366-746.png)
+
+同样的方法，还可以尝试`-webkit-filter: brightness(30%);`。在chrome下实际测试发现`100%`是原来的色值，`0`是黑色。也支持更大或更小的值。效果如下：
+
+![](http://gtms02.alicdn.com/tps/i2/T18iMtFCNgXXczMsYP-1366-746.png)
+
+其他支持的滤镜还有：
+
+*   `-webkit-filter: contrast(30%);`
+*   `-webkit-filter: grayscale(30%);`
+*   `-webkit-filter: sepia(30%);`
+>   sepia：棕褐色
+*   `-webkit-filter: invert(30%);`
+*   `-webkit-filter: opacity(30%);`
+*   `-webkit-filter: saturate(30%);`
+>   saturate:饱和度
+>   加到`saturate(10000000%)`挺好看的。
+*   `-webkit-filter: hue-rotate(300deg);`
+>   单位为`deg`
+*   `-webkit-filter: drop-shadow(rgba(0,0,0,0.5) 5px 5px 15px);`
+
+### 参考资料
+1.  [Quick Fun: Css3 Filter Effects](http://girliemac.com/blog/2011/12/21/quick-fun-css3-filter-effects/)
+2.  [html5 rocks--understanding css filter effects](http://www.html5rocks.com/en/tutorials/filters/understanding-css/)
+>   这篇文章末尾有很多有用的资源
+
+3.  [W3C filter规范](http://www.w3.org/TR/filter-effects-1/)
