@@ -108,3 +108,4 @@ DEP(内存执行保护)，ASLR(内存地址空间随机化)保护机制的绕过
 2.  SiteDigger和Search Diggity
 >   [SiteDigger](http://www.mcafee.com/us/downloads/free-tools/sitedigger.aspx)
 >   [Search Diggity](http://www.stachliu.com)目前会自动重定向到[http://www.bishopfox.com/](http://www.bishopfox.com/)
+
