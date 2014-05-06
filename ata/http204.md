@@ -1,7 +1,7 @@
 HTTP 204
 ---
 
->   打开fiddler，发现一个奇怪的请求响应状态码204，处于强烈的好奇心，搜索了解了下并整理成了下面的内容
+>   打开fiddler，发现一个奇怪的请求响应状态码204，出于强烈的好奇心，搜索了解了下并整理成了下面的内容
 
 ### `HEAD`请求方法
 
@@ -25,31 +25,31 @@ Content`。那么，为什么服务器不干脆返回body为0字节的HTTP/200�
 在没有body返回的较多场景下，这样两个请求的响应状态码意义是相同的。但是存在
 一种情况，如果用户正从一个浏览器窗口导航到一个`frame`或者`iframe`，那么HTTP/204的行为就完全不一样了。
 
-* 如果跳转到一个返回0字节body，状态吗为HTTP/200的URL地址，浏览器的`frame`会显示一个空白的文档。页面或者`frame`的URL会显示新的URL。
+* 如果跳转到一个返回0字节body，状态码为HTTP/200的URL地址，浏览器的`frame`会显示一个空白的文档。页面或者`frame`的URL会显示新的URL。
 
 * 如果服务器返回HTTP/204，`frame`和`body`会保持不变--就像没有发生跳转一样。页面或者`frame`的URL地址也不会改变。
 
-更加不常见的HTTP/205响应和HTTP/204做了同样的事情，唯一的不同是，205响应还会清除当前文档中的所有表单（`form`元素）。
+更加不常见的HTTP/205响应和HTTP/204做了同样的事情，唯一的不同是，205响应还会清除当前文档中的所有表单（`form`元素）已经填写的内容。
 
 ### HTTP/206响应
 
-HTTP/206表示（`Partial Content`--部分内容）。发生的场景是在客户端只请求目标URL地址的部分资源时。例如客户端正在加载一个较大的二进制文件（例如加载视频或者PDF文件），从[不完整的下载](http://blogs.msdn.com/b/ieinternals/archive/2011/06/03/send-an-etag-to-enable-http-206-file-download-resume-without-restarting.aspx)中恢复。或者客户端尝试实现自己的`bandwidth throttling`（带宽限制）。
+HTTP/206表示（`Partial Content`--部分内容）。发生的场景是在客户端只请求目标URL地址的部分资源时。例如客户端正在加载一个较大的二进制文件（例如加载视频或者PDF文件），从[不完整的下载](http://blogs.msdn.com/b/ieinternals/archive/2011/06/03/send-an-etag-to-enable-http-206-file-download-resume-without-restarting.aspx)中恢复。或者客户端尝试实现自己的[`bandwidth throttling`（带宽限制）](http://msdn.microsoft.com/en-us/library/windows/desktop/aa362708\(v=vs.85\).aspx)。
 
 可以通过请求头中的`Range`来确定部分内容（`partial content`）请求。这个请求头的值指定了客户端需要请求body中的哪部分内容。
 
 ![](http://blogs.telerik.com/images/default-source/teststudio-blog-posts/windows-live-writer-understanding-head-http204-and-http206_f0d4-image_15-png)
 
-例如上图为客户端需要服务器端视频文件172032到13325503字节之间的内容。
+例如上图表示客户端需要服务器端视频文件中172032到13325503字节之间的内容。
 
-大部分情况下，客户端也需要发送一个标记服务器端期望使用的资源版本的请求头。在上图中为`ETag`，包含在`If-Match`头信息中。客户端还需要通过使用`If-Unmodified-Since`请求头来发送第一次请求的`Last-Modified`信息。
+大部分情况下，客户端也需要发送一个用于标记服务器端期望使用的资源版本的请求头。在上图中为`ETag`，包含在`If-Match`头信息中。客户端还需要通过使用`If-Unmodified-Since`请求头来发送第一次请求的`Last-Modified`信息。
 
-如果服务器发现客户端请求的资源版本和自己返回的资源版本不同，会返回HTTP/412响应（`Precondition Failed`）。如果客户端使用`If-Range`发送了`ETag`信息，而不是使用`If-Match`来发送的话，服务器在于客户端的`ETag`不匹配时返回完整的请求body内容。使用`If-Range`在客户端需要完整文件时可以节省一次网络请求。
+如果服务器发现客户端请求的资源版本和自己返回的资源版本不同，会返回HTTP/412响应（`Precondition Failed`）。如果客户端使用`If-Range`发送了`ETag`信息，而不是使用`If-Match`来发送的话，服务器在发现与客户端的`ETag`不匹配时会返回完整的请求body内容。使用`If-Range`请求头可以在客户端需要完整文件时节省一次网络请求。
 
-服务器响应的`Content-Range`头部指明了发送的文件范围，而`Content-Length`头部指定了该范围文件部分的大小。例如：
+服务器响应的`Content-Range`头部指明了发送的文件范围，而`Content-Length`头部指定了该范围所需文件的大小。例如：
 
 ![](http://blogs.telerik.com/images/default-source/teststudio-blog-posts/windows-live-writer-understanding-head-http204-and-http206_f0d4-image_18-png)
 
-注意请求中的`Accept-Ranges`头表明客户端可以提前知道自己可以通过`Range`请求头来获取一些特定字节的内容。
+注意请求中的`Accept-Ranges`头表明客户端可以提前知道自己可以通过`Range`请求头来获取特定字节长度的内容。
 
 
 ### 参考资料
@@ -63,7 +63,7 @@ HTTP/206表示（`Partial Content`--部分内容）。发生的场景是在客�
 *   URL必须为HTTP或者HTTPS协议
 *   服务器的响应头中没有`Accept-Ranges:none`
 *   服务器请求中必须包含`StrongETAG`头信息
-*   服务器必须接受在接下来的下载请求中包含的`Range`头信息
+*   服务器必须接受在接下来的下载请求中包含`Range`头信息
 
 下载恢复请求是通过发送包含了指定客户端当前拥有的资源版本的HTTP请求（通过`ETag`来标记）以及客户端需要服务器发送的文件的范围(`range`)来实现的。例如这样一个请求：
 
@@ -80,7 +80,7 @@ Connection: Keep-Alive
 
 如果服务器允许恢复下载，会返回HTTP/206请求，并在头信息的`Accept-Ranges`中指定发送的文件范围。如果禁止或者不能恢复下载的话，会返回包含`Accept-Ranges:none`头信息的HTTP/200请求。在IE中，服务器还必须包含`strong Etag`。否则，IE下载管理器的暂停按钮会被禁用。除此之外，服务器还需要状态信息（例如Session Cookie或者HTTP验证--HTTP Authentication）来恢复下载，如果用户关闭浏览器再重新打开，丢失了这些状态信息的话，那么下载也不能恢复。
 
-[About BITS](http://msdn.microsoft.com/en-us/library/windows/desktop/aa362708(v=vs.85).aspx)
+[About BITS](http://msdn.microsoft.com/en-us/library/windows/desktop/aa362708\(v=vs.85\).aspx)
 
 ### 关于BITS
 
