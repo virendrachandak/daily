@@ -103,3 +103,15 @@ Client-Side XSS Filters》
 安全，任重道远！从好的编码习惯和代码风格做起
 
 欢迎斧正！
+
+#### XSS例子
+[http://blog.securitee.org/?p=37](http://blog.securitee.org/?p=37)
+[http://securitee.tk/files/chrome_xss.php?a=%3Cscript%3Evoid%28%27&b=%27%29;alert%281%29;%3C/script%3E](http://securitee.tk/files/chrome_xss.php?a=%3Cscript%3Evoid%28%27&b=%27%29;alert%281%29;%3C/script%3E)
+[http://www.hackersonlineclub.com/cross-site-scripting-xss](http://www.hackersonlineclub.com/cross-site-scripting-xss)
+[https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
+[http://resources.infosecinstitute.com/using-x5s-with-fiddler-to-find-xss-vulnerabilities/](http://resources.infosecinstitute.com/using-x5s-with-fiddler-to-find-xss-vulnerabilities/)
+[http://blog.securitee.org/?p=114](http://blog.securitee.org/?p=114)
+
+[http://www.enhanceie.com/test/xss/](http://www.enhanceie.com/test/xss/)
+[http://www.enhanceie.com/test/xss/BlockMode.asp](http://www.enhanceie.com/test/xss/BlockMode.asp)
+[http://drops.wooyun.org/tips/956](http://drops.wooyun.org/tips/956)
