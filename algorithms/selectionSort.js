@@ -11,13 +11,18 @@ function TestArray(length) {
 function selectionSort(arr, verbose) {
     if (Object.prototype.toString.call(arr).indexOf('Array') > 0 && arr.length > 0) {
         var num = arr.length;
-        for (var i = 0; i < num; i++) {
-            var max = arr[i];
-            for (var j = i + 1; j < num - i; j++) {
-                if (arr[j] > max) {
-                    max = arr[j];
+        var temp;
+        var result = [];
+        for (var i = 0; i < num - 1; i++) {
+            var min = arr[i];
+            for (var j = 0; j < num - 1; j++) {
+                if (arr[j] < min) {
+                    min = arr[j];
                 }
             }
+
+            if (verbose)
+            console.log(arr);
         }
     } else {
         return;
