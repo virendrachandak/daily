@@ -42,3 +42,15 @@ Git log中文乱码有两种情况，一种是因为在`commit`时提交的日�
 ### 参考资料
 
 [git config](http://git-scm.com/docs/git-config)
+
+### 补充说明
+
+用了没多久又发现一件奇怪的事情，发现在terminal中查看带中文的git日志又乱码了。
+可是查看git的配置发现确实已经设置成utf-8了，而且terminal的默认编码也是utf-8，
+那么，问题到底处在哪呢？一个个排除后，将目光锁定在zsh上，通过编辑`.zshrc`，
+加入一下两行内容，并运行命令`source ~/.zshrc`后问题解决。
+
+```
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
+```
