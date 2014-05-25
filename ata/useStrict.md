@@ -2,14 +2,15 @@
 ---
 
 > 起源：使用`MacVim`编写代码时发现`JSLint`报错`Use the function form of "use strict"`，出于“打破砂锅问到底的精神”，就有了下面这篇文章。
+> update@20140525:写着写着，发现在`vim`下使用`syntastic`来检查javascript和css的语法对提高代码质量还是很有帮助的，下次找机会再介绍下`csslint`的使用。
 
 [stackover flow上的问题和答案](http://stackoverflow.com/questions/4462478/jslint-is-suddenly-reporting-use-the-function-form-of-use-strict)
 
-在包装函数的第一个声明使用`use strict`，这样`use strict`只会对该函数生效。这样可以防止在合并并非`strict`模式的代码时出错。示例代码：
+在包装函数的第一个声明使用`"use strict";`，这样`"use strict";`只会对该函数生效。这样可以防止在合并并非`strict`模式的代码时出错。示例代码：
 
-```
+```javascript
 (function() {
-  `use strict`;
+  "use strict";
   // this function is strict...
 }()
 
@@ -36,7 +37,7 @@
 
 ```
 (function() {
-  `use strict`;
+  "use strict";
   // this function is strict...
 }()
 
@@ -203,3 +204,60 @@ WEB浏览器最严重的缺陷是`XSS`(`Cross Site Scripting`，跨站点脚本�
 [Discoverer of JSON Recommends Suspension of HTML5](http://ajax.sys-con.com/node/1544072)
 
 > 综上，`Crockford`大牛在2010年，就是上面这篇文章的发表日期时，认为应该先解决安全问题再推动`HTML5`的其他新功能。现在看来，还是颇有些感想的～其实，有点感觉类似于`Node.js`，难道，这是互联网`唯快不破`的本质决定的？
+
+### 更多参考资料
+
+1. [It's time to start using JavaScript strict mode](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)
+
+### 是时候使用`JavaScript` `Strict Mode`了by Nicolas C. Zakas
+
+#### 概述
+
+* 解决两类问题：细节（`subtle`）问题和明显的（`obvious`）问题
+  * `subtle`问题可以参考Dmitry Soshnikov的`ECMA-262-5 in Detail`
+
+* `Strict Mode`的目标：能够更快地调试出问题
+
+#### 细节示例
+
+注意：如果希望在浏览器的控制台中看到效果，请在外面加上一个函数来调用，否则`"use strict";`会被忽略掉。
+
+例如：下面的例子，应该写成：
+ 
+```javascript
+function test() {
+  "use strict";
+  with (location) {
+    alert(href);
+  }
+}
+```
+
+
+1.  消除了`with`，例如，下面的代码在`"use strict";`的代码中会报错。
+
+  ```javascript
+  with (location) {
+    alert(href);
+  }
+  ```
+
+2.  阻止意外的全局变量，例如下面的代码会在`strict mode`报错：
+
+  ```javascript
+  // Throws an error in strict mode
+  (function() {
+    someUndeclaredVar = "foo";
+  })();
+  ```
+
+所有示例，看这张截图好了：
+
+![]()
+
+### 其他
+
+在`vim`下面可以通过[`syntastic`](`github`上搜索`scrooloose/syntastic`)插件来方便的调用`jshint`插件对`js`文件进行`strict mode`的检查。同理，还可以使用`csslint`来对css文件进行检查，提高代码质量，避免意想不到的错误。
+
+[http://www.jshint.com/](http://www.jshint.com/)
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
