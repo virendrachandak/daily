@@ -253,7 +253,7 @@ function test() {
 
 所有示例，看这张截图好了：
 
-![]()
+![](http://gtms03.alicdn.com/tps/i3/T1exEJFNpaXXa4Vzog-2876-1740.png)
 
 ### 其他
 
