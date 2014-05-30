@@ -261,3 +261,26 @@ function test() {
 
 [http://www.jshint.com/](http://www.jshint.com/)
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode)
+
+### update@20140525:15:35
+
+如何在`Node.js`项目中使用`JSHint`？
+
+如果在`Node.js`项目中使用`JSHint`，会出现`require is not defined`或者`module is node defined`这样的错误。要声明这些变量是OK的，可以在项目文件顶部加上：
+
+```javascript
+/*global, require, module, __dirname */
+```
+
+或者，更轻松的，更符合语法的方法是添加：
+
+```javascript
+/*jshint node: true */
+```
+
+所以，在所有`Node.js`项目JS文件的顶部，最好写上：
+
+```javascript
+/*jshint node: true */
+"use strict";
+```

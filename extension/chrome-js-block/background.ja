@@ -1,0 +1,8 @@
+chrome.weRequest.onBeforeRequest.addListener(
+  function() { return {cancel: true}; },
+  {
+    urls: ["http://img.baidu.com/hunter/alog/alog.min.js"],
+    types: ["script"]
+  },
+  ["blocking"]
+);
