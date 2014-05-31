@@ -65,3 +65,29 @@
 ### 后序
 
 `Atom`是基于`node.js`完成的图形化编辑器，只要了解`JavaScript`我们也可以为它定制我们想要的功能，还可以熟悉`node.js`的使用。冲着一点，也值得试一试这款编辑器。当然，不要因此换上选择恐惧症，编辑器这种东西，用着顺手就好了。有时间再折腾下。
+
+### 彩蛋
+
+发现`atom`安装`vim-mode`后在普通模式下显示的鼠标状态不清楚，无法分辨，可以通过编辑`~/.atom/styles.less`文件，假如如下内容解决：
+
+```css
+//fix cursor display problem
+.vim-mode.command-mode {
+  .cursor, .cursor.blink-off {
+    background-color: #F00;
+    width: 7px !important;
+    visibility: visible;
+  }
+}
+```
+
+解决方案[来源](https://github.com/atom/vim-mode/issues/201)
+
+以及[`visual`模式下鼠标的显示设置](https://github.com/atom/vim-mode/pull/46)
+
+还有[这个](https://github.com/atom/vim-mode/pull/123)
+
+自定义主题和UI
+[theme](https://github.com/leoshawn/electron-dark-syntax)
+[ui](https://github.com/leoshawn/neutron-ui)
+[官方说明](https://atom.io/docs/v0.99.0/creating-a-theme)
