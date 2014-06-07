@@ -297,3 +297,5 @@ processlist ##检查`MySQL`服务器运行的所有进程
 [官方文档](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
 
 So，非常检查，执行命令:`brew install mongodb`即可。
+
+[`mongodb`入门--官方英文文档](http://docs.mongodb.org/manual/tutorial/getting-started/)
