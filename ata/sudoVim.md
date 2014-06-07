@@ -105,6 +105,8 @@ Bundle 'tpope/vim-fugitive'
 
 而要添加文件到`HEAD`区域，只需要运行：
 
-`:git add .`就可以了。
+`:Git add .`就可以了。
+
+> 注意：这里的`Git`一定要大写`G`。
 
 然后提交`:Gcommit`。So Easy!这样就不用在`terminal`和`macvim`之间切来切去了。
