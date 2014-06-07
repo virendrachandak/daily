@@ -1,5 +1,10 @@
-`MacVim`配置使用`sudo.vim`提升权限
+`MacVim`小技巧--`sudo`和使用`git`
 ---
+
+> 本文有三部分主要内容：1.`macvim`的安装，主要解决从命令行启动`gui macvim`的
+> 问题；2.`sudo`保存需要特殊权限的文件修改。3.在`macvim`下使用`git`。
+
+# `macvim`的简单安装说明以及从`terminal`的启动
 
 最简单的安装方法：
 
@@ -13,7 +18,11 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 2.  使用`brew install macvim`命令安装`macvim`。
 
-3.  `Su-write`（`sudo`写入）
+这样就可以通过运行`mvim`来从命令行启动带图形界面的`macvim`了。
+
+# `macvim`获取`sudo`权限
+
+1.  `Su-write`（`sudo`写入）
 
 有时候需要修改一些需要`root`权限的文件，例如`/etc`下面的文件。但是当我们修改完保存的时候，会得到`permission denied`错误。这时候可以按照下面的内容来获取临时的`root`权限保存修改内容。
 
@@ -77,3 +86,25 @@ nnoremap <leader>es :w! /tmp/sudoSave \| let $fileToSave=expand('%') \| let $fi
 
 ## 参考资料
 [Su-write](http://vim.wikia.com/wiki/Su-write)
+
+# 在`macvim`中使用`git`
+
+首先，使用`vundle`安装`fugitive`插件，如果安装了[`vundle`](https://github.com/gmarik/vundle)，只需要在`$MYVIMRC`（即`vim`的配置文件，通常为`~/.vimrc`）中添加下面这行就可以了：
+
+```
+Bundle 'tpope/vim-fugitive'
+```
+
+> `vundle`的安装配置非常简单，参考我上面给出的链接的文档直接安装即可，这里不在赘述。
+
+安装完成以后，如果我们当前打开了某个`git`仓库里的文件，只需要输入下面的命令就可以查看当前的`git`库状态：
+
+```
+:Gstatus
+```
+
+而要添加文件到`HEAD`区域，只需要运行：
+
+`:git add .`就可以了。
+
+然后提交`:Gcommit`。So Easy!这样就不用在`terminal`和`macvim`之间切来切去了。
