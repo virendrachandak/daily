@@ -189,6 +189,111 @@ mysql> select Host, Db, User from mysql.db;
 
   3.  使用`mysqladmin`命令行程序。
 
+      ```
+      shell> mysqladmin -u root password 'xxx'
+      shell> mysqladmin -u root -h host_name password 'newpwd'
+      ```
+
+设置好`root`账户的密码后，`root`的操作需要输入密码才能执行。例如查看`MySQL`服务器的运行状态，需要使用如下命令：
+
+`mysqladmin -uroot -p status`
+
+#### 为匿名账号设置密码
+
+1.  使用`set password`命令：
+    
+    ```
+    shell>mysql -u root -p
+    mysql> set password for ''@'localhost'=password('xxx');
+    ```
+    
+    `-p`表示已经为`root`用户设置了密码并且使用密码。
+  
+2.  使用`update`命令：
+
+    ```
+    shell>mysql -u root -p
+    mysql> update mysql.user set password=password('xxx') where user='';
+    mysql> flush privileges;
+    ```
+
+    > `flush`命令会让`MySQL`服务器重新读取`grant`表。否则，密码的修改只有在`MySQL`服务器重启后才会生效。
+
+#### 删除匿名账户
+
+如果宁愿删除匿名账户而不是为它们指定密码，可以这样做：
+
+```
+shell> mysql -u root -p
+mysql> drop user ''@'localhost';
+```
+
+#### `test`数据库安全
+
+`mysql.db`中包含的内容指定了`test`和`test_`开头的数据库默认是可以任意访问的（因为`mysql.db`中的`User`这一列的值为空，即代表匹配任意用户名）。这意味着，即使没有权限的用户也可以访问到`test`和`test_`开头的数据库。如果想要删除任意用户访问`test`数据库，按如下步骤操作：
+
+```
+shell>mysql -u root -p
+mysql> delete from mysql.db where db like 'test%';
+mysql> flush privileges;
+```
+
+这样，只有拥有`global`数据库权限，或者`test`数据库明确授予了权限的用户可以访问它。如果想要干脆删除掉数据库，可以这样做：
+
+```
+mysql> drop database test;
+```
+
+> 除了`workbench`和`utilites`，还可以为`MySQL`服务器安装[`proxy`](http://dev.mysql.com/doc/refman/5.6/en/mysql-proxy.html)（[下载地址](http://dev.mysql.com/downloads/mysql-proxy/)）。
+> `proxy`可以监测、过滤和操作`MySQl`服务器和客户端的查询等操作。
+
+安装`proxy`非常简单，解压下载的二进制文件，然后配置好`PATH`环境
+变量就可以了。
+
+> 如何以匿名用户连接`MySQL`服务器。
+> `mysql -h 'localhost' -p`（`-p`选项在为匿名用户设置了密码的情况下使用，否则不需要使用）。
+
 `Mac OS X MySQL`的`DMG`安装包安装在`/usr/local/mysql-`**VERSION**目录下，并且创建了一个符号链接`/usr/local/mysql`。
 
+##### 彩蛋
+
+常用的一些`MySQL`命令：
+
+1.  设置`MySQL`服务器`root`账户的密码：
+
+`mysqladmin -uroot password xxxxx`
+
+2.  修改`MySQL`服务器`root`账户的密码：
+
+`mysqladmin -uroot -p123456 password 'newpassword'`
+
+> 这里有一个安全隐患，可以通过`history`命令看到密码，在一般的`linux`下，可以通过命令`history -c`来消除`history`记录。在`zsh`+`os x`系统中，可以通过删除`~/.zsh_history`的内容来清除记录。
+
+3.  检查`MySQL`服务器是否在运行：
+
+```
+mysqladmin -u root -p ping
+```
+
+4.  检查当前运行的`MySQL`服务器版本：
+
+```
+mysqladmin -uroot -p version
+```
+
+OK，看出规律来了，前面基本上是`mysqladmin -u root -p`，后面跟上具体的命令即可。
+
+```
+extended-status ##检查`MySQL`服务器当前运行状态使用的变量设置
+variables   ##查看`MySQL`服务器的所有变量和值
+processlist ##检查`MySQL`服务器运行的所有进程
+```
+
+[参考资料](http://www.tecmint.com/mysqladmin-commands-for-database-administration-in-linux/)
+
 ## `mongodb`
+
+[中文讨论](https://ruby-china.org/topics/160)
+[官方文档](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)
+
+So，非常检查，执行命令:`brew install mongodb`即可。
