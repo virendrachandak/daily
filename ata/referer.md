@@ -58,3 +58,5 @@
 [新浪微博蠕虫](http://www.wooyun.org/bugs/wooyun-2013-019597)
 [小米TOKEN劫持](http://www.wooyun.org/bugs/wooyun-2012-09986)
 </pre>
+
+> 网易云音乐在登陆时需要`referer`，否则会请求失败。
