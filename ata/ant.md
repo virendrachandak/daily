@@ -128,7 +128,7 @@ Build failed
 
 编辑`~/.zshrc`文件。
 
-均假如以下内容：
+均加入以下内容：
 
 ```
 # Set environment variables for apache ant
