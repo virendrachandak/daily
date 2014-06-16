@@ -11,3 +11,6 @@
 export M2_HOME=/usr/local/apache-maven-3.0.5
 export PATH=${PATH}:${M2_HOME}/bin``
 ```
+
+[Apache Maven 入门篇 ( 上 )](http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-1-406235-zhs.html)
+[Apache Maven 入门篇(下)](http://www.oracle.com/technetwork/cn/community/java/apache-maven-getting-started-2-405568-zhs.html)
