@@ -116,5 +116,25 @@ Build failed
 
 还可以通过`anti -version`来查看配置好的`ant`版本。
 
+### 修改`PATH`环境变量
+
+上面说到的修改环境变量的方法在`terminal`重启后会失效。需要按照如下步骤设置。
+
+1.  `bash`环境
+
+编辑`~/.bash_profile`文件。
+
+2.  `zsh`环境
+
+编辑`~/.zshrc`文件。
+
+均假如以下内容：
+
+```
+# Set environment variables for apache ant
+export ANT_HOME=/usr/local/apache-ant-1.9.4/
+export PATH=${PATH}:${ANT_HOME}/bin
+```
+
 # 原文
 [http://ant.apache.org/manual/index.html](http://ant.apache.org/manual/index.html)
