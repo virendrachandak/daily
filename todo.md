@@ -111,3 +111,9 @@
 
 ### 阅读和资讯
 1.  [readwrite](http://readwrite.com/hack)
+
+### 权威文档
+1.  [mdn](https://developer.mozilla.org/en-US/docs/Web)
+2.  [html5](http://www.whatwg.org/specs/web-apps/current-work/multipage/index.html#contents)
+3.  [dom2](http://www.w3.org/TR/DOM-Level-2-HTML/Overview.html#contents)
+> 其他css3,dom1,dom3,apple developer等等
