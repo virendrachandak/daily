@@ -85,7 +85,7 @@
 
 ![](testablejavascript-1-2.png)
 
-##### 测试驱动的开发（`Test-Driven Development`）
+##### 测试驱动的开发（`Test-Driven Development`，简称`TDD`）
 
 理论上简单来说就是“先写测试，再编码”。
 
@@ -93,4 +93,47 @@
 
 结论，在编码前、编码中和编码后写测试代码都是好事！
 
-##### 行为驱动开发（`Behavior-Driven Development`）
+##### 行为驱动开发（`Behavior-Driven Development`，简称`BDD`）
+
+基于`TDD`，需要用户编写`User Story`来描述测试内容。需要符合一定格式，格式例如：
+
+```
+As a [someone] I want to [something] so that [result]
+```
+
+实例例如：
+
+```
+As in a Yahoo! Mail user I want to attach a picture to my email so that my recipients can see it.
+```
+
+可以不用代码，用一般语言描述就可以了。适用于从非本团队的人收集正式的反馈。
+
+##### 为什么要编写可测试的代码？
+
+> Writing software is the hardest thing people do.
+> --Douglas Crockford
+
+```
+x = x + 1;
+```
+
+这段简单代码的问题？`x`是字符串、`infinity`或者对象怎么办？
+
+**可维护性**
+
+程序员通常不是从零开始写代码的。因此需要代码有可维护性。每个人都可能会调试和维护别人的代码。可测试的代码维护性肯定更好。这对于每个人来说都有好处。
+
+**可理解性**
+
+> 不用解释了吧
+
+##### 什么是可测试的代码？
+
+容易测试。特征与可维护、可理解的代码一样：不复杂、注释信息完整、松耦合。
+
+即三个特征：
+
+* `testabale`
+* `maitainable`
+* `understandable`
