@@ -137,3 +137,73 @@ x = x + 1;
 * `testabale`
 * `maitainable`
 * `understandable`
+
+# 第二章--复杂度（`Complexity`）
+---
+
+### 方法一：命令查询分离（`Command Query Separation`）
+
+命令（`Commands`）：做事情的函数。即`setters`
+
+查询（`Queries`）：有返回值的函数。即`getters`
+对`commands`的测试是通过`mock`（模拟）。对`queries`的测试是通过`stub`（根）。第四章会有这块内容的详解。
+
+`command query`分离可以提供读写分离，提供了更大的扩展性。例如下面应用了`command query`分离的`Node.js`代码：
+
+```
+function configure(values) {
+  var fs = require('fs'),
+      config = { docRoot: '/somewhere' },
+      key,
+      stat;
+
+  for (key in values) {
+    config[key] = values[key];
+  }
+
+  try {
+    stat = fs.statSync(config.docRoot);
+    if (!stat.isDirectory()) {
+      throw new Error('Is not valid');
+    }
+  } catch(e) {
+    console.log("** " + config.docRoot + " does not exist or is not a directory");
+    return;
+  }
+
+  // ... check other values ...
+  return config;
+
+}
+```
+
+相应的测试代码（先忽略具体语法，后面第四章会解释测试代码的语法细节）：
+
+```
+describe("configure tests", function() {
+  it ("undef if docRoot does not exist", function() {
+    expect(configure({ docRoot: '/xxx' })).toBeUndefined();
+  });
+
+  it ("not undef if docRoot does exist", function() {
+    expect(configure({ docRoot: '/tmp' })).not.toBeUndefined();
+  });
+
+  it ("adds values to config hash", function() {
+    var config = configure({ docRoot: '/tmp', zany: 'crazy' });
+    expect(config).not.toBeUndefined();
+    expect(config.zany).toEqual('crazy');
+    expect(config.docRoot).toEqual('/tmp');
+  });
+
+  it ("verifies value1 good...", function() {
+  });
+
+  it ("verifies value1 bad...", function() {
+  });
+
+  // ... many more validation tests with multiple expects...
+});
+```
+
+
