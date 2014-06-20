@@ -206,4 +206,255 @@ describe("configure tests", function() {
 });
 ```
 
+可以从测试代码看出我们上面的示例代码有这些问题：
+
+* 函数做了太多事情：在设置默认配置值后，该函数继续检查配置值的有效性。
+* 每个值的验证都包裹在了一个函数中，无法分离验证单个值。如果使用单元测试验证，会需要很多单元测试。
+* 返回值会让人困惑：`undefined`或者完整有效的hash值。
+
+> 其实根据上文，我们可以明显看出上面的代码将读操作和写操作混合在了一起。
+
+解决方案是将这个函数拆分，例如：
+
+```
+function configure(values) {
+  var config = { docRoot: '/somewhere' }, key;
+
+  for (key in values) {
+    config[key] = values[key];
+  }
+
+  return config;
+}
+
+function validateDocRoot(config) {
+  var fs = require('fs'), stat;
+
+  stat = fs.statSync(config.docRoot);
+
+  if (!stat.isDirectory()) {
+    throw new Error('Is not valid');
+  }
+}
+
+function validateSomethingElse(config) { //... }
+```
+
+主要拆分在于设置值部分和验证函数（`commands`，没有返回值；可能会抛出错误）部分的拆分。这样的函数拆分使得我们的单元测试可以更加集中，也更加灵活。
+
+```
+describe("validae value1", function() {
+    it("accepts the correct value", function() {
+      // some expects
+    });
+
+    it("rejects the incorrect value", function() {
+      // some expects
+    });
+});
+```
+
+这样的代码更加稳定，因为验证函数可以单独进行测试而不用包裹并且隐藏在一个比较通用的`configure`测试中。然而，问题在于，验证函数需要在`configure`函数中调用。这就是`command query`分离原则可能失效的地方。
+
+```
+function configure(values) {
+  var config = { docRoot: '/somewhere' };
+  for (var key in values) {
+    config[key] = values[key];
+    validateDocRoot(config);
+    validateSomethingElse(config);
+    // ...
+    return config;
+  }
+}
+```
+
+这个新的`configure`函数可会返回一个有效的`config`对象或者抛出一个错误。而且所有的验证函数也可以从`configure`函数分离进行测试。
+
+还可以优化的一点是：将`config`对象的所有键值链接到其验证函数并且在一个地方集中保存完整的`hash`内容。
+
+```
+var fields {
+  docRoot: { 
+    validator: validateDocRoot,
+    default: '/somewhere'
+  },
+  somethingElse: {
+    validator: validateSomethingElse
+  }
+}
+
+function configure(values) {
+  for (var key in values) {
+    if (typeof values[key] !== 'undefined') {
+      fields[key].validator(values[key]);
+      config[key] = values[key];
+    } else {
+      config[key] = fields[key].default;
+    }
+  }
+  return config;
+}
+```
+
+这样代码可以更加轻松地用于单元测试，也可以在设置好新值后进行调用，所有与键值相关的数据都集中存储在了一个地方。
+
+然而，作为题外话的一个问题是，如何有人运行下面的代码呢？
+
+```
+config.docRoot = '/does/not/exist';
+```
+
+验证函数将不会执行。对于对象，有一种非常棒的解决方案，使用ECMAScript5中的`Object`方法，这些方法会用内置的验证函数、`getter`、`setter`方法等来创建属性值，而且所有这些都是可测试的：
+
+```
+var obj = { realRoot: '/somewhere' };
+Object.defineProperty(obj, 'docRoot', {
+  {
+    enumerable: true,
+    set: function(value) {
+      validateDocRoot(value);
+      this.realRoot = value;
+    }
+  }
+});
+```
+
+这样，执行`config.docRoot = '/does/not/exist';`这行代码时，会执行`set`函数，从而调用`validate`函数。在路径不存在时，`validate`函数会抛出一场，从而实现验证作用。
+
+但是这会很奇怪，赋值函数会抛出异常从而需要用`try/catch`代码块包住。即使去掉`throw`，如果验证失败了，应该将`config.docRoot`设置为什么值呢？不管设成什么值，输出也是预料不到的。不可预料的输出意味着麻烦。而且，`docRoot`和`realRoot`这两个变量名字也会让人感到困惑。
+
+一种更好的解决方案是使用带有`public gtter setter`（即公开的`get`和`set`方法）的私有属性。这样可以保持属性是私有的，而其他所有事情都是公开的，包括验证器，以保证可测试性：
+
+```
+var Obj = (function() {
+  return function() {
+    var docRoot = '/somewhere';
+    this.validateDocRoot = function(val) {
+      // 验证逻辑，如果失败则抛出错误
+    };
+    this.setDocRoot = function(val) {
+      this.validateDocRoot(val);
+      docRoot = val;
+    };
+    this.getDocRoot = function() {
+      return docRoot;
+    };
+  };
+}());
+```
+
+这样，只能通过我们的API来访问`docRoot`属性，这样可以强制在“写”时进行验证。用法如下：
+
+```
+var myObject = new Obj();
+try {
+  myObject.setDocRoot('/somewhere/else');
+} catch(e) {
+  // something wrong with my new doc root
+  // old value of docRoot still there
+}
+
+// all is OK
+console.log(myObject.getDocRoot);
+```
+
+不过，还有一个问题可能需要解决。
+
+```
+var myObject = new Obj();
+myObject.docRoot = '/somewhere/wrong';
+
+// and then later ...
+var dR = myObject.docRoot;
+```
+
+API中的方法不知道这个`docRoot`域是由用户错误地创建的。修复的方法也很简单：
+
+```
+var Obj = (function() {
+  return function() {
+    var docRoot = '/somewhere';
+    this.validateDocRoot = function(val) {
+      // validation logic - throw Exception if not OK
+    };
+    this.setDocRoot = function(val) {
+      this.validateDocRoot(val);
+      docRool = val;
+    };
+    this.getDocRoot = function() {
+      return docRoot;
+    };
+    Object.preventExtension(this)
+  };
+}());
+```
+
+使用`Object.preventExtension`方法可以在有人试图为对象添加属性时抛出`TypeError`错误。
+
+修改后代码对应的测试代码如下：
+
+```
+describe("validate docRoot", function() {
+    var config = new Obj();
+
+    it("throw if docRoot does not exist", function() {
+      expect(config.validateDocRoot.bind(config, '/xxx')).toThrow();
+    });
+
+    it("not throw if docRoot does exist", function() {
+      expect(config.validateDocRoot.bind(config, '/tmp')).not.toThrow();
+    });
+});
+```
+
+`Command Query分离`并非唯一的方法，也并非总是可行，但却是一个好的起点。虽然`Command Query分离`方法有助于`JavaScript`的强项：事件，还有许多其他方法来管理代码的大小。
+
+##### JSLint
+
+虽然`JSLint`没有直接测量代码的复杂度，但是可以强迫开发者了解代码所做的事情。这样可以降低代码复杂度，确保开发者不会使用过于复杂或者容易出错的结构。或者简单地说，可以测量出代码的合理性（`Sanity`）。`JSLint`来源与`C`语言的`lint`，它会分析代码的风格、语法和句法，从而检测出代码可能存在的`坏内容`（`bad parts`）。
+
+使用好代码替换掉坏代码是可测试JavaScript的本质。例如：
+
+```
+function sum(a, b) {
+  return
+    a + b;
+}
+```
+
+在这个简单的例子上运行`JSLint`结果为：
+
+> 可以在[www.jslint.com](http://www.jslint.com/)上实际操作试一下。
+> 理解jslint,jshint和eslint的错误提示：[网站jslinterrors](http://jslinterrors.com/)
+> 原文给出的jslint错误有7条，如下：
+> ```
+> Error:
+>      Problem at line 2 character 5: Missing 'use strict' statement.
+>  return
+>      Problem at line 2 character 11: Expected ';' and instead saw 'a'.
+>  return
+>      Problem at line 3 character 8: Unreachable 'a' after 'return'.
+>  a+b;
+>      Problem at line 3 character 8: Expected 'a' at column 5,
+>  not column 8.
+>  a+b;
+>      Problem at line 3 character 9: Missing space between 'a' and '+'.
+>  a+b;
+>      Problem at line 3 character 10: Missing space between '+' and 'b'.
+>  a+b;
+>      Problem at line 3 character 10: Expected an assignment or
+>  function call and instead saw an expression.
+>  a+b;
+> ```
+> 但是实际在jslint网站上测的结果为：
+> ```
+> Missing 'use strict' statement.
+>    return
+> line 2 character 9Expected ';' and instead saw 'a'.
+>    return
+> line 3 character 5Unreachable 'a' after 'return'.
+>    a + b;
+> ```
+
 
