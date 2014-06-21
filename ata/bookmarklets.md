@@ -134,3 +134,6 @@ IE 6 beta2  2084
 # `tips`
 
 
+### 原文
+[http://subsimple.com/bookmarklets/tips.php#Encapsulation](http://subsimple.com/bookmarklets/tips.php#Encapsulation)
+[http://subsimple.com/bookmarklets/links.php#Articles](http://subsimple.com/bookmarklets/links.php#Articles)
