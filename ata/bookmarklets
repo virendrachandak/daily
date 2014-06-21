@@ -1,0 +1,275 @@
+Opera Hotlist version 2.0
+Options:encoding=utf8,version=3
+
+#FOLDER
+	NAME=Bookmarklets
+	CREATED=1044141169
+	VISITED=0
+
+#FOLDER
+	NAME=Layout
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=Clear Ads
+	URL=javascript:function C(d,o){v=d.createElement('div');o.parentNode.replaceChild(v,o);}function A(d){for(j=0;t=['iframe','embed','object','marquee'][j];++j){o=d.getElementsByTagName(t);for(i=o.length-1;i>=0;i--)C(d,o[i]);}g=d.images;for(k=g.length-1;k>=0;k--)if({'21x21':1,'48x48':1,'60x468':1,'88x31':1,'88x33':1,'88x62':1,'90x30':1,'90x32':1,'90x90':1,'100x30':1,'100x37':1,'100x45':1,'100x50':1,'100x70':1,'100x100':1,'100x275':1,'110x50':1,'110x55':1,'110x60':1,'110x110':1,'120x30':1,'120x60':1,'120x80':1,'120x90':1,'120x120':1,'120x163':1,'120x181':1,'120x234':1,'120x240':1,'120x300':1,'120x400':1,'120x410':1,'120x500':1,'120x600':1,'120x800':1,'125x40':1,'125x60':1,'125x65':1,'125x72':1,'125x80':1,'125x125':1,'125x170':1,'125x250':1,'125x255':1,'125x300':1,'125x350':1,'125x400':1,'125x600':1,'125x800':1,'126x110':1,'130x60':1,'130x65':1,'130x158':1,'130x200':1,'132x70':1,'140x55':1,'140x350':1,'145x145':1,'146x60':1,'150x26':1,'150x60':1,'150x90':1,'150x100':1,'150x150':1,'155x275':1,'155x470':1,'160x80':1,'160x126':1,'160x600':1,'180x30':1,'180x66':1,'180x132':1,'180x150':1,'194x165':1,'200x60':1,'220x100':1,'225x70':1,'230x30':1,'230x33':1,'230x60':1,'234x60':1,'234x68':1,'240x80':1,'240x300':1,'250x250':1,'275x60':1,'280x280':1,'300x60':1,'300x100':1,'300x250':1,'320x50':1,'320x70':1,'336x280':1,'350x300':1,'350x850':1,'360x300':1,'380x112':1,'380x250':1,'392x72':1,'400x40':1,'400x50':1,'425x600':1,'430x225':1,'440x40':1,'464x62':1,'468x16':1,'468x60':1,'468x76':1,'468x120':1,'468x248':1,'470x60':1,'480x400':1,'486x60':1,'545x90':1,'550x5':1,'600x30':1,'720x90':1,'720x300':1,'725x90':1,'728x90':1,'734x96':1,'745x90':1,'750x25':1,'750x100':1,'750x150':1,'850x120':1}[g[k].width+'x'+g[k].height])C(d,g[k]);}A(document);for(f=0;z=frames[f];++f)A(z.document);
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Clear Trails
+	URL=javascript:function A(w,t){H(w,t);for(j=0;j<w.frames.length;j++){H(w.frames[j],t);}}function H(w,t){try{o=w.document.getElementsByTagName(t);for(i=o.length-1;N=o[i];i--){if(t=='span'){if({texttail:1,spanstyle:1}[N.className])N.removeNode(true);}else{if(N.style.left&&parseInt(N.style.left)<=0){p=N.parentNode;if(p.tagName=='DIV'&&p.style.position=='absolute'){p.removeNode(true);}}}}}catch(e){}}onerror=function(){return true;};A(window,'span');A(window,'div');A(window,'img');
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Bigger Text Areas
+	URL=javascript:function resize(w){try{var areas=w.document.getElementsByTagName('textarea');for(i=0;A=areas[i];i++){A.cols*=2;A.rows*=2;if(document.all&&!w.opera){A.runtimeStyle.height=DS(A.currentStyle.height);A.runtimeStyle.width=DS(A.currentStyle.width);}}for(var i=0;F=w.frames[i];i++){resize(F);}}catch(e){}}function DS(s){var c=parseInt(s);if(!isNaN(c)){var u=s.replace(c,'');if(u.indexOf('%')>=0)return s;return ((c*2)+u);}}resize(window);
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Clear
+	URL=javascript:/* Clear Ads */function C(d,o){v=d.createElement('div');o.parentNode.replaceChild(v,o);}function A(d){for(j=0;t=['iframe','embed','object','marquee'][j];++j){o=d.getElementsByTagName(t);for(i=o.length-1;i>=0;i--)C(d,o[i]);}g=d.images;for(k=g.length-1;k>=0;k--)if({'21x21':1,'48x48':1,'60x468':1,'88x31':1,'88x33':1,'88x62':1,'90x30':1,'90x32':1,'90x90':1,'100x30':1,'100x37':1,'100x45':1,'100x50':1,'100x70':1,'100x100':1,'100x275':1,'110x50':1,'110x55':1,'110x60':1,'110x110':1,'120x30':1,'120x60':1,'120x80':1,'120x90':1,'120x120':1,'120x163':1,'120x181':1,'120x234':1,'120x240':1,'120x300':1,'120x400':1,'120x410':1,'120x500':1,'120x600':1,'120x800':1,'125x40':1,'125x60':1,'125x65':1,'125x72':1,'125x80':1,'125x125':1,'125x170':1,'125x250':1,'125x255':1,'125x300':1,'125x350':1,'125x400':1,'125x600':1,'125x800':1,'126x110':1,'130x60':1,'130x65':1,'130x158':1,'130x200':1,'132x70':1,'140x55':1,'140x350':1,'145x145':1,'146x60':1,'150x26':1,'150x60':1,'150x90':1,'150x100':1,'150x150':1,'155x275':1,'155x470':1,'160x80':1,'160x126':1,'160x600':1,'180x30':1,'180x66':1,'180x132':1,'180x150':1,'194x165':1,'200x60':1,'220x100':1,'225x70':1,'230x30':1,'230x33':1,'230x60':1,'234x60':1,'234x68':1,'240x80':1,'240x300':1,'250x250':1,'275x60':1,'280x280':1,'300x60':1,'300x100':1,'300x250':1,'320x50':1,'320x70':1,'336x280':1,'350x300':1,'350x850':1,'360x300':1,'380x112':1,'380x250':1,'392x72':1,'400x40':1,'400x50':1,'425x600':1,'430x225':1,'440x40':1,'464x62':1,'468x16':1,'468x60':1,'468x76':1,'468x120':1,'468x248':1,'470x60':1,'480x400':1,'486x60':1,'545x90':1,'550x5':1,'600x30':1,'720x90':1,'720x300':1,'725x90':1,'728x90':1,'734x96':1,'745x90':1,'750x25':1,'750x100':1,'750x150':1,'850x120':1}[g[k].width+'x'+g[k].height])C(d,g[k]);}A(document);for(f=0;z=frames[f];++f)A(z.document);/* Clear Trails */function B(w,t){H(w,t);for(j=0;j<w.frames.length;j++){H(w.frames[j],t);}}function H(w,t){try{o=w.document.getElementsByTagName(t);for(i=o.length-1;N=o[i];i--){if(t=='span'){if({texttail:1,spanstyle:1}[N.className])N.removeNode(true);}else{if(N.id){p=N.parentNode;if(p.tagName=='DIV'&&p.style.position=='absolute'){p.removeNode(true);}}}}}catch(e){}}onerror=function(){return true;};B(window,'span');B(window,'div');B(window,'img');
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Links Info
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=List All Links
+	URL=javascript:if(frames.length>1)alert('Sorry, frames detected.');else{var wnd=open('','lnkswnd','width=400,height=500,top=0,left=0,scrollbars,resizable');var lnks=document.links;with(wnd.document){var s='<html><base target=_blank>';for(var i=0;i<lnks.length;i++){s+='\n<li><a href='+lnks[i].href+'><span onClick=setTimeout(\'window.close()\',10)>'+lnks[i].text+'</span></a></li>';}s+='</html>';writeln(s);void(close());}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=List E-mail Links
+	URL=javascript:if(frames.length>1)alert('Sorry, frames detected.');else{var wnd=open('','lnkswnd','width=300,height=200,top=0,left=0,scrollbars,resizable');var lnks=document.links;with(wnd.document){var s='<html><base target=_blank>';for(var i=0;i<lnks.length;i++){if(lnks[i].href.toLowerCase().substring(0,7)=='mailto:'){writeln('<li><a href='+lnks[i].href+'><span onClick=setTimeout(\'window.close()\',10)>'+lnks[i].text+'</span></a> ('+lnks[i].href.substring(7)+')</li>');}}s+='</html>';writeln(s);void(close());}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Links to New
+	URL=javascript:function toBlank(w){try{for(var j=0;L=w.document.links[j];j++){if(L.href.indexOf('http',0)==0){L.target='_blank';}}for(var i=0;F=w.frames[i];i++){toBlank(F);}}catch(e){}}toBlank(window);
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Find Specific URLs
+	URL=javascript:function hiliteUrls(wndw){for(pf8s=0;pf8s<wndw.document.links.length;pf8s++){void(lnk3=wndw.document.links[pf8s]);if(lnk3.href.indexOf(answ1)!=-1){void(lnk3.style.backgroundColor='yellow');tot2++;}}}var answ1=prompt('Find URLs containing this text:','');if(answ1!=null&&answ1!=''){var tot2=0;void(frms=window.frames);if(frms.length==0){hiliteUrls(window);}else{for(iQA=0;iQA<frms.length;iQA++){hiliteUrls(frms[iQA]);}}alert(tot2+' link(s) found containing \''+answ1+'\'.');}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Show Links Dest.
+	URL=javascript:function RIT(lX2){void(g=lX2.getElementsByTagName('img'));for(j=0;j<g.length;j++){if(g[j].alt!=''||g[j].title!='')void(g[j].alt+='\n\n'+lX2.title);}}function LT(wndwZ04){void(l=wndwZ04.document.links);for(i=0;i<l.length;i++){if(!l[i].titleMod){void(trg=l[i].target);if(trg!='')trg+=':\n';void(tit=l[i].title);if(tit!='')tit+='\n\n';void(l[i].title=tit+trg+l[i].href);void(l[i].titleMod=true);RIT(l[i]);}}}LT(window);for(iG4=0;iG4<frames.length;iG4++)LT(frames[iG4]);
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Navigation
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=Last Modified
+	URL=javascript:function gett(w){try{var lm=new Date(w.document.lastModified);if(lm>maxd)maxd=lm;for(var i=0;F=w.frames[i];i++){gett(F);}}catch(e){}}var now=new Date();var maxd=new Date(document.lastModified);gett(window);if(maxd.getTime()==0||now.toUTCString()==maxd.toUTCString()){alert('Page is dynamically generated, cannot determine date.');}else{alert('Page was last modified '+maxd.toLocaleString());}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Leave Frameset
+	URL=javascript:if(frames.length<=1)alert('No frames detected.');else{try{void(top.location.href=frames[frames.length-1].document.location.href);}catch(e){alert(e.description)}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Reload Images
+	URL=javascript:function reloadImages(w){try{for(var j=0;IMG=w.document.images[j];++j){if(IMG.readyState!='complete')IMG.src=IMG.src;}for(var i=0;F=w.frames[i];i++){reloadImages(F);}}catch(e){}}reloadImages(window);
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Debugging
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=Read Global Variable
+	URL=javascript:var globalvar=prompt('Read which variable?','');if(globalvar)try{alert(globalvar+' = '+eval(globalvar)+' ('+typeof(eval(globalvar))+')');}catch(e){alert('Global variable \''+globalvar+'\' does not exist.');}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=DOM Browser
+	URL=javascript:(function(){W=open('','','width=500,height=550,resizable,status');W.document.writeln('<script language=JavaScript src=\'http://subsimple.com/bookmarklets/browsedom.js\'></script>');})()
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Developer
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=ASCII Table
+	URL=javascript:function C(v){return '<td>'+v+'</td><td>'+((v>>4).toString(16)+(v&15).toString(16)).toUpperCase()+'</td><td bgcolor=DDDDDD>&'+'#'+v+';</td>';}var c=4,b=Math.ceil(224/c),a='<table border=0><tr>';for(j=0;j<c;j++){a+='<td>DEC</td><td>HEX</td><td>ASC</td>';}a+='</tr>';for(i=33;i<33+b;i++){a+='<tr>';for(j=0;j<c;j++){t=i+(j*b);if(t<=255)a+=C(t);}a+='</tr>';}a+='</table>';var W=open('','','width=500,height=600,left=0,top=0,resizable,scrollbars');void(W.document.write(a));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=List Frames
+	URL=javascript:(function(){var s='';function getF(w,lvl){try{if(lvl>0){s+='<ul><li>';if(w.name!='')s+='<b>'+w.name+'</b><br>\n';}else{s+='<b>'+w.document.title+'</b><br>\n';}s+='<a href='+w.location.href+'>'+w.location.href+'</a>\n';for(var i=0;F=w.frames[i];i++){getF(F,++lvl);}if(lvl>0)s+='</li></ul>\n';}catch(e){s+='(IFRAME or cross-domain)\n';}}if(!frames.length)alert('No frames.');else{getF(window,0);w=open();w.document.write(s);w.document.close();}})()
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=List Comments
+	URL=javascript:if(frames.length>1)alert('Sorry, frames detected.');else{strdoc=document.body.innerHTML.split(/\<!--/g);strcmnt='';for(i=0;i<strdoc.length;i++){pos=strdoc[i].indexOf('-->');if(pos>0){strcmnt+='<xmp><!-'+'-'+strdoc[i].substring(0,pos+3)+'</xmp><br>\n';}}win=open('','','resizable,scrollbars');with(win.document){writeln('<b>Comments</b><br>');writeln(strcmnt);close();}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Table Borders
+	URL=javascript:function showBorders(wndw){void(tags=wndw.document.all?wndw.document.all.tags('TABLE'):wndw.document.getElementsByTagName('TABLE'));for(var i=0;i<tags.length;i++)void(tags[i].border=(tags[i].border=='0'?'1':'0'));}void(frms=window.frames);if(frms.length==0){showBorders(window);}else{for(iQA=0;iQA<frms.length;iQA++){showBorders(frms[iQA]);}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Form Borders
+	URL=javascript:function showBorders(wndw){for(var i=0;i<wndw.document.forms.length;i++)void(wndw.document.forms[i].style.border=(wndw.document.forms[i].style.border==''?'thin blue dashed':''));}void(frms=window.frames);if(frms.length==0){showBorders(window);}else{for(iQA=0;iQA<frms.length;iQA++){showBorders(frms[iQA]);}}
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Form Info
+	URL=javascript:(function(){function G(d){for(i=0;F=d.forms[i];++i){Z='fn'+i;if(!d.getElementById(Z)){F.innerHTML='<span id='+Z+'></span>'+F.innerHTML;}s='';B=F.style;if(B.border==''){B.border='thin red dashed';s='<div style=\'background-color:red\'>Name='+F.name+'<br>Id='+F.id+'<br>Action='+F.action+'<br>Method='+F.method+'<br>OnSubmit='+F.onsubmit+'<br>Target='+F.target+'</div>';}else{B.border='';}d.getElementById(Z).innerHTML=s;}}G(document);for(j=0;R=frames[j];++j)G(R.document);})()
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Execute HTML
+	URL=javascript:(function(){var sel;function getText(w){if(w.getSelection){return w.getSelection();}if(w.document.getSelection){return w.document.getSelection();}return w.document.selection.createRange().text;}function getSel(w){try{sel=getText(w);if(sel)return;for(var i=0;F=w.frames[i];i++){getSel(F);if(sel)return;}}catch(e){}}getSel(window);if(!sel)alert('Select some text.');else{w=open();w.document.write(sel);w.document.close();}})()
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Search
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=Search Google
+	URL=javascript:q=document.getSelection();for(i=0;i<frames.length;i++){q=frames[i].document.getSelection();if(q)break;}if(!q)void(q=prompt('Search Google using these keywords:',''));if(q)void(open('http://www.google.com/search?q='+escape(q),'',''));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Search Dictionary.com
+	URL=javascript:q=document.getSelection();for(i=0;i<frames.length;i++){q=frames[i].document.getSelection();if(q)break;}if(!q)void(q=prompt('Search Dictionary.com using these keywords:',''));if(q)void(open('http://www.dictionary.com/search?q='+escape(q),'',''));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Wikilookup
+	URL=javascript:q=document.getSelection();for(i=0;i<frames.length;i++){q=frames[i].document.getSelection();if(q)break;}if(!q)void(q=prompt('Lookup in Wikipedia:',''));if(q)void(open('http://en.wikipedia.org/wiki/wiki.phtml?search='+escape(q),'',''));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Wikirandom
+	URL=javascript:function add(o){var as=o.getElementsByTagName('a');for(var i=0;i<as.length;i++){var a=as[i];var pos=a.href.lastIndexOf('/');if(pos>=0){var n=decodeURIComponent(a.href).substring(pos+1);var p=n.indexOf('#');if(p>=0)n=n.substring(0,p);if(n!=''&&n.indexOf(':')<0&&a.title==n.replace(/\_/g,' ')){A.push(a);}}}}function go(){if(A.length==0)alert('No wiki links to follow.');else{location.href=A[Math.floor(Math.random()*A.length)].href;}}var A=new Array();var d=document.getElementsByTagName('div');for(var i=0;i<d.length;i++){if(d[i].id=='bodyContent'){add(d[i]);break;}}go();
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Selection
+	URL=javascript:q=document.getSelection();for(i=0;i<frames.length;i++){q=frames[i].document.getSelection();if(q)break;}if(!q)void(q=prompt('Text to translate:',''));if(q)void(open('http://babelfish.altavista.com/tr?doit=done&urltext='+escape(q)+'&lp=en_fr','',''));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Eng-Fre)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_fr&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Fre-Eng)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=fr_en&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Eng-Spa)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_es&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Spa-Eng)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=es_en&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Eng-Ger)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=en_de&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Translate Page (Ger-Eng)
+	URL=javascript:q=(document.location.href);void(open('http://babelfish.altavista.com/babelfish/trurl_pagecontent?lp=de_en&url='+escape(q),'','resizable,location,menubar,toolbar,scrollbars,status'));
+	CREATED=1044141169
+	VISITED=0
+
+#URL
+	NAME=Validate Page (Hitbox)
+	URL=javascript:var geturl=prompt('URL of page to check:',location.href);if(geturl!=null){var valurl='http://tools2.hitbox.com/cgi-bin/doctor/cgi/doctor.cgi?url='+geturl+'&response=lc&response=hv&response=mt&response=lt&response=sc';void(open(valurl,'','resizable,location,menubar,toolbar,scrollbars,status'));}
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#FOLDER
+	NAME=Experimental
+	CREATED=1044141169
+	VISITED=0
+
+
+#URL
+	NAME=Replace Banner Ads
+	URL=javascript:function doRep(objs,w){for(var j=0;o=objs[j];j++){if(o.width==468&&o.height==60){o.src='http://subsimple.com/bookmarklets/images/bnr_subsimple.gif';o.alt=o.title='subSimple.com';for(var k=0;L=w.document.links[k];k++){if(L.innerHTML==o.outerHTML){L.href='http://subsimple.com/bookmarklets/';}}}}}function rep(w){try{doRep(w.document.images,w);doRep(w.document.getElementsByTagName('iframe'),w);for(var i=0;F=w.frames[i];i++){rep(F);}}catch(e){}}rep(window);
+	CREATED=1044141169
+	VISITED=0
+
+-
+
+#URL
+	NAME=Bookmarklets - Browser Power
+	URL=http://subsimple.com/bookmarklets/
+	CREATED=1044141169
+	VISITED=0
+
+-

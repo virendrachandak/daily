@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=windows-1252'>
+  <meta name='GENERATOR' content='Anything but FrontPage'>
+  <meta name='KEYWORDS' content='bookmarklets, bookmarklet builder, bookmarklets builder, bookmarklet editor, bookmarklets editor, javascript editor'>
+  <meta name='DESCRIPTION' content='Online editor for creating bookmarklets. Features formatting, simple syntax validation, and easy testing.'>
+  <title>Bookmarklet Builder</title>
+  <style type='text/css'>
+    .button  {width:100px;}
+    xxtextarea {width:660px;}
+  </style>
+
+<script language='JavaScript' src='parse.js'></script>
+<script language='JavaScript' src='format.js'></script>
+<script language='JavaScript' src='objectprops.js'></script>
+<script language='JavaScript'>
+
+/*
+I've given up supporting Netscape 4.7. Introducing (without executing)
+try...catch statements makes it roll over and die. Anyway, it's a crappy browser.
+Upgrade to a new browser if you're using it. Get with the times. This isn't 1998.
+*/
+
+var NS4 = (document.layers) ? true : false;
+var NS6 = (document.getElementById && !document.all) ? true : false;
+var IE4 = (document.all && document.execCommand) ? true : false;
+
+var INLINE_EDIT = true;           // Format/compress directly in the textarea?
+
+var isBmkLinkActive = false;
+
+
+function displayHTML(id, str, prot) {
+  if (IE4)
+    document.all[id].innerHTML = str;
+  else if (NS4) {
+  }
+  else {
+    document.getElementById(id).innerHTML = str;
+  }
+}
+
+function displayText(id, str) {
+  if (IE4)
+    document.all[id].innerText = str;
+  else if (NS4) {
+  }
+  else {
+    document.getElementById(id).innerHTML = str;     // NS6 supports innerHTML but not innerText
+  }
+}
+
+function updateLinks(form, compressedText) {
+  var bmkname = form.elements['bmkname'].value;
+  var linkcode = "<a href='' name='bmklink'>" + bmkname + "</a>";
+  displayHTML("bookmark", linkcode);
+  if (IE4) {
+    document.all.bmklink.href = compressedText;
+//    document.getElementById('bmklink').onblur = handleBmkLinkBlur;
+//    document.getElementById('bmklink').onfocus = handleBmkLinkFocus;
+  }
+  else {
+    document.links[1].href = compressedText;
+//    document.links[1].onblur = handleBmkLinkBlur;
+//    document.links[1].onfocus = handleBmkLinkFocus;
+  }
+}
+
+function addToFavorites(form) {
+  if (!IE4) {
+    alert('Only supported in Internet Explorer');
+    return;
+  }
+  var jscode = form.elements['jscode'].value;
+  if (scan(jscode)) {
+    var ct = getCompressedText();
+    updateLinks(form, ct);
+    var bmkname = form.elements['bmkname'].value;
+
+    try {
+      self.external.addFavorite(document.all.bmklink.href, bmkname);
+    }
+    catch(e) {
+      self.alert('Could not add script to Favorites.');
+    }
+
+  }
+  else
+    displayError(getErrorText(jscode));
+}
+
+function presentCompressedSource(form) {
+  var jscode = form.elements['jscode'].value;
+  if (scan(jscode)) {
+    var ct = getCompressedText();
+    var ct2 = ct.replace(/\r/g, "");
+    ct2 = ct2.replace(/\n/g, "");
+    if (INLINE_EDIT) {
+      form.elements['WrapChk'].checked = true;
+      wrapText(form);
+      form.elements['jscode'].value = ct2;
+      displayText("formatsrc", ct2.length + " characters");
+    }
+    else {
+      displayText("formatsrc", ct2 + "\n \n" + ct2.length + " characters");
+    }
+    updateLinks(form, ct);
+  }
+  else
+    displayError(getErrorText(jscode));
+}
+
+function presentFormattedSource(form) {
+  var jscode = form.elements['jscode'].value;
+  if (scan(jscode)) {
+    var ft = getFormattedText();
+    var ct = getCompressedText();
+    var ct2 = ct.replace(/\r/g, "");
+    ct2 = ct2.replace(/\n/g, "");
+    if (INLINE_EDIT) {
+      form.elements['WrapChk'].checked = false;
+      wrapText(form);
+      form.elements['jscode'].value = ft;
+      displayText("formatsrc", ct2.length + " characters");
+    }
+    else {
+      displayText("formatsrc", ft + "\n \n" + ct2.length + " characters");
+    }
+    updateLinks(form, ct);
+  }
+  else
+    displayError(getErrorText(jscode));
+}
+
+function displayError(str) {
+  displayText("formatsrc", str);
+  displayHTML("bookmark", "<font color='red'>ERROR</font>");
+
+  // Move cursor to pos. where error occurs
+  if (!IE4) {
+    return;
+  }
+  var errorpos = parseErrors[0].pos;
+  var pos = 0;
+  var lines = -1;
+  while (pos > -1 && pos < errorpos) {
+    pos = document.all('jscode').value.indexOf('\n', pos+1);
+    lines++;
+  }
+  errorpos -= lines;
+  gotoCursorPos(errorpos);
+}
+
+function replaceEscape20(form) {
+  form.elements['jscode'].value = replaceOutsideStrings(form.elements['jscode'].value, "%20", " ");
+}
+
+function replaceAll(form) {
+  var srch = prompt('Replace...', '');
+  if (srch) {
+    var rplc = prompt('...with:', '');
+    if (rplc) {
+      var re = new RegExp(srch, 'gi');
+      form.elements['jscode'].value = form.elements['jscode'].value.replace(re, rplc);
+    }
+  }
+}
+
+function wrapText(form) {
+
+  if (form.elements['WrapChk'].checked)
+    form.elements['jscode'].wrap = 'soft';
+  else
+    form.elements['jscode'].wrap = 'off';
+
+//form.elements['jscode'].wrap = 'off';
+}
+
+function setEditorHeight(form) {
+  if (isNaN(form.elements['jscodeheight'].value) || parseInt(form.elements['jscodeheight'].value) < 5)
+    form.elements['jscodeheight'].value = form.elements['jscode'].rows;
+  else
+    form.elements['jscode'].rows = parseInt(form.elements['jscodeheight'].value);
+}
+
+function gotoCursorPos(pos) {
+  try {
+    var tr = document.forms[0].elements['jscode'].createTextRange();
+    tr.move('character', pos);
+    tr.select();
+  }
+  catch (e) {
+    // Do nothing
+  }
+}
+
+function promptCursorPos() {
+  var pos = prompt('Cursor position:', '');
+  if (pos != null && !isNaN(pos)) {
+    gotoCursorPos(pos);
+  }
+}
+
+function addBraces(form) {
+  var jscode = form.elements['jscode'];
+  var pos = jscode.value.indexOf('javascript:');
+  if (pos >= 0) {
+    var s = 'javascript:';
+    s += '(function(){' + jscode.value.substring(pos + 'javascript:'.length) + '})()';
+    jscode.value = s;
+  }
+}
+
+</script>
+
+</head>
+
+
+<body bgcolor='#CCCCCC' style='margin-top:5px; margin-bottom:5px'>
+
+<!--
+<h3 style='margin-bottom:10px'>Bookmarklet Builder</h3>
+-->
+
+<form onSubmit='return false' style='margin-top:0px; margin-bottom:0px'>
+
+<table cellpadding='0' cellspacing='0' border='0'>
+  <tr>
+    <td width='260'>Bookmarklet name:</td>
+    <td width='100'>&nbsp;&nbsp;Rows:</td>
+    <td width='100'><br></td>
+    <td width='*'><br></td>
+  </tr>
+  <tr>
+    <td><input type='text' name='bmkname' value='Name' size='35'></td>
+    <td nowrap>&nbsp;&nbsp;<input type='text' name='jscodeheight' value='24' size='3' onKeyPress='javascript: if(event.keyCode==13){setEditorHeight(this.form);return false}'>&nbsp;<input type='button' value='Set' onClick='javascript: setEditorHeight(this.form)'></td>
+    <td valign='middle' nowrap>&nbsp;&nbsp;<a href='jsbuilderhelp.htm' target='jshelp'>Help</a> for Bookmarklet Builder&nbsp;&nbsp;</td>
+    <td valign='middle' nowrap>&nbsp;&nbsp;<span id='cursorpos'></span></td>
+  </tr>
+<!--
+  <tr>
+    <td colspan='2'>Javascript code:<br><textarea name='jscode' rows='24' cols='80' wrap='soft'>javascript:
+    </textarea></td>
+  </tr>
+-->
+</table>
+
+Javascript code:<br>
+<textarea name='jscode' rows='24' cols='80' wrap='soft' style='width:100%'>javascript:
+</textarea>
+<br>
+
+<table cellpadding='2' cellspacing='0' border='0'>
+  <tr valign='baseline'>
+    <td nowrap><input type='button' class='button' value='  Format  ' onClick='javascript: presentFormattedSource(this.form)'></td>
+    <td nowrap><input type='button' class='button' value=' Compress ' onClick='javascript: presentCompressedSource(this.form)'></td>
+    <td nowrap valign='middle'><input type='checkbox' name='WrapChk' onClick='javascript: wrapText(this.form)' checked>Wrap&nbsp;text&nbsp;</td>
+    <td nowrap><input type='button' class='button' value='Replace...' onClick='javascript: replaceAll(this.form)'></td>
+    <td nowrap><input type='button' class='button' value='Replace %20' onClick='javascript: replaceEscape20(this.form)'></td>
+    <td nowrap><input type='button' class='button' value='DOM Browser' onClick='javascript: open("dombrowser.htm", "", "width=500,height=550,resizable,status");'></td>
+    <td nowrap><input type='button' class='button' name='JumpBtn' value='Go to...' onClick='javascript: promptCursorPos()'></td>
+    <td nowrap><input type='button' class='button' name='FuncBtn' value='(function...)' onClick='javascript: addBraces(this.form)'></td>
+<!--
+    <td nowrap><input type='button' class='button' name='FavBtn' value='Add to Fav.' onClick='javascript: addToFavorites(this.form)'></td>
+-->
+  </tr>
+</table>
+
+<br>
+<span id='bookmark'><u>(Bookmarklet)</u></span>
+<br>
+
+<font face='courier new'>
+
+<pre><span id='formatsrc'></span></pre>
+
+</font>
+</form>
+
+
+<script language='JavaScript'>
+  if (!IE4) {
+    document.forms[0].elements['JumpBtn'].style.visibility = 'hidden';
+//    document.forms[0].elements['FavBtn'].style.visibility = 'hidden';
+  }
+  else {
+    // If there's text in the clipboard beginning with "javascript:" we paste it in
+    try {
+      var pastedText = clipboardData.getData('Text');
+      if (pastedText.indexOf('javascript:') == 0)
+        document.forms[0].elements['jscode'].value = pastedText;
+    }
+    catch (e) {
+      // Do nothing
+    }
+  }
+
+/*
+  document.getElementById('jscode').onkeydown = handleTextAreaKeyDown;
+
+  function handleTextAreaKeyDown() {
+    document.getElementById('cursorpos').innerText = event.keyCode;
+  }
+*/
+
+  // Custom error handling
+  if (IE4)
+    window.onerror = handleError;
+
+  function handleError(errorMessage, url, line) {
+//alert(event.srcElement);
+//alert(Event.target);
+//    if (isBmkLinkActive) {
+    if (document.activeElement.name == 'bmklink') {
+      var s = 'Runtime error.\n';
+/*
+      // IE: error will be stored in the event object
+      for (var ev in event)
+        if (ev != 'type' && ev != 'errorUrl')
+          if (event[ev])
+            s += '\n' + ev + '\t' + event[ev];
+*/
+      var pos = event['errorCharacter'];
+
+//      gotoCursorPos(pos + 10);              // Only works when text is compressed
+      var errstmt = gotoErrorPos(pos);      // Get correct cursor pos
+
+      s += '\nError:\t' + errorMessage;
+      s += '\nLine:\t' + line;
+      s += '\nChar:\t' + pos;
+      s += '\nStmt.:\t' + errstmt + '...';
+      alert(s);
+
+//      document.body.focus();
+      return true;
+    }
+    return false;
+  }
+
+  function gotoErrorPos(pos) {
+    var txt = unescape(document.forms[0].elements['jscode'].value);
+    var compressedText = getCompressedText();
+    var errorStartStr = unescape(compressedText).replace(/[\t\r\n]/g, "").substr(pos + 10);
+//    alert(errorStartStr);
+
+    // Truncate so we get part of errorStartStr before ; or ) or }
+    var pos = 0;
+    var str = "";
+    var c;
+    do {
+      c = errorStartStr.charAt(pos);
+      if (c == ';' || c == ')' || c == '}' || pos >= errorStartStr.length - 1)
+        break;
+      str += c;
+      pos++;
+    }
+    while (true);
+
+//    alert(str);
+//    alert(txt);
+    var newPos = unescape(txt).replace(/[\t\r]/g, "").indexOf(str);
+    gotoCursorPos(newPos);
+    return str;
+/*
+    var posCorrected = 10;
+    if (txt.indexOf("javascript:\r\n") == 0)
+      posCorrected += 2;
+    alert(posCorrected);
+    while (posCorrected < txt.length) {
+      var p = txt.indexOf('\r\n');
+      if (p > 0) {
+        txt = txt.substr(p);
+        alert(p);
+        posCorrected += p + 2;
+        pos -= p;
+      }
+      else {
+        posCorrected += pos;
+        break;
+      }
+    }
+    alert(posCorrected);
+    gotoCursorPos(posCorrected);
+*/
+  }
+
+  function handleBmkLinkBlur() {
+    isBmkLinkActive = false;
+  }
+
+  function handleBmkLinkFocus() {
+    isBmkLinkActive = true;
+  }
+
+</script>
+
+</body>
+</html>

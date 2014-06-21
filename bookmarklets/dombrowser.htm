@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name='GENERATOR' content='Anything but FrontPage'>
+  <meta name='KEYWORDS' content='DOM Browser, bookmarklets, bookmarklet builder, bookmarklets builder, bookmarklet editor, bookmarklets editor, javascript editor'>
+  <meta name='DESCRIPTION' content='On-line DHTML DOM Browser.'>
+  <title>DOM Browser</title>
+
+<script language='JavaScript' src='objectprops.js'></script>
+
+<script language='JavaScript'>
+function scanCR() {
+  if (isIE)
+    if (event.keyCode == 13) {
+      document.forms[0].elements['btnGet'].click();
+      return false;
+    }
+}
+</script>
+
+</head>
+
+<body bgcolor='#CCCCCC' style='margin:5px' leftmargin='5' rightmargin='5' topmargin='5' bottommargin='5'>
+
+<form enctype='text/plain' onSubmit='return false'>
+<table id='tblDom' cellpadding='1' cellspacing='0' border='0' width='100%' height='100%'>
+  <tr height='1%'>
+    <td>
+      <table cellpadding='0' cellspacing='0' border='0' width='100%'>
+      <tr valign='top'>
+        <td width='96%' nowrap><input type='text' name='txtExpr' value='document' size='60' style='width:100%' onKeyDown='scanCR()'></td>
+        <td width='1%' nowrap>&nbsp;<input type='submit' name='btnGet' value=' Get ' onClick='getProps()'></td>
+        <td width='1%' nowrap>&nbsp;<input type='button' name='btnUp' value=' Up ' onClick='goUp()'></td>
+        <td width='1%' nowrap>&nbsp;<input type='button' name='btnBack' value=' < ' onClick='goBack()'></td>
+        <td width='1%' nowrap>&nbsp;<input type='button' name='btnForward' value=' > ' onClick='goForward()'></td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign='top' height='*'>
+    <td><select id='evalresult' size='25' style='width:100%; height:100%' onDblClick='selectProp(this)'></select></td>
+  </tr>
+  <tr height='1%'>
+    <td>
+      Quick nav.:&nbsp;&nbsp;<a href='javascript: browseTo("window")'>window</a>&nbsp;&nbsp;
+      <a href='javascript: browseTo("document")'>document</a>&nbsp;&nbsp;
+      <a href='javascript: browseTo("document.body")'>body</a>&nbsp;&nbsp;
+      <a href='javascript: browseTo("window.frames")'>frames</a>
+    </td>
+  </tr>
+</table>
+</form>
+
+<script language='JavaScript'>
+
+if (opener) {
+  document.title = "DOM Browser - " + opener.document.location.href;
+  getProps();
+}
+else {
+  alert('The referring window has been closed, or you opened this page directly.\nThis page is intended to be called from a referrer.');
+}
+
+if (isNS) {
+  window.onresize = handleResizeNS;
+  handleResizeNS();
+}
+if (isOP) {
+  window.onresize = handleResizeOP;
+  handleResizeOP();
+}
+
+/*
+For Mozilla and Opera we need to patch their style implementation.
+
+Mozilla thinks a listbox with style='width:100%' means the listbox width must accommodate 
+the widest element in the listbox. In fact '100%' should refer to the page width, 
+meaning the listbox should be as wide as the page. That's how it works for textboxes.
+
+Mozilla furthermore ignores listbox style='height:100%'.
+
+Opera thinks a listbox with style='height:100%' means the listbox height must accommodate 
+the total # element in the listbox. In fact '100%' should refer to the page height, 
+meaning the listbox should be as tall as the page. An empty listbox with style='height:100%' 
+is 1 px. high in Opera!
+*/
+
+function handleResizeNS() {
+  document.getElementById('evalresult').style.width = document.body.offsetWidth + "px";
+  document.getElementById('evalresult').style.height = window.innerHeight-70 + "px";
+}
+
+function handleResizeOP() {
+  document.getElementById('evalresult').style.width = document.body.offsetWidth-20 + "px";
+  document.getElementById('evalresult').style.height = window.innerHeight-90 + "px";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<a href="javascript:alert(new Date());">hello world,bookmarklet</a>
+
+<a href="javascript:if(frames.length>1)alert('Sorry, frames detected.');else{var wnd=open('','lnkswnd','width=400,height=500,top=0,left=0,scrollbars,resizable');var lnks=document.links;with(wnd.document){var s='<html><base target=_blank>';for(var i=0;i<lnks.length;i++){s+='<li><a href='+lnks[i].href+'><span onClick=window.close()>'+lnks[i].text+'</span></a></li>';}s+='</html>';writeln(s);void(close());}}">show all links</a>
+</body>
+</html>

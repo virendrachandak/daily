@@ -2,9 +2,104 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>CSS Triangle Shape</title>
+  <style>
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #F00;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	
+	border-left: 60px solid green;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid blue; 
+}
+
+.tooltip {
+  /**/
+}
+
+.tooltip:before, .tooltip:after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 10px solid transparent;
+}
+
+.tooltip:before {
+  border-bottom-color: #FFF;
+  position: absolute;
+  top: -19px;
+  left: 255px;
+  z-index: 2;
+}
+
+.tooltip:after {
+  border-bottom-color: #333;
+  position: absolute;
+  top: -24px;
+  left: 255px;
+  z-index: 1;
+}
+
+  
+#test {
+  width: 0px;
+  height: 0;
+  border-top : 50px #fff solid;
+  border-bottom: 50px #fff solid;
+  background: #fff;
+  border-left: green 50px solid;
+  position:relative;
+}
+
+#test:before {
+  border-top: 50px transparent solid;
+  border-bottom: 50px transparent solid;
+  border-left: 50px #fff solid;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  content: " ";
+}
+  
+  </style>
 </head>
 <body>
-  
+  <div class="arrow-up"></div>  
+  <div class="arrow-down"></div>  
+  <div class="arrow-right"></div>  
+  <div class="arrow-left"></div>  
+  <div style="position:relative">
+    <div class="tooltip"></div>
+  </div>
+  <div id="test"></div>  
 </body>
 </html>
