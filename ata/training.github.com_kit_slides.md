@@ -655,3 +655,15 @@ git log -F<fixed-string-no-regex-in-code>
 [基础--Foundations](http://training.github.com/kit/slides/github-foundations.html)
 [中级--Intermediate](http://training.github.com/kit/slides/github-intermediate.html)
 [高级--Advanced](http://training.github.com/kit/slides/github-advanced.html)
+
+### skills
+
+* 查看某个文件的commit历史
+
+`git log --state -- somefilepath`
+
+> 这条命令只能看到部分内容，需要修改成如下命令：
+
+`git log --state -M --follow -- somefilepath`
+
+* 相似度指数（similarity index）
