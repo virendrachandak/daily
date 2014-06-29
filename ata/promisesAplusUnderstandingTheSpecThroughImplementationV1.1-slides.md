@@ -374,3 +374,6 @@ Promise.pool = function() {
 // var name = getName().then(0, function() {return 'USER';});
 // Promise.pool(name, getAddress()).then(display);
 ```
+
+### 原文
+[promisesa-understanding-spec-through.html](http://modernjavascript.blogspot.jp/2014/01/promisesa-understanding-spec-through.html)
