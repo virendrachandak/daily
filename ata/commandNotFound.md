@@ -1,0 +1,1 @@
+command not found---在项目下有一个sh脚本用来build和运行本地服务器，之前运行得好好的，结果今天跑一下出现“command not found”提示。经过检查后发现，原来是fileformat的问题。mac仅支持unix和mac格式，而这里的脚本的fileformat是dos，因此就找不到命令了。解决方案：```vi xx.sh:set ff=unix```
