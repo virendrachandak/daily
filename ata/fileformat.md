@@ -1,1 +1,1 @@
-[File Format](http://vim.wikia.com/wiki/File_format)[Convert DOS line endings to Linux line endings in vim](http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim)
+[File Format](http://vim.wikia.com/wiki/File_format)[Convert DOS line endings to Linux line endings in vim](http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim)[Dealing with line endings](https://help.github.com/articles/dealing-with-line-endings)

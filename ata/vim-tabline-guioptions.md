@@ -1,0 +1,1 @@
+http://vimdoc.sourceforge.net/htmldoc/tabpage.html#setting-tablinehttp://vimdoc.sourceforge.net/htmldoc/options.htmlhttp://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text
