@@ -1,0 +1,1 @@
+Vim基础插件--NERDTree---### 镜像在多个Tab中让NERDTree状态相同。`:NERDTreeMirror`### 快捷键* `t` 在新标签中打开选中文件* `i` 在水平切分的窗口中打开选中文件* `s` 在垂直切分的窗口中打开选中文件* `I` 切换隐藏文件的显示* `m` 显示NERDTree菜单* `R` 刷新* `?` 切换NERDTree的快速帮助### 更多`:help NERDTree`

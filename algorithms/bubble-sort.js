@@ -1,0 +1,1 @@
+/** *@description: bubble sort */function bubbleSort(items) {  'use strict';  if (!items || items.length === 0 || typeof items !== 'Array') return;  for (var i = 0; i < items.length; i++) {  }}//https://github.com/nzakas/computer-science-in-javascript/tree/master/algorithms/sorting/bubble-sort

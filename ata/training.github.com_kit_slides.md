@@ -667,3 +667,7 @@ git log -F<fixed-string-no-regex-in-code>
 `git log --stat -M --follow -- somefilepath`
 
 * 相似度指数（similarity index）
+
+* diff时不按行比较而是按词比较
+
+`git diff --color-words`
