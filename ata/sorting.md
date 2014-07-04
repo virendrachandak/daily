@@ -1,0 +1,1 @@
+http://zh.wikipedia.org/wiki/%E7%A9%A9%E5%AE%9A%E6%8E%92%E5%BA%8F#.E5.88.86.E9.A1.9Ehttp://www.nczonline.net/blog/2012/10/02/computer-science-and-javascript-merge-sort/
