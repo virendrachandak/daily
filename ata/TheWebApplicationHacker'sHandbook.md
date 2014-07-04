@@ -1,1 +1,1 @@
-http://blog.sina.com.cn/s/blog_545eb7860101379s.htmlhttp://www.ituring.com.cn/book/885http://mdsec.net/wahh/
+《黑客攻防技术宝典--Web实战篇》笔记---# 第二章：核心防御机制### 多步确认与规范化```<scr<script>ipt>```### 参考资料* [中文答案](http://blog.sina.com.cn/s/blog_545eb7860101379s.html)* [图灵社区](http://www.ituring.com.cn/book/885)* [英文答案](http://mdsec.net/wahh/)### 同类书籍* The Browser Hacker's Handbook* The Tangled Web

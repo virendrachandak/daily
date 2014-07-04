@@ -1,1 +1,1 @@
-基于midway的FEM大屏幕开发---
+基于midway的FEM大屏幕开发---concurrentgracefulnodemonnode-inspectorq* [https://www.npmjs.org/package/q](https://www.npmjs.org/package/q)* [https://github.com/kriskowal/q](https://github.com/kriskowal/q)serve-staticnode: console中输出带颜色和格式的信息
