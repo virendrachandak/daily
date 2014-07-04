@@ -1,0 +1,1 @@
+expressunderscore中间件：* serve-static[https://github.com/expressjs/serve-static][http://nginx.com/resources/admin-guide/serving-static-content/][http://blog.modulus.io/nodejs-and-express-static-content][http://mojolicio.us/perldoc/Mojolicious/Static][http://mushfiq.com/2013/11/02/serving-static-files-using-restify/]* 如何定制express的错误页面（404，500等）
