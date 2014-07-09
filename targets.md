@@ -135,3 +135,33 @@ http://code.tutsplus.com/tutorials/the-best-way-to-learn-javascript--net-21954
 https://developer.mozilla.org/en-US/learn/javascript
 http://javascriptissexy.com/how-to-learn-javascript-properly/
 http://javascriptissexy.com/
+
+关于各种javascript技巧和css技巧应用实例：
+https://github.com/codrops
+http://tympanus.net/codrops/
+http://www.cssdesignawards.com/
+http://flippinawesome.org/
+
+w3测试工具集合
+http://jigsaw.w3.org/
+
+css
+http://www.csszengarden.com/
+
+### todo
+https://gist.github.com/liamcurry/2597326
+
+### performance
+1.  javascript performance
+2.  page speed performance(web and network)
+3.  page rendering performance(css and layout optimization)
+> profiling methods and optimizating methods
+> smooth and better css effect
+
+3 perspectives
+1.  actions(javascript, css actions, network--such as ajax,dns,http,csp[security] and .etc.)
+2.  view(rendering, css performance, page layout rationality, semantics & optimization)
+3.  communication(dns redirecting, dns-prefetching, ajax requests and etc.)
+
+### node.js
+http://deadhorse.me/co-and-koa-talk

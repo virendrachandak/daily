@@ -1,0 +1,1 @@
+http://jakoblaegdsmand.com/blog/2013/04/how-to-get-an-awesome-looking-terminal-on-mac-os-x/http://zanshin.net/2011/08/12/oh-my-zsh/https://github.com/robbyrussell/oh-my-zsh/wiki/themes

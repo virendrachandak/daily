@@ -1,0 +1,1 @@
+// VanillaJS v1.0// Released into the Public Domain// Your code goes here:// That's all//http://stackoverflow.com/questions/20435653/what-is-vanillajs//http://stackoverflow.com/questions/3393900/is-plain-vanilla-javascript-better-than-using-frameworks-like-jquery-or-mootools//http://vanilla-js.com/

@@ -1,0 +1,1 @@
+http://www.hacksparrow.com/node-js-exports-vs-module-exports.htmlhttp://stackoverflow.com/questions/7137397/module-exports-vs-exports-in-nodejshttp://cnodejs.org/topic/4f7523168a04d82a3d4446dfhttp://zihua.li/2012/03/use-module-exports-or-exports-in-node/
