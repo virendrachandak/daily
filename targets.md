@@ -167,3 +167,6 @@ https://gist.github.com/liamcurry/2597326
 
 ### node.js
 http://deadhorse.me/co-and-koa-talk
+
+https
+how to differ a page from pre-render and rendered
