@@ -1,0 +1,1 @@
+https://www.mediawiki.org/wiki/Help:Magic_words
