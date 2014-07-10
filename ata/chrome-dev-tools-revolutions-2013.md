@@ -1,0 +1,1 @@
+Chrome DevTools高级用法----主要讲到的功能：* workspaces，将DevTools作为源码编辑器。* live-editing sass等支持和实现了sourcemap的css预编译文件。* ### 原文[Chrome DevTools Revolutions 2013](http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/)

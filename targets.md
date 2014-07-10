@@ -157,6 +157,8 @@ https://gist.github.com/liamcurry/2597326
 3.  page rendering performance(css and layout optimization)
 > profiling methods and optimizating methods
 > smooth and better css effect
+> jank free
+> web performance
 
 3 perspectives
 1.  actions(javascript, css actions, network--such as ajax,dns,http,csp[security] and .etc.)
