@@ -1,0 +1,1 @@
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise><http://www.html5rocks.com/zh/tutorials/es6/promises/><https://www.promisejs.org/>

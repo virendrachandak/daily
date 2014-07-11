@@ -170,3 +170,18 @@ http://deadhorse.me/co-and-koa-talk
 
 https
 how to differ a page from pre-render and rendered
+
+### vim
+ctrlp
+ag
+
+### javascript-plugins
+datalazyload优化
+
+### javascript强化
+权威指南
+高级程序设计
+sizzle.js+scriptaculous源码
+seajs,jQuery和kissyui
+mocha,qunit等测试框架
+localstorage, sessionstorage

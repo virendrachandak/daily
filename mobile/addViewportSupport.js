@@ -1,0 +1,1 @@
+function addViewportSupport() {  var viewport = document.createElement('meta');  viewport.name = 'viewport';  viewport.content = 'initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width';  //document.body.appendChild(viewport);  document.head.appendChild(viewport);}
