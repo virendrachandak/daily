@@ -1,0 +1,1 @@
+https://community.qualys.com/blogs/securitylabs/2013/08/07/defending-against-the-breach-attackhttp://www.breachattack.com/http://www.theregister.co.uk/2013/08/02/breach_crypto_attack/http://arstechnica.com/security/2013/08/gone-in-30-seconds-new-attack-plucks-secrets-from-https-protected-pages/

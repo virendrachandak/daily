@@ -1,0 +1,1 @@
+http://blog.cloudflare.com/efficiently-compressing-dynamically-generated-53805
