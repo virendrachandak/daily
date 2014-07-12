@@ -192,3 +192,6 @@ responsive web design
 
 ### HTML
 4.1 <http://www.w3.org/TR/html401/>
+
+### XMLHttpRequest
+<http://www.w3.org/TR/XMLHttpRequest/>
