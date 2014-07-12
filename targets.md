@@ -189,3 +189,6 @@ localstorage, sessionstorage
 
 ### CSS
 responsive web design
+
+### HTML
+4.1 <http://www.w3.org/TR/html401/>
