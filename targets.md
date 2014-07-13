@@ -219,3 +219,14 @@ responsive web design
 
 ### webkit
 <http://www.webkit.org/>
+
+### common utilities
+paste, upload, slides, <github在issue里直接粘贴图片的功能>
+<http://mobiarch.wordpress.com/2013/09/25/upload-image-by-copy-and-paste/>
+HTML5 clipboard API
+<http://dev.w3.org/2006/webapi/clipops/clipops.html>
+<http://strd6.com/2011/09/html5-javascript-pasting-image-data-in-chrome/>
+<http://codepen.io/netsi1964/pen/IoJbg>
+
+### learning by practice
+<http://codepen.io/>
