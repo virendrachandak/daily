@@ -25,7 +25,8 @@ nodeconf, jsconf, cssconf, html5 conf
 * alistapart, 24ways, css-tricks, anevent apart
 * CSS[lea verou me](http://lea.verou.me/)
 * nodejs -- substack
-> [http://nodeschool.io/](http://nodeschool.io/)
+  * [http://nodeschool.io/](http://nodeschool.io/)
+  * <http://nodeup.com/>
 * smashing magazine
 * [http://tympanus.net/codrops/](http://tympanus.net/codrops/)
 * //[http://www.the-haystack.com/](http://www.the-haystack.com/) 
