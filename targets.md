@@ -195,3 +195,27 @@ responsive web design
 
 ### XMLHttpRequest
 <http://www.w3.org/TR/XMLHttpRequest/>
+
+### client-side storage
+[web storage specification](http://dev.w3.org/html5/webstorage/)
+> sessionStorage, localStorage and client-side storage like appcache
+
+### chromium
+<http://dev.chromium.org/>
+<http://www.chromestatus.com/features>
+
+### web workers
+<http://www.html5rocks.com/en/tutorials/workers/basics/>
+<http://www.whatwg.org/specs/web-workers/current-work/>
+
+### transition
+<https://developer.apple.com/safaridemos/showcase/transitions/>
+
+### SPDY
+<http://dev.chromium.org/spdy>
+
+### Safari
+<https://developer.apple.com/safaridemos/>
+
+### webkit
+<http://www.webkit.org/>
