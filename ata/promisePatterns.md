@@ -1,7 +1,7 @@
 Promise模式
 ---
 
-Promise是编写异步代码而不用缩进的好方法，但如果只是这样使用的话就是[错误过Promise的要点](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/)了。Promise是简化事务的抽象层，它有两个属性方便使用的属性：
+Promise是编写异步代码而不用缩进的好方法，但如果只是这样使用的话就是[错误过Promise的要点](http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/)了。Promise是简化事务的抽象层，它有两个方便使用的属性：
 
 1.  单个Promise对象可以绑定多个回调；
 2.  值和状态（错误）会被传递。
