@@ -231,3 +231,18 @@ HTML5 clipboard API
 
 ### learning by practice
 <http://codepen.io/>
+
+### JavaScript Events
+halt, preventdefault, fire, on, live, customize event
+
+```javascript
+if (evt && evt.halt) {
+  console.log(evt);
+//evt.halt();
+//evt.preventDefault();
+}
+```
+
+### 理解vim的工作原理
+1.  例如vimrc的加载，插件的加载等。
+2.  bundle, nerdtree等常用插件的编写
