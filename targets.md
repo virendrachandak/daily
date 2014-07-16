@@ -246,3 +246,53 @@ if (evt && evt.halt) {
 ### 理解vim的工作原理
 1.  例如vimrc的加载，插件的加载等。
 2.  bundle, nerdtree等常用插件的编写
+3.  <http://spf13.com/>
+
+### 项目工具
+1.  grunt
+<http://www.elijahmanor.com/grunt-away-those-pesky-console-log-statements/>
+
+### web security
+The Ultimate XSS Protection Cheatsheet for Developers
+<http://www.reddit.com/r/netsec/>
+<http://opensecurity.in/>
+<http://www.exploit-db.com/>
+
+### nodejs
+globals--<http://nodejs.org/docs/latest/api/globals.html>
+npm
+* <https://www.npmjs.org/>
+* <https://www.npmjs.org/doc/>
+* <https://www.npmjs.org/doc/json.html>
+npmjs.org `most depended upon` & `most starred`
+[underscore's annotated source code](http://underscorejs.org/docs/underscore.html)
+Express
+<Google:`express use parameters error`>
+Express Middle Ware
+<body-parser>
+connect:<http://www.senchalabs.org/connect/>
+`DEBUG=express:* nodemon index.js`
+<http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4>
+
+### commonjs
+<http://wiki.commonjs.org/wiki/CommonJS>
+<http://lifesinger.wordpress.com/>
+<https://github.com/lifesinger>
+
+### Git
+git协议
+git命令
+
+### tools
+<http://runnable.com/>
+
+### 技术资料博客
+<http://scotch.io/>
+
+### 网站动效
+<http://aprilzero.com/>
+
+### JavaScript Template Engine
+<http://stackoverflow.com/questions/7788611/what-javascript-template-engines-you-recommend>
+<http://garann.github.io/template-chooser/>
+<http://codecondo.com/15-javascript-template-engines/>
