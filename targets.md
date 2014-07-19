@@ -168,6 +168,8 @@ https://gist.github.com/liamcurry/2597326
 
 ### node.js
 http://deadhorse.me/co-and-koa-talk
+promise -- q,async
+<https://github.com/kriskowal/q>
 
 https
 how to differ a page from pre-render and rendered
@@ -184,6 +186,7 @@ datalazyload优化
 高级程序设计
 sizzle.js+scriptaculous源码
 seajs,jQuery和kissyui
+<http://kissyteam.github.io/xtpl/>--kissy xtemplate
 mocha,qunit等测试框架
 localstorage, sessionstorage
 (malformed)markdown security(xss ,csrf)
@@ -296,3 +299,6 @@ git命令
 <http://stackoverflow.com/questions/7788611/what-javascript-template-engines-you-recommend>
 <http://garann.github.io/template-chooser/>
 <http://codecondo.com/15-javascript-template-engines/>
+
+### xtemplate
+如果在页面上灌一个对象，例如var a = [{}, {}, {}]这样的。
