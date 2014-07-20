@@ -278,6 +278,7 @@ Express Middle Ware
 connect:<http://www.senchalabs.org/connect/>
 `DEBUG=express:* nodemon index.js`
 <http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4>
+<https://github.com/substack/stream-handbook>     stream handbook //TODO
 
 ### commonjs
 <http://wiki.commonjs.org/wiki/CommonJS>
@@ -610,3 +611,22 @@ git命令
 
 ### downloads
 <http://kickass.to/>
+
+### learn
+<http://www.explainxkcd.com/wiki/index.php/Main_Page>
+<http://www.xkcd.com/>
+LearnxxxtheHardWay
+
+### read
+<http://readwrite.com/>
+
+### movie
+<code rush>
+<revolution os>
+`The Internet's Own Boy: The Story of Aaron Swartz`
+<http://wearelegionthedocumentary.com/>
+
+### practice
+<http://escape.alf.nu/>     xss practice
+<http://regex.alf.nu/>      regex practice
+<http://alf.nu/>
