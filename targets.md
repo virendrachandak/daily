@@ -260,6 +260,8 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <http://www.reddit.com/r/netsec/>
 <http://opensecurity.in/>
 <http://www.exploit-db.com/>
+<http://lcamtuf.coredump.cx/>   The Tangled Web作者 <http://lcamtuf.blogspot.jp/>
+<https://code.google.com/p/browsersec/>   The Browser Security Handbook
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
