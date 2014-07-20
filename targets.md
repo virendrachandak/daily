@@ -302,3 +302,306 @@ git命令
 
 ### xtemplate
 如果在页面上灌一个对象，例如var a = [{}, {}, {}]这样的。
+
+### books
+<table border="1">
+  <tbody><tr>
+    <th>Title</th>
+
+    <th>Author</th>
+
+    <th>ISBN</th>
+
+    <th>My Rating</th>
+  </tr>
+
+  <tr>
+    <td>UNIX Filesystems</td>
+
+    <td>Steve Pate</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-471-16483-6">0-471-16483-6</a></td>
+
+    <td>*</td>
+  </tr>
+
+  <tr>
+    <td>Hardware Hacking</td>
+
+    <td>Joe Grand</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-932266-83-6">1-932266-83-6</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Professional Assembly</td>
+
+    <td>Richard Blum</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-7645-7901-0">0-7645-7901-0</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Write Great Code I</td>
+
+    <td>Randall Hyde</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-59327-003-8">1-59327-003-8</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Write Great Code II</td>
+
+    <td>Randall Hyde</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-59327-065-8">1-59327-065-8</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>C Unleashed</td>
+
+    <td>Various.</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-67231-896-2">0-67231-896-2</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>1/4 Century of UNIX</td>
+
+    <td>Peter H. Salus</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-54777-5">0-201-54777-5</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Hackers Delight</td>
+
+    <td>Henry Warren</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-91465-4">0-201-91465-4</a></td>
+
+    <td>* * * * *</td>
+  </tr>
+
+  <tr>
+    <td>Modern Operating Sys.</td>
+
+    <td>Tanenbaum</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-13-092641-8">0-13-092641-8</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Computer Arch. &amp; Org.</td>
+
+    <td>John Hayes</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-07-100479-3">0-07-100479-3</a></td>
+
+    <td>*</td>
+  </tr>
+
+  <tr>
+    <td>The Terse Prog. Lang.</td>
+
+    <td>Jim Neil</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-9652660-0-1">0-9652660-0-1</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Lex and Yacc</td>
+
+    <td>John Levine</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-56592-000-7">1-56592-000-7</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Applied Cryptography</td>
+
+    <td>Bruce Schneier</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-471-11709-9">0-471-11709-9</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Vi Improved - Vim</td>
+
+    <td>Steve Oualline</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-7357-1001-5">0-7357-1001-5</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Programming Pearls</td>
+
+    <td>Jon Bentley</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-65788-0">0-201-65788-0</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Lion Commentary on UNIX</td>
+
+    <td>John Lions</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-57398-013-7">1-57398-013-7</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Reversing</td>
+
+    <td>Eldad Eilam</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-7645-7481-7">0-7645-7481-7</a></td>
+
+    <td>* * * * *</td>
+  </tr>
+
+  <tr>
+    <td>Debugging with GDB</td>
+
+    <td>Stallman, et al</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-882114-88-4">1-882114-88-4</a></td>
+
+    <td>* * * * *</td>
+  </tr>
+
+  <tr>
+    <td>Expert C Programming</td>
+
+    <td>P.V.D. Linden</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-13-177429-8">0-13-177429-8</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Design of the UNIX OS</td>
+
+    <td>Maurice J. Bach</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-13-201757-1">0-13-201757-1</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>C Interfaces and Implem</td>
+
+    <td>David R Hanson</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-49841-3">0-201-49841-3</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Advanced UNIX Prog.</td>
+
+    <td>Marc Rochkind</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-13-141154-3">0-13-141154-3</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Hacker Disassembling Un</td>
+
+    <td>Kris Kaspersky</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-931769-22-2">1-931769-22-2</a></td>
+
+    <td>* * *</td>
+  </tr>
+
+  <tr>
+    <td>Advanced Prog. in UNIX</td>
+
+    <td>Richard Stevens</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-43307-9">0-201-43307-9</a></td>
+
+    <td>* * * * *</td>
+  </tr>
+
+  <tr>
+    <td>Compilers</td>
+
+    <td>Alfred V. Aho</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=0-201-10194-7">0-201-10194-7</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Linkers and Loaders</td>
+
+    <td>John R Levine</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-55860-496-0">1-55860-496-0</a></td>
+
+    <td>* * * * *</td>
+  </tr>
+
+  <tr>
+    <td>Computer Org. &amp; Design</td>
+
+    <td>Patterson/Henn.</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-55860-604-1">1-55860-604-1</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Advanced X Window Prog.</td>
+
+    <td>Reichard</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-55828-344-7">1-55828-344-7</a></td>
+
+    <td>* * * *</td>
+  </tr>
+
+  <tr>
+    <td>Dive into Python</td>
+
+    <td>Mark Pilgrim</td>
+
+    <td><a href="http://amazon.co.uk/exec/obidos/external-search?tag=taviso-21&amp;keyword=1-59059-356-1">1-59059-356-1</a></td>
+
+    <td>* * *</td>
+  </tr>
+</tbody></table>
