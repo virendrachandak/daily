@@ -262,6 +262,23 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <http://www.exploit-db.com/>
 <http://lcamtuf.coredump.cx/>   The Tangled Web作者 <http://lcamtuf.blogspot.jp/>
 <https://code.google.com/p/browsersec/>   The Browser Security Handbook
+<http://www.exploit-db.com/vbseo-from-xss-to-reverse-php-shell/>    //TODO
+<http://krebsonsecurity.com/>
+<https://citizenlab.org/>
+<http://en.wikipedia.org/wiki/Morgan_Marquis-Boire>
+[blackhat](http://www.blackhat.com/)
+[defcon](https://www.defcon.org/)
+<http://googleonlinesecurity.blogspot.com/>
+<http://www.nilsjuenemann.de/>    google漏洞最多的白帽子
+<http://scarybeastsecurity.blogspot.com/>   google员工
+<http://lcamtuf.blogspot.com/>    google员工
+<http://lcamtuf.coredump.cx/css_calc/>    //TODO
+<http://lcamtuf.blogspot.com/2013/02/firefox-https-and-response-code-407.html> //TODO
+<http://steike.com/hostnames/1/>  //TODO
+<http://lcamtuf.blogspot.com/2014/03/messing-around-with-download.html> //TODO
+<http://lcamtuf.blogspot.com/search?q=https>    //TODO:https
+<https://www.google.com/about/appsecurity/tools/> //TODO:tools
+<https://www.google.com/about/appsecurity/learning/xss/>  //TODO:important
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
@@ -619,6 +636,7 @@ LearnxxxtheHardWay
 
 ### read
 <http://readwrite.com/>
+<http://www.techinasia.com/>
 
 ### movie
 <code rush>
