@@ -12,6 +12,7 @@ git, grunt, gulp等等
 jquery, kissy, polymer, angularjs等
 7.  生活
 greasemonkey, chrome extension, firefox addon等
+<https://developer.chrome.com/extensions/devguide>
 8.  webkit,v8
 9.  conferences
 nodeconf, jsconf, cssconf, html5 conf
@@ -185,7 +186,7 @@ datalazyload优化
 权威指南
 高级程序设计
 sizzle.js+scriptaculous源码
-seajs,jQuery和kissyui
+seajs,jQuery和kissyui,aralejs <http://aralejs.org/>
 <http://kissyteam.github.io/xtpl/>--kissy xtemplate
 mocha,qunit等测试框架
 localstorage, sessionstorage
@@ -295,7 +296,13 @@ Express Middle Ware
 connect:<http://www.senchalabs.org/connect/>
 `DEBUG=express:* nodemon index.js`
 <http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4>
+<http://howtonode.org/>
 <https://github.com/substack/stream-handbook>     stream handbook //TODO
+<http://strongloop.com/strongblog/node-js-performance-garbage-collection/> //TODO
+<http://strongloop.com/strongblog/node-js-api-tip-model-driven-development/> //TODO
+<http://strongloop.com/strongblog/automatic-node-js-clustering-with-log-aggregation/> //TODO
+<http://koajs.com/>
+<https://github.com/visionmedia/express>
 
 ### commonjs
 <http://wiki.commonjs.org/wiki/CommonJS>
@@ -648,3 +655,6 @@ LearnxxxtheHardWay
 <http://escape.alf.nu/>     xss practice
 <http://regex.alf.nu/>      regex practice
 <http://alf.nu/>
+
+### tool
+<http://lorempixel.com/>
