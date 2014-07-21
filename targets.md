@@ -673,6 +673,7 @@ LearnxxxtheHardWay
 <http://blog.stevenlevithan.com/archives/regex-lookahead-bug>
 <http://blog.stevenlevithan.com/archives/10-reasons-to-learn-and-use-regular-expressions>
 <http://blog.stevenlevithan.com/archives/npcg-javascript>
+<http://bennadel.github.io/RegEx-Day-2014/>
 
 ### blog rolls
 <http://www.bennadel.com/>
