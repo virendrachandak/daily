@@ -658,3 +658,21 @@ LearnxxxtheHardWay
 
 ### tool
 <http://lorempixel.com/>
+
+### leisure and hobby
+<http://en.wikipedia.org/wiki/Rubik's_Cube>
+
+### regular expression
+<https://github.com/slevithan/xregexp>
+<http://blog.stevenlevithan.com/>
+<https://github.com/slevithan/regex-colorizer>
+<https://github.com/slevithan/SyntaxHighlighter>
+//TODO
+<http://blog.stevenlevithan.com/archives/fixing-javascript-regexp>
+<http://blog.stevenlevithan.com/archives/javascript-regex-and-unicode>
+<http://blog.stevenlevithan.com/archives/regex-lookahead-bug>
+<http://blog.stevenlevithan.com/archives/10-reasons-to-learn-and-use-regular-expressions>
+<http://blog.stevenlevithan.com/archives/npcg-javascript>
+
+### blog rolls
+<http://www.bennadel.com/>
