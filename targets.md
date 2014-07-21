@@ -668,6 +668,8 @@ LearnxxxtheHardWay
 <https://github.com/slevithan/regex-colorizer>
 <https://github.com/slevithan/SyntaxHighlighter>
 //TODO
+<http://regex.alf.nu/10>  //TODO!important
+<http://www.regular-expressions.info/lookaround.html> //TODO!important learning
 <http://blog.stevenlevithan.com/archives/fixing-javascript-regexp>
 <http://blog.stevenlevithan.com/archives/javascript-regex-and-unicode>
 <http://blog.stevenlevithan.com/archives/regex-lookahead-bug>
@@ -677,3 +679,11 @@ LearnxxxtheHardWay
 
 ### blog rolls
 <http://www.bennadel.com/>
+<http://www.matrix67.com/blog/>   //中文
+
+### HTML5 -- web storage
+localstorage, sessionstorage, cookie, indexedDB
+<https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage>
+<http://caniuse.com/#search=localstorage>
+<http://www.w3.org/TR/webstorage/>
+<http://www.html5rocks.com/en/features/storage>
