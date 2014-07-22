@@ -280,6 +280,7 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <http://lcamtuf.blogspot.com/search?q=https>    //TODO:https
 <https://www.google.com/about/appsecurity/tools/> //TODO:tools
 <https://www.google.com/about/appsecurity/learning/xss/>  //TODO:important
+<https://github.com/EFForg/OpenWireless>    EFF OpenWireless
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
