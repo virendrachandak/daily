@@ -689,6 +689,9 @@ LearnxxxtheHardWay
 ### tool
 <http://lorempixel.com/>
 <https://etherpad.mozilla.org/>
+vimperator
+<https://vimpr.github.io/plugins-en.html>
+<https://github.com/vimperator/vimperator-labs>
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
