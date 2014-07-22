@@ -281,6 +281,35 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <https://www.google.com/about/appsecurity/tools/> //TODO:tools
 <https://www.google.com/about/appsecurity/learning/xss/>  //TODO:important
 <https://github.com/EFForg/OpenWireless>    EFF OpenWireless
+<https://wiki.mozilla.org/Security/Automation>    mozilla security automation
+mozilla security
+<http://mozilla.github.io/scanjs/client/>
+<http://mozfreddyb.github.io/escape-artist/>
+<https://blog.mozilla.org/security/>
+<https://code.google.com/p/zaproxy/>
+>   related training courses
+>   <https://code.google.com/p/zaproxy/wiki/TrainingCourses>
+>   related tools
+>   <https://code.google.com/p/zaproxy/wiki/RelatedTools>
+>   security distributors
+>   <https://code.google.com/p/zaproxy/wiki/SecurityDistros>
+>   Tips and tricks
+>   <https://code.google.com/p/zaproxy/wiki/TipsAndTricks>
+>   other videos
+>   <https://code.google.com/p/zaproxy/wiki/VideosOther>
+>   tutorials videos
+>   <http://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB&feature=view_all>
+<https://support.mozilla.org/en-US/kb/how-does-phishing-and-malware-protection-work>    //firefox anti-phishing
+chromium safe browsing
+<http://blog.chromium.org/2012/01/all-about-safe-browsing.html>
+<http://www.chromium.org/Home/chromium-security/core-principles>    //Core Principles
+<https://developers.google.com/safe-browsing/>    Safe-browsing API
+黑点github的大牛
+<http://homakov.blogspot.com/>
+Timing attack
+<http://en.wikipedia.org/wiki/Timing_attack>
+How to deploy https correctly
+<https://www.eff.org/https-everywhere/deploying-https>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
@@ -659,6 +688,7 @@ LearnxxxtheHardWay
 
 ### tool
 <http://lorempixel.com/>
+<https://etherpad.mozilla.org/>
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
@@ -688,3 +718,7 @@ localstorage, sessionstorage, cookie, indexedDB
 <http://caniuse.com/#search=localstorage>
 <http://www.w3.org/TR/webstorage/>
 <http://www.html5rocks.com/en/features/storage>
+
+### news
+Firefox 31 release
+<https://www.mozilla.org/en-US/firefox/31.0/releasenotes/>
