@@ -310,6 +310,12 @@ Timing attack
 <http://en.wikipedia.org/wiki/Timing_attack>
 How to deploy https correctly
 <https://www.eff.org/https-everywhere/deploying-https>
+Mozilla Bugs
+<https://bugzilla.mozilla.org/>
+MDN Mozilla
+<https://developer.mozilla.org/en-US/docs/Mozilla>
+Firefox Developer Tools
+<https://developer.mozilla.org/en-US/docs/Tools>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
