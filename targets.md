@@ -333,6 +333,8 @@ connect:<http://www.senchalabs.org/connect/>
 <http://strongloop.com/strongblog/automatic-node-js-clustering-with-log-aggregation/> //TODO
 <http://koajs.com/>
 <https://github.com/visionmedia/express>
+npm
+<https://www.npmjs.org/doc/package.json.html>   package.json
 
 ### commonjs
 <http://wiki.commonjs.org/wiki/CommonJS>
