@@ -733,3 +733,6 @@ localstorage, sessionstorage, cookie, indexedDB
 ### news
 Firefox 31 release
 <https://www.mozilla.org/en-US/firefox/31.0/releasenotes/>
+
+### 网站（Web sites）
+<https://aws.amazon.com/cn/documentation/>    amazon aws
