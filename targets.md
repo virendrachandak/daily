@@ -736,3 +736,6 @@ Firefox 31 release
 
 ### 网站（Web sites）
 <https://aws.amazon.com/cn/documentation/>    amazon aws
+
+### Proxy
+foxproxy, autoproxy, switchysharp等
