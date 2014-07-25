@@ -1,0 +1,1 @@
+<https://developer.mozilla.org/en/docs/Components.utils.Sandbox>
