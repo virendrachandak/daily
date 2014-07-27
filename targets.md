@@ -740,3 +740,7 @@ Firefox 31 release
 
 ### Proxy
 foxproxy, autoproxy, switchysharp等
+
+### algorithms
+sedgewick
+donald knuth
