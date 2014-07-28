@@ -1,0 +1,1 @@
+Firefox扩展开发----### 参考资料<https://developer.mozilla.org/en/docs/Building_an_Extension>
