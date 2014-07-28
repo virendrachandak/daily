@@ -304,8 +304,10 @@ chromium safe browsing
 <http://blog.chromium.org/2012/01/all-about-safe-browsing.html>
 <http://www.chromium.org/Home/chromium-security/core-principles>    //Core Principles
 <https://developers.google.com/safe-browsing/>    Safe-browsing API
-黑点github的大牛
+黑掉github的大牛
 <http://homakov.blogspot.com/>
+知名安全论坛
+<http://sebug.net/>
 Timing attack
 <http://en.wikipedia.org/wiki/Timing_attack>
 How to deploy https correctly
