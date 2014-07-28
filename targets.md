@@ -744,3 +744,9 @@ foxproxy, autoproxy, switchysharp等
 ### algorithms
 sedgewick
 donald knuth
+
+### 牛人
+* jeff dean
+* [褚霸](http://blog.yufeng.info/)
+  [淘宝核心系统团队博客](http://csrd.aliapp.com/)
+  <http://blog.csdn.net/junecauzhang/article/details/7770014>
