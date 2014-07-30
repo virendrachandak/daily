@@ -772,3 +772,8 @@ donald knuth
 
 ### style样式
 <http://oocss.org/>
+<http://sass-lang.com/>
+<http://css-tricks.com/custom-user-mixins/>   mixins
+<http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code>  sass mixin
+<http://compass-style.org/reference/compass/css3/>  compass css3
+<http://learnboost.github.io/stylus/docs/mixins.html> stylus mixin
