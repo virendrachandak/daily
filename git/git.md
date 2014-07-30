@@ -1,0 +1,1 @@
+[`.gitattributes`](http://git-scm.com/book/en/Customizing-Git-Git-Attributes)> <https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html>
