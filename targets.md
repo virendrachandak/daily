@@ -756,3 +756,8 @@ donald knuth
 ### linux
 <http://en.wikipedia.org/wiki/Command-line_interface>
 <http://en.wikipedia.org/wiki/Shell_builtin>
+<http://zsh.sourceforge.net/Guide/zshguide.html>  zsh guide
+<http://www.linux-mag.com/id/1079/>  Writing Scripts for zsh
+<http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692> why zsh is cooler than your shell
+<https://wiki.archlinux.org/index.php/zsh>    archlinux zsh mannual
+<http://en.wikipedia.org/wiki/Z_shell>  wikipedia zshell
