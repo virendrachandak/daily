@@ -707,6 +707,9 @@ vim
 <http://usevim.com/>
 项目构建，开发环境构建
 <http://www.gitignore.io/>  gitignore
+<https://github.com/github/gitignore> github gitignore files collection
+<http://git-scm.com/docs/gitattributes> gitattributes
+<http://git-scm.com/docs/gitignore.html>  gitignore
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
