@@ -703,6 +703,8 @@ LearnxxxtheHardWay
 vimperator
 <https://vimpr.github.io/plugins-en.html>
 <https://github.com/vimperator/vimperator-labs>
+vim
+<http://usevim.com/>
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
@@ -761,3 +763,4 @@ donald knuth
 <http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692> why zsh is cooler than your shell
 <https://wiki.archlinux.org/index.php/zsh>    archlinux zsh mannual
 <http://en.wikipedia.org/wiki/Z_shell>  wikipedia zshell
+<https://linuxtoy.org/archives/the-perfect-linux-desktop-arch-linux-2007-08-2-1.html> archlinux installation guide
