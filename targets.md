@@ -752,3 +752,7 @@ donald knuth
 * [褚霸](http://blog.yufeng.info/)
   [淘宝核心系统团队博客](http://csrd.aliapp.com/)
   <http://blog.csdn.net/junecauzhang/article/details/7770014>
+
+### linux
+<http://en.wikipedia.org/wiki/Command-line_interface>
+<http://en.wikipedia.org/wiki/Shell_builtin>
