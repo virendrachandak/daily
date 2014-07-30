@@ -705,6 +705,8 @@ vimperator
 <https://github.com/vimperator/vimperator-labs>
 vim
 <http://usevim.com/>
+项目构建，开发环境构建
+<http://www.gitignore.io/>  gitignore
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
