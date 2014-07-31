@@ -786,3 +786,12 @@ donald knuth
 <http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code>  sass mixin
 <http://compass-style.org/reference/compass/css3/>  compass css3
 <http://learnboost.github.io/stylus/docs/mixins.html> stylus mixin
+
+### 动画
+缓动easing（三角函数）
+<easing.net>
+碰撞collision detect
+碰撞模拟和物理引擎（算法复杂度很高）
+分离轴定理
+骨骼动画、帧动画（用空间来换时间）
+三维模拟（No WebGL, But canvas 2d）光线投影
