@@ -796,3 +796,6 @@ donald knuth
 骨骼动画、帧动画（用空间来换时间）
 三维模拟（No WebGL, But canvas 2d）光线投影
 <https://github.com/hongru>   岑安
+<http://hongru.cnblogs.com/>  个人博客
+<http://upshots.org/actionscript/jsas-understanding-easing>
+余弦相似度
