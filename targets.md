@@ -264,6 +264,7 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <http://lcamtuf.coredump.cx/>   The Tangled Web作者 <http://lcamtuf.blogspot.jp/>
 <https://code.google.com/p/browsersec/>   The Browser Security Handbook
 <http://www.exploit-db.com/vbseo-from-xss-to-reverse-php-shell/>    //TODO
+<http://beefproject.com/>   BeEF framework
 <http://krebsonsecurity.com/>
 <https://citizenlab.org/>
 <http://en.wikipedia.org/wiki/Morgan_Marquis-Boire>
@@ -316,8 +317,16 @@ Mozilla Bugs
 <https://bugzilla.mozilla.org/>
 MDN Mozilla
 <https://developer.mozilla.org/en-US/docs/Mozilla>
+<https://developer.mozilla.org/en-US/docs/Mozilla/Security>
+<https://developer.mozilla.org/en-US/docs/Web/Security>
+IE 9 security
+<http://blogs.msdn.com/b/ie/archive/2011/03/07/internet-explorer-9-security-part-1-enhanced-memory-protections.aspx>
 Firefox Developer Tools
 <https://developer.mozilla.org/en-US/docs/Tools>
+HTTPS
+<http://www.cs.cornell.edu/wya/papers/ALA-2003.php>
+<https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet>
+<https://blog.mozilla.org/tanvi/2013/04/10/mixed-content-blocking-enabled-in-firefox-23/>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
