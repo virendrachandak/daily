@@ -799,3 +799,7 @@ donald knuth
 <http://hongru.cnblogs.com/>  个人博客
 <http://upshots.org/actionscript/jsas-understanding-easing>
 余弦相似度
+
+### 行业会议
+<http://velocity.oreilly.com.cn/>
+<http://adc.taobao.com/carnival/>
