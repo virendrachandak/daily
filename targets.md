@@ -283,6 +283,8 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <https://www.google.com/about/appsecurity/learning/xss/>  //TODO:important
 <https://github.com/EFForg/OpenWireless>    EFF OpenWireless
 <https://wiki.mozilla.org/Security/Automation>    mozilla security automation
+vunlerabilities
+"Hole 196" // wpa2 vulnerability
 mozilla security
 <http://mozilla.github.io/scanjs/client/>
 <http://mozfreddyb.github.io/escape-artist/>
@@ -365,6 +367,7 @@ git命令
 ### tools
 <http://runnable.com/>
 <http://ternjs.net/>
+<https://api.ip2info.org/>
 
 ### 技术资料博客
 <http://scotch.io/>
