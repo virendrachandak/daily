@@ -803,3 +803,6 @@ donald knuth
 ### 行业会议
 <http://velocity.oreilly.com.cn/>
 <http://adc.taobao.com/carnival/>
+
+### 浏览器性能
+<http://arewefastyet.com/>
