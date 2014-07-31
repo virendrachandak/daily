@@ -115,7 +115,7 @@ https://developer.apple.com/library/safari/documentation/NetworkingInternet/Conc
 "Safari Image Delivery Best Practice"
 http://www.webmonkey.com/
 http://www.html5rocks.com/en/mobile/high-dpi/
-https://www.duosecurity.com/blog/duo-security-researchers-uncover-bypass-of-paypal-s-two-factor-authentication
+<https://www.duosecurity.com/blog/duo-security-researchers-uncover-bypass-of-paypal-s-two-factor-authentication> //TODO
 
 
 https://www.codeschool.com/paths/javascript
@@ -283,6 +283,11 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <https://www.google.com/about/appsecurity/learning/xss/>  //TODO:important
 <https://github.com/EFForg/OpenWireless>    EFF OpenWireless
 <https://wiki.mozilla.org/Security/Automation>    mozilla security automation
+<http://www.thoughtcrime.org/>    personal blog:moxie marlinspike && sslstrip creator && "https sslstrip"
+<http://www.thoughtcrime.org/software/sslstrip/>
+<https://en.wikipedia.org/wiki/Moxie_Marlinspike>
+<https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security>  HSTS
+<http://convergence.io/>
 vunlerabilities
 "Hole 196" // wpa2 vulnerability
 mozilla security
@@ -307,6 +312,10 @@ chromium safe browsing
 <http://blog.chromium.org/2012/01/all-about-safe-browsing.html>
 <http://www.chromium.org/Home/chromium-security/core-principles>    //Core Principles
 <https://developers.google.com/safe-browsing/>    Safe-browsing API
+HTTPS
+<https://www.eff.org/>
+<https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet>
+<https://owasp.org/index.php/SSL_Best_Practices>  outdated
 黑掉github的大牛
 <http://homakov.blogspot.com/>
 知名安全论坛
@@ -329,6 +338,8 @@ HTTPS
 <http://www.cs.cornell.edu/wya/papers/ALA-2003.php>
 <https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet>
 <https://blog.mozilla.org/tanvi/2013/04/10/mixed-content-blocking-enabled-in-firefox-23/>
+owasp
+<https://www.owasp.org/index.php/Main_Page>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
@@ -771,6 +782,7 @@ donald knuth
 * [褚霸](http://blog.yufeng.info/)
   [淘宝核心系统团队博客](http://csrd.aliapp.com/)
   <http://blog.csdn.net/junecauzhang/article/details/7770014>
+* <http://www.jwz.org/>
 
 ### linux
 <http://en.wikipedia.org/wiki/Command-line_interface>

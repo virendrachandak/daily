@@ -1,0 +1,1 @@
+HSTS(Strict-Transport-Security)<https://speakerdeck.com/codebutler/firesheep-intentions-responses-and-whats-next><EFF and OWASP>
