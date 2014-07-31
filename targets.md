@@ -833,3 +833,7 @@ donald knuth
 
 ### Web Components
 <https://speakerdeck.com/zenorocha/web-components-a-chance-to-create-the-future>
+
+20140801
+---
+<http://eloquentjavascript.net/04_data.html>
