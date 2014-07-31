@@ -795,3 +795,4 @@ donald knuth
 分离轴定理
 骨骼动画、帧动画（用空间来换时间）
 三维模拟（No WebGL, But canvas 2d）光线投影
+<https://github.com/hongru>   岑安
