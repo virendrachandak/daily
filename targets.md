@@ -284,6 +284,7 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <https://github.com/EFForg/OpenWireless>    EFF OpenWireless
 <https://wiki.mozilla.org/Security/Automation>    mozilla security automation
 <http://www.thoughtcrime.org/>    personal blog:moxie marlinspike && sslstrip creator && "https sslstrip"
+<https://www.youtube.com/watch?v=pDmj_xe7EIQ> youtube:
 <http://www.thoughtcrime.org/software/sslstrip/>
 <https://en.wikipedia.org/wiki/Moxie_Marlinspike>
 <https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security>  HSTS
@@ -379,6 +380,8 @@ git命令
 <http://runnable.com/>
 <http://ternjs.net/>
 <https://api.ip2info.org/>
+<http://www.backtrack-linux.org/>   //安全工具
+<http://www.monkey.org/~dugsong/dsniff/>
 
 ### 技术资料博客
 <http://scotch.io/>
@@ -783,6 +786,12 @@ donald knuth
   [淘宝核心系统团队博客](http://csrd.aliapp.com/)
   <http://blog.csdn.net/junecauzhang/article/details/7770014>
 * <http://www.jwz.org/>
+安全牛人
+<dan kaminsky>
+<charlie miller>
+<jacob appelbaum>
+<bruce schneier>
+<david litchfield>
 
 ### linux
 <http://en.wikipedia.org/wiki/Command-line_interface>
@@ -821,3 +830,6 @@ donald knuth
 
 ### 浏览器性能
 <http://arewefastyet.com/>
+
+### Web Components
+<https://speakerdeck.com/zenorocha/web-components-a-chance-to-create-the-future>
