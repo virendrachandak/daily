@@ -847,7 +847,12 @@ Math.round和toFixed
 
 #### IE兼容性
 Array的indexOf方法在IE7下没有，可以使用KISSY.indexOf方法
+<http://stackoverflow.com/questions/1744310/how-to-fix-array-indexof-in-javascript-for-internet-explorer-browsers>
+<http://msdn.microsoft.com/en-us/library/ie/53xtt423(v=vs.94).aspx>
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf>
+<http://docs.kissyui.com/1.4/docs/html/api/lang/indexOf.html>
 ie7下table的td内的内容margin-auto失效，解决方法，为td加上width属性：100%。
+<http://code.tutsplus.com/tutorials/9-most-common-ie-bugs-and-how-to-fix-them--net-7764>
 
 ### 前后端分离
 模板+webcomponent
