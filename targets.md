@@ -838,3 +838,6 @@ donald knuth
 ---
 <http://eloquentjavascript.net/04_data.html>
 <https://www.mozilla.org/en-US/>
+
+### javascript运算精度
+<http://wenku.baidu.com/view/a8f5f9c30c22590102029df0.html>
