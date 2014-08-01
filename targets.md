@@ -844,3 +844,11 @@ donald knuth
 1.16*100 =  115.99999999999999
 分开乘没有问题1 * 100 + .16 * 100
 Math.round和toFixed
+
+#### IE兼容性
+Array的indexOf方法在IE7下没有，可以使用KISSY.indexOf方法
+ie7下table的td内的内容margin-auto失效，解决方法，为td加上width属性：100%。
+
+### 前后端分离
+模板+webcomponent
+测试方法
