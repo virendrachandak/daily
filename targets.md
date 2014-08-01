@@ -839,5 +839,8 @@ donald knuth
 <http://eloquentjavascript.net/04_data.html>
 <https://www.mozilla.org/en-US/>
 
-### javascript运算精度
+### javascript运算精度//TODO
 <http://wenku.baidu.com/view/a8f5f9c30c22590102029df0.html>
+1.16*100 =  115.99999999999999
+分开乘没有问题1 * 100 + .16 * 100
+Math.round和toFixed
