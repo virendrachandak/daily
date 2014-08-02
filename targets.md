@@ -341,6 +341,32 @@ HTTPS
 <https://blog.mozilla.org/tanvi/2013/04/10/mixed-content-blocking-enabled-in-firefox-23/>
 owasp
 <https://www.owasp.org/index.php/Main_Page>
+vim modeline vulnerability
+<http://vim.1045645.n5.nabble.com/BUG-ada-txt-sets-encoding-by-modeline-which-may-cause-dataloss-in-some-cases-td1164893.html>
+>   <http://vim.1045645.n5.nabble.com/>
+<http://www.iss.net/security_center/reference/vuln/vim-modeline-command-execution.htm>
+<http://vim.wikia.com/wiki/Modeline_magic>
+<http://securityintelligence.com/topics/x-force/>   IBM security intelligence Blog
+<http://securityintelligence.com/>    security intelligence
+fingerprinting
+<https://wiki.mozilla.org/Fingerprinting>
+<https://panopticlick.eff.org/>
+<http://cseweb.ucsd.edu/~hovav/papers/ms12.html>
+<http://www.propublica.org/article/meet-the-online-tracking-device-that-is-virtually-impossible-to-block>
+<https://adblockplus.org/blog/adblock-plus-and-the-canvas-fingerprinting-threat>
+<http://www.propublica.org/article/privacy-tools-how-to-block-online-tracking>
+<https://trac.torproject.org/projects/tor/ticket/6253>
+<https://securehomes.esat.kuleuven.be/~gacar/persistent/index.html>   //Important TODO
+<https://blog.disconnect.me/disconnect-blocks-new-tracking-device-that-makes-your-computer-draw-a-unique-image>
+other things privacy concerned
+<http://lwn.net/Articles/606186/#Comments>
+<https://www.browserleaks.com/>
+<https://en.wikipedia.org/wiki/Browser_cookie>
+traffic confirmation attack
+<https://blog.torproject.org/blog/one-cell-enough>
+<https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack>
+security
+<http://www.tummy.com/presentations/>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
@@ -736,6 +762,11 @@ vim
 <https://github.com/github/gitignore> github gitignore files collection
 <http://git-scm.com/docs/gitattributes> gitattributes
 <http://git-scm.com/docs/gitignore.html>  gitignore
+vim python
+<https://wiki.python.org/moin/Vim>
+<http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide>
+python 
+<https://wiki.python.org/moin/BeginnersGuide/Programmers>
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
@@ -857,3 +888,6 @@ ie7下table的td内的内容margin-auto失效，解决方法，为td加上width�
 ### 前后端分离
 模板+webcomponent
 测试方法
+
+c10k
+<http://www.kegel.com/c10k.html>
