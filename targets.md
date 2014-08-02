@@ -864,6 +864,9 @@ donald knuth
 <http://hongru.cnblogs.com/>  个人博客
 <http://upshots.org/actionscript/jsas-understanding-easing>
 余弦相似度
+重绘、回流（repaint，reflow）24帧、30帧、60帧
+<https://hacks.mozilla.org/2014/07/resources-for-html5-game-developers/>
+<http://www.sitepoint.com/introduction-resource-timing-api/>
 
 ### 行业会议
 <http://velocity.oreilly.com.cn/>
@@ -874,6 +877,8 @@ donald knuth
 
 ### Web Components
 <https://speakerdeck.com/zenorocha/web-components-a-chance-to-create-the-future>
+<http://www.html5rocks.com/en/tutorials/webcomponents/imports/>
+前端组件化
 
 20140801
 ---
