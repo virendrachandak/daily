@@ -367,6 +367,15 @@ traffic confirmation attack
 <https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack>
 security
 <http://www.tummy.com/presentations/>
+Timing-Allow-Origin
+quic
+<http://blog.chromium.org/2013/06/experimenting-with-quic.html>
+<http://www.slideshare.net/ankhreharakhte/google-quic>
+<https://docs.google.com/document/d/1RNHkx_VvKWyWg6Lr8SZ-saqsQx7rFV-ev2jRFUoVD34/mobilebasic>
+<http://www.chromium.org/spdy/spdy-protocol/spdy-protocol-draft2>
+<http://www.chromium.org/spdy/spdy-whitepaper>
+<https://en.wikipedia.org/wiki/QUIC>
+<https://news.ycombinator.com/item?id=7227255>
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
@@ -408,6 +417,7 @@ git命令
 <https://api.ip2info.org/>
 <http://www.backtrack-linux.org/>   //安全工具
 <http://www.monkey.org/~dugsong/dsniff/>
+<http://mitmproxy.org/doc/index.html>   mitmproxy
 
 ### 技术资料博客
 <http://scotch.io/>
@@ -872,9 +882,13 @@ donald knuth
 
 ### javascript运算精度//TODO
 <http://wenku.baidu.com/view/a8f5f9c30c22590102029df0.html>
+```
 1.16*100 =  115.99999999999999
 分开乘没有问题1 * 100 + .16 * 100
 Math.round和toFixed
+```
+* <https://www.npmjs.org/package/bignumber.js>
+* <https://github.com/MikeMcl/big.js/>
 
 #### IE兼容性
 Array的indexOf方法在IE7下没有，可以使用KISSY.indexOf方法
@@ -891,3 +905,7 @@ ie7下table的td内的内容margin-auto失效，解决方法，为td加上width�
 
 c10k
 <http://www.kegel.com/c10k.html>
+
+file format
+<http://vim.wikia.com/wiki/File_format>
+<http://stackoverflow.com/questions/3852868/how-to-make-vim-show-m-and-substitute-it>
