@@ -15,7 +15,8 @@ greasemonkey, chrome extension, firefox addon等
 <https://developer.chrome.com/extensions/devguide>
 8.  webkit,v8
 9.  conferences
-nodeconf, jsconf, cssconf, html5 conf
+nodeconf, jsconf, cssconf, html5 conf, google io, velocity
+<https://developers.google.com/events/io/>
 10. html5, css3, mobile development
 11. podcasts
 * [http://fripfrap.io/](http://fripfrap.io/)
@@ -418,6 +419,7 @@ git命令
 <http://www.backtrack-linux.org/>   //安全工具
 <http://www.monkey.org/~dugsong/dsniff/>
 <http://mitmproxy.org/doc/index.html>   mitmproxy
+<http://emmet.io/>    emmet
 
 ### 技术资料博客
 <http://scotch.io/>
