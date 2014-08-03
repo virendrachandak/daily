@@ -1,0 +1,1 @@
+Web Components指南----## 介绍Web Components是一套标准的集合。为什么会有Web Components呢？先看看我们现在的Web前端开发方式。许多情况下，我们都需要复制大量HTML并粘贴到Web应用中去，这样会造成HTML页面内容庞大（`Bloated`）。此外，我们还需要为这些HTML内容加上对应的JavaScript逻辑，很多情况下会造成HTML难以理解。而理想的情况是，单靠HTML就能充分地表达出复杂的UI和交互，并且能够扩展。这就是Web Components出现的原因。> 不懂没关系，下面细细道来。## Web Components简单来说，Web Components使得我们可以将标记和样式绑定到定制的HTML元素中。
