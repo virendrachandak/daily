@@ -951,6 +951,7 @@ javascript test
 <https://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd>   javascript unit test tools discussion
 <http://blog.building-blocks.com/technical-tips/javascript-unit-testing-with-qunit-and-sinon-js>  javascript unit test
 <http://www.elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/>
+<http://jordankasper.com/blog/2013/04/automated-javascript-tests-using-grunt-phantomjs-and-qunit/>
 
 test coverage
 <http://martinfowler.com/bliki/TestCoverage.html>
@@ -960,3 +961,8 @@ javascript unit test coverage
 
 javascript benchmark
 <https://www.webkit.org/perf/sunspider/sunspider.html> sunspider for the webkit project
+
+javascript error detection
+例如模板中的标签未闭合，变量未定义等。
+[Google JavaScript Guide](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+[Google Style Guide](https://code.google.com/p/google-styleguide/)
