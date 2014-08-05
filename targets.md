@@ -941,5 +941,22 @@ references
 
 javascript test
 <http://ejohn.org/blog/javascript-testing-does-not-scale/>  jQuery test
-<http://phantomjs.org/> phantomJS
-<https://visionmedia.github.io/mocha/>
+<http://phantomjs.org/> phantomJS [github](https://github.com/ariya/phantomjs)
+<https://visionmedia.github.io/mocha/>  mocha
+[mocha phatomsjs](https://github.com/metaskills/mocha-phantomjs)
+<http://qunitjs.com/> qunit
+<http://bocoup.com/weblog/breaking-rules-in-tests/>
+<http://bocoup.com/weblog/proactive-nodejs-development/>
+<http://bocoup.com/weblog/effective-unit-testing-with-amd/>
+<https://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd>   javascript unit test tools discussion
+<http://blog.building-blocks.com/technical-tips/javascript-unit-testing-with-qunit-and-sinon-js>  javascript unit test
+<http://www.elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/>
+
+test coverage
+<http://martinfowler.com/bliki/TestCoverage.html>
+javascript unit test coverage
+<https://gotwarlost.github.io/istanbul/>
+<https://timurstrekalov.github.io/saga/>
+
+javascript benchmark
+<https://www.webkit.org/perf/sunspider/sunspider.html> sunspider for the webkit project
