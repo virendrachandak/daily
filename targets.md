@@ -938,3 +938,8 @@ generators
 
 references
 <http://pragprog.com/>    books, video, audio
+
+javascript test
+<http://ejohn.org/blog/javascript-testing-does-not-scale/>  jQuery test
+<http://phantomjs.org/> phantomJS
+<https://visionmedia.github.io/mocha/>
