@@ -318,6 +318,7 @@ HTTPS
 <https://www.eff.org/>
 <https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet>
 <https://owasp.org/index.php/SSL_Best_Practices>  outdated
+<https://code.facebook.com/posts/405362859567894/secure-browsing-by-default/>     facebook https //todo
 黑掉github的大牛
 <http://homakov.blogspot.com/>
 知名安全论坛
@@ -945,13 +946,15 @@ javascript test
 <https://visionmedia.github.io/mocha/>  mocha
 [mocha phatomsjs](https://github.com/metaskills/mocha-phantomjs)
 <http://qunitjs.com/> qunit
+<http://qunitjs.com/cookbook/>  qunit cookbook
 <http://bocoup.com/weblog/breaking-rules-in-tests/>
 <http://bocoup.com/weblog/proactive-nodejs-development/>
 <http://bocoup.com/weblog/effective-unit-testing-with-amd/>
 <https://stackoverflow.com/questions/300855/javascript-unit-test-tools-for-tdd>   javascript unit test tools discussion
-<http://blog.building-blocks.com/technical-tips/javascript-unit-testing-with-qunit-and-sinon-js>  javascript unit test
-<http://www.elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/>
-<http://jordankasper.com/blog/2013/04/automated-javascript-tests-using-grunt-phantomjs-and-qunit/>
+<http://blog.building-blocks.com/technical-tips/javascript-unit-testing-with-qunit-and-sinon-js>  javascript unit //todo
+<http://www.elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/>   //todo
+<http://jordankasper.com/blog/2013/04/automated-javascript-tests-using-grunt-phantomjs-and-qunit/>  //todo
+<http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#JavaScript> lists of unit testing frameworks javascript
 karma
 <http://karma-runner.github.io/>
 <https://github.com/karma-runner/karma/raw/master/thesis.pdf> How it works thesis
@@ -962,6 +965,9 @@ test coverage
 javascript unit test coverage
 <https://gotwarlost.github.io/istanbul/>
 <https://timurstrekalov.github.io/saga/>
+
+reactive
+<https://github.com/kissyteam/kissy/tree/master/src/reactive>
 
 javascript benchmark
 <https://www.webkit.org/perf/sunspider/sunspider.html> sunspider for the webkit project
