@@ -966,3 +966,6 @@ javascript error detection
 例如模板中的标签未闭合，变量未定义等。
 [Google JavaScript Guide](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 [Google Style Guide](https://code.google.com/p/google-styleguide/)
+
+### interview
+<https://github.com/darcyclarke/Front-end-Developer-Interview-Questions>
