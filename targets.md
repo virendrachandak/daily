@@ -952,6 +952,10 @@ javascript test
 <http://blog.building-blocks.com/technical-tips/javascript-unit-testing-with-qunit-and-sinon-js>  javascript unit test
 <http://www.elijahmanor.com/unit-test-like-a-secret-agent-with-sinon-js/>
 <http://jordankasper.com/blog/2013/04/automated-javascript-tests-using-grunt-phantomjs-and-qunit/>
+karma
+<http://karma-runner.github.io/>
+<https://github.com/karma-runner/karma/raw/master/thesis.pdf> How it works thesis
+<http://tddjs.com/> Test-driven JavaScript Development
 
 test coverage
 <http://martinfowler.com/bliki/TestCoverage.html>
