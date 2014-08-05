@@ -916,3 +916,8 @@ c10k
 file format
 <http://vim.wikia.com/wiki/File_format>
 <http://stackoverflow.com/questions/3852868/how-to-make-vim-show-m-and-substitute-it>
+
+javascript ecma
+Object.defineproperty
+<http://ejohn.org/blog/ecmascript-5-objects-and-properties/>
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty>

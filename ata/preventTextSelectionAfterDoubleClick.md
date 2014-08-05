@@ -1,0 +1,1 @@
+```javascriptfunction clearSelection() {  if (document.selection && document.selection.empty) {    document.selection.empty();  } else if (window.getSelection) {    var sel = window.getSelection();    sel.removeAllRanges();  }}```<http://stackoverflow.com/questions/880512/prevent-text-selection-after-double-click>

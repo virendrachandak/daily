@@ -1,0 +1,1 @@
+<http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size>
