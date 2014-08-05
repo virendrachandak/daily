@@ -921,3 +921,6 @@ javascript ecma
 Object.defineproperty
 <http://ejohn.org/blog/ecmascript-5-objects-and-properties/>
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty>
+
+references
+<http://pragprog.com/>    books, video, audio
