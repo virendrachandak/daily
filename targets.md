@@ -420,6 +420,16 @@ git命令
 <http://www.monkey.org/~dugsong/dsniff/>
 <http://mitmproxy.org/doc/index.html>   mitmproxy
 <http://emmet.io/>    emmet
+<http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/> iterm
+<http://teohm.com/blog/2012/01/04/shortcuts-to-move-faster-in-bash-command-line/>
+<http://blog.taylormcgann.com/tag/iterm/>
+<https://stackoverflow.com/questions/68372/what-is-your-single-most-favorite-command-line-trick-using-bash>
+<http://hiltmon.com/blog/2013/02/13/make-iterm-2-more-mac-like/>
+<http://lifehacker.com/302197/useful-command-line-tricks-for-mac-users>
+<http://www.michael-noll.com/blog/2007/01/04/word-movement-shortcuts-for-iterm-on-mac-os-x/>
+
+from jquery to angularjs
+<https://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background/15012542#15012542>
 
 ### 技术资料博客
 <http://scotch.io/>
