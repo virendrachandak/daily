@@ -921,6 +921,10 @@ javascript ecma
 Object.defineproperty
 <http://ejohn.org/blog/ecmascript-5-objects-and-properties/>
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty>
+ecma6 harmony
+generators
+<http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators>
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*>
 
 references
 <http://pragprog.com/>    books, video, audio
