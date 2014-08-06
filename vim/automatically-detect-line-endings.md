@@ -1,1 +1,1 @@
-<http://vim.wikia.com/wiki/Automatically_reload_files_with_mixed_line-endings_in_DOS_fileformat>
+<http://vim.wikia.com/wiki/Automatically_reload_files_with_mixed_line-endings_in_DOS_fileformat><http://stackoverflow.com/questions/1110678/m-at-the-end-of-every-line-in-vim>
