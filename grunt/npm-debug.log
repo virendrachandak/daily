@@ -1,0 +1,2181 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/lib/node_modules/tnpm/node_modules/.bin/npm',
+1 verbose cli   '--force',
+1 verbose cli   '--no-proxy',
+1 verbose cli   '--disturl=http://npm.taobao.net/dist',
+1 verbose cli   '--userconfig=/Users/leo/.tnpmrc',
+1 verbose cli   '--cache=/Users/leo/.npm/.cache/tnpm',
+1 verbose cli   '--registry=http://registry.npm.taobao.net',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'tnpm' ]
+2 info using npm@1.4.20
+3 info using node@v0.10.28
+4 verbose node symlink /usr/local/bin/node
+5 warn using --force I sure hope you know what you are doing.
+6 verbose cache add [ 'tnpm', null ]
+7 verbose cache add name=undefined spec="tnpm" args=["tnpm",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'tnpm',
+8 verbose parsed url   path: 'tnpm',
+8 verbose parsed url   href: 'tnpm' }
+9 silly lockFile c914047e-tnpm tnpm
+10 verbose lock tnpm /Users/leo/.npm/.cache/tnpm/c914047e-tnpm.lock
+11 silly lockFile c914047e-tnpm tnpm
+12 silly lockFile c914047e-tnpm tnpm
+13 verbose addNamed [ 'tnpm', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile fe900314-tnpm tnpm@
+16 verbose lock tnpm@ /Users/leo/.npm/.cache/tnpm/fe900314-tnpm.lock
+17 silly addNameRange { name: 'tnpm', range: '*', hasData: false }
+18 verbose request where is /tnpm
+19 verbose request registry http://registry.npm.taobao.net/
+20 verbose request id afa48899eba7d25d
+21 verbose url raw /tnpm
+22 verbose url resolving [ 'http://registry.npm.taobao.net/', './tnpm' ]
+23 verbose url resolved http://registry.npm.taobao.net/tnpm
+24 verbose request where is http://registry.npm.taobao.net/tnpm
+25 info trying registry request attempt 1 at 20:24:26
+26 verbose etag "1404722265000"
+27 http GET http://registry.npm.taobao.net/tnpm
+28 http 200 http://registry.npm.taobao.net/tnpm
+29 silly registry.get cb [ 200,
+29 silly registry.get   { server: 'Tengine',
+29 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+29 silly registry.get     'content-type': 'application/json; charset=utf-8',
+29 silly registry.get     connection: 'close',
+29 silly registry.get     'x-powered-by': 'koa',
+29 silly registry.get     etag: '"1407220533000"',
+29 silly registry.get     'x-readtime': '41',
+29 silly registry.get     'content-length': '86092' } ]
+30 silly addNameRange number 2 { name: 'tnpm', range: '*', hasData: true }
+31 silly addNameRange versions [ 'tnpm',
+31 silly addNameRange   [ '1.0.8',
+31 silly addNameRange     '1.0.7',
+31 silly addNameRange     '1.0.6',
+31 silly addNameRange     '1.0.5',
+31 silly addNameRange     '1.0.4',
+31 silly addNameRange     '1.0.3',
+31 silly addNameRange     '1.0.2',
+31 silly addNameRange     '1.0.1',
+31 silly addNameRange     '1.0.0',
+31 silly addNameRange     '0.7.5',
+31 silly addNameRange     '0.7.4',
+31 silly addNameRange     '0.7.3',
+31 silly addNameRange     '0.7.2',
+31 silly addNameRange     '0.7.1',
+31 silly addNameRange     '0.7.0',
+31 silly addNameRange     '0.6.1',
+31 silly addNameRange     '0.6.0',
+31 silly addNameRange     '0.5.1-beta',
+31 silly addNameRange     '0.5.1',
+31 silly addNameRange     '0.5.0',
+31 silly addNameRange     '0.4.1',
+31 silly addNameRange     '0.4.0',
+31 silly addNameRange     '0.3.10',
+31 silly addNameRange     '0.3.9',
+31 silly addNameRange     '0.3.8',
+31 silly addNameRange     '0.3.7',
+31 silly addNameRange     '0.3.6',
+31 silly addNameRange     '0.3.5',
+31 silly addNameRange     '0.3.4',
+31 silly addNameRange     '0.3.3',
+31 silly addNameRange     '0.3.2',
+31 silly addNameRange     '0.3.1',
+31 silly addNameRange     '0.3.0',
+31 silly addNameRange     '0.2.4',
+31 silly addNameRange     '0.2.3',
+31 silly addNameRange     '0.2.2',
+31 silly addNameRange     '0.2.1',
+31 silly addNameRange     '0.2.0',
+31 silly addNameRange     '0.1.9',
+31 silly addNameRange     '0.1.8',
+31 silly addNameRange     '0.1.5',
+31 silly addNameRange     '0.1.4',
+31 silly addNameRange     '0.1.3',
+31 silly addNameRange     '0.1.2',
+31 silly addNameRange     '0.1.1',
+31 silly addNameRange     '0.1.0',
+31 silly addNameRange     '0.0.4',
+31 silly addNameRange     '0.0.3',
+31 silly addNameRange     '0.0.2',
+31 silly addNameRange     '0.0.1' ] ]
+32 verbose addNamed [ 'tnpm', '1.0.8' ]
+33 verbose addNamed [ '1.0.8', '1.0.8' ]
+34 silly lockFile ebe13405-tnpm-1-0-8 tnpm@1.0.8
+35 verbose lock tnpm@1.0.8 /Users/leo/.npm/.cache/tnpm/ebe13405-tnpm-1-0-8.lock
+36 silly lockFile d10bc74c-net-tnpm-download-tnpm-1-0-8-tgz http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+37 verbose lock http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz /Users/leo/.npm/.cache/tnpm/d10bc74c-net-tnpm-download-tnpm-1-0-8-tgz.lock
+38 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz',
+38 verbose addRemoteTarball   '757a8e91b695451dc8752fd61af0b14f1827f9a9' ]
+39 info retry fetch attempt 1 at 20:24:26
+40 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+41 http GET http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+42 http 200 http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+43 silly lockFile d10bc74c-net-tnpm-download-tnpm-1-0-8-tgz http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+44 silly lockFile d10bc74c-net-tnpm-download-tnpm-1-0-8-tgz http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz
+45 silly lockFile ebe13405-tnpm-1-0-8 tnpm@1.0.8
+46 silly lockFile ebe13405-tnpm-1-0-8 tnpm@1.0.8
+47 silly lockFile fe900314-tnpm tnpm@
+48 silly lockFile fe900314-tnpm tnpm@
+49 silly resolved [ { name: 'tnpm',
+49 silly resolved     version: '1.0.8',
+49 silly resolved     description: 'npm client for alibaba private npm registry',
+49 silly resolved     bin:
+49 silly resolved      { tnpm: './bin/tnpm',
+49 silly resolved        'tnpm-check': './bin/tnpm-check',
+49 silly resolved        'tnpm-doc': './bin/tnpm-doc',
+49 silly resolved        'tnpm-web': './bin/tnpm-web',
+49 silly resolved        'tnpm-sync': './bin/tnpm-sync' },
+49 silly resolved     preferGlobal: true,
+49 silly resolved     dependencies:
+49 silly resolved      { 'ali-npm': '~1.0.3',
+49 silly resolved        'auto-correct': '~1.0.0',
+49 silly resolved        bagpipe: '~0.3.5',
+49 silly resolved        colors: '~0.6.2',
+49 silly resolved        commander: '~2.3.0',
+49 silly resolved        'cross-spawn': '~0.1.7',
+49 silly resolved        debug: '~1.0.4',
+49 silly resolved        'npm-request': '~0.0.4',
+49 silly resolved        open: '~0.0.5',
+49 silly resolved        'rmdir-recursive': '~0.0.0',
+49 silly resolved        urllib: '~0.5.16' },
+49 silly resolved     devDependencies:
+49 silly resolved      { 'ali-contributors': '*',
+49 silly resolved        autod: '*',
+49 silly resolved        'fs-extra': '~0.10.0',
+49 silly resolved        mocha: '*',
+49 silly resolved        should: '~4.0.4' },
+49 silly resolved     homepage: 'http://gitlab.alibaba-inc.com/node/tnpm',
+49 silly resolved     repository: { type: 'git', url: 'git@gitlab.alibaba-inc.com:node/tnpm.git' },
+49 silly resolved     publishConfig: { registry: 'http://registry.npm.alibaba-inc.com' },
+49 silly resolved     keywords: [ 'tnpm', 'npm', 'alibaba', 'taobao', 'local-npm', 'cnpm', 'ali' ],
+49 silly resolved     author:
+49 silly resolved      { name: '苏千',
+49 silly resolved        email: 'suqian.yf@alipay.com',
+49 silly resolved        url: 'http://fengmk2.github.com' },
+49 silly resolved     license: 'MIT',
+49 silly resolved     contributors: [ [Object], [Object], [Object] ],
+49 silly resolved     readmeFilename: 'README.md',
+49 silly resolved     gitHead: '73453edecd52d0a42fc9f5f831e616df23b01fb8',
+49 silly resolved     _id: 'tnpm@1.0.8',
+49 silly resolved     scripts: {},
+49 silly resolved     _shasum: '757a8e91b695451dc8752fd61af0b14f1827f9a9',
+49 silly resolved     _from: 'tnpm@',
+49 silly resolved     _npmVersion: '1.0.3',
+49 silly resolved     _npmUser: { name: 'busi.hyy', email: 'busi.hyy@alibaba-inc.com' },
+49 silly resolved     maintainers: [ [Object], [Object] ],
+49 silly resolved     dist:
+49 silly resolved      { shasum: '757a8e91b695451dc8752fd61af0b14f1827f9a9',
+49 silly resolved        size: 8621,
+49 silly resolved        key: 'tnpm/-/tnpm-1.0.8.tgz',
+49 silly resolved        tarball: 'http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz' },
+49 silly resolved     _publish_on_cnpm: true,
+49 silly resolved     _cnpm_publish_time: 1407220525122,
+49 silly resolved     _resolved: 'http://registry.npm.taobao.net/tnpm/download/tnpm-1.0.8.tgz' } ]
+50 info install tnpm@1.0.8 into /usr/local/lib
+51 info installOne tnpm@1.0.8
+52 verbose lib/node_modules/tnpm unbuild
+53 info preuninstall tnpm@0.5.1
+54 info uninstall tnpm@0.5.1
+55 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild tnpm@0.5.1
+56 verbose /usr/local/bin,[object Object] binRoot
+57 info postuninstall tnpm@0.5.1
+58 verbose tar unpack /Users/leo/.npm/.cache/tnpm/tnpm/1.0.8/package.tgz
+59 silly lockFile 599024ac--usr-local-lib-node-modules-tnpm tar:///usr/local/lib/node_modules/tnpm
+60 verbose lock tar:///usr/local/lib/node_modules/tnpm /Users/leo/.npm/.cache/tnpm/599024ac--usr-local-lib-node-modules-tnpm.lock
+61 silly lockFile ed00eabe-ache-tnpm-tnpm-1-0-8-package-tgz tar:///Users/leo/.npm/.cache/tnpm/tnpm/1.0.8/package.tgz
+62 verbose lock tar:///Users/leo/.npm/.cache/tnpm/tnpm/1.0.8/package.tgz /Users/leo/.npm/.cache/tnpm/ed00eabe-ache-tnpm-tnpm-1-0-8-package-tgz.lock
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 silly gunzTarPerm extractEntry package.json
+65 silly gunzTarPerm extractEntry .npmignore
+66 silly gunzTarPerm extractEntry README.md
+67 silly gunzTarPerm extractEntry origin_npm.js
+68 silly gunzTarPerm extractEntry utils.js
+69 silly gunzTarPerm extractEntry config.js
+70 silly gunzTarPerm extractEntry bin/tnpm
+71 silly gunzTarPerm extractEntry bin/tnpm-check
+72 silly gunzTarPerm extractEntry bin/tnpm-doc
+73 silly gunzTarPerm extractEntry bin/tnpm-sync
+74 silly gunzTarPerm extractEntry bin/tnpm-web
+75 silly gunzTarPerm extractEntry AUTHORS
+76 silly gunzTarPerm extractEntry History.md
+77 silly gunzTarPerm extractEntry AUTHORS.map.json
+78 silly lockFile 599024ac--usr-local-lib-node-modules-tnpm tar:///usr/local/lib/node_modules/tnpm
+79 silly lockFile 599024ac--usr-local-lib-node-modules-tnpm tar:///usr/local/lib/node_modules/tnpm
+80 silly lockFile ed00eabe-ache-tnpm-tnpm-1-0-8-package-tgz tar:///Users/leo/.npm/.cache/tnpm/tnpm/1.0.8/package.tgz
+81 silly lockFile ed00eabe-ache-tnpm-tnpm-1-0-8-package-tgz tar:///Users/leo/.npm/.cache/tnpm/tnpm/1.0.8/package.tgz
+82 info preinstall tnpm@1.0.8
+83 verbose readDependencies using package.json deps
+84 verbose readDependencies using package.json deps
+85 verbose cache add [ 'ali-npm@~1.0.3', null ]
+86 verbose cache add name=undefined spec="ali-npm@~1.0.3" args=["ali-npm@~1.0.3",null]
+87 verbose parsed url { protocol: null,
+87 verbose parsed url   slashes: null,
+87 verbose parsed url   auth: null,
+87 verbose parsed url   host: null,
+87 verbose parsed url   port: null,
+87 verbose parsed url   hostname: null,
+87 verbose parsed url   hash: null,
+87 verbose parsed url   search: null,
+87 verbose parsed url   query: null,
+87 verbose parsed url   pathname: 'ali-npm@~1.0.3',
+87 verbose parsed url   path: 'ali-npm@~1.0.3',
+87 verbose parsed url   href: 'ali-npm@~1.0.3' }
+88 verbose cache add [ 'auto-correct@~1.0.0', null ]
+89 verbose cache add name=undefined spec="auto-correct@~1.0.0" args=["auto-correct@~1.0.0",null]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: 'auto-correct@~1.0.0',
+90 verbose parsed url   path: 'auto-correct@~1.0.0',
+90 verbose parsed url   href: 'auto-correct@~1.0.0' }
+91 verbose cache add name="ali-npm" spec="~1.0.3" args=["ali-npm","~1.0.3"]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: '~1.0.3',
+92 verbose parsed url   path: '~1.0.3',
+92 verbose parsed url   href: '~1.0.3' }
+93 verbose addNamed [ 'ali-npm', '~1.0.3' ]
+94 verbose addNamed [ null, '>=1.0.3-0 <1.1.0-0' ]
+95 silly lockFile 42f5dda2-ali-npm-1-0-3 ali-npm@~1.0.3
+96 verbose lock ali-npm@~1.0.3 /Users/leo/.npm/.cache/tnpm/42f5dda2-ali-npm-1-0-3.lock
+97 verbose cache add name="auto-correct" spec="~1.0.0" args=["auto-correct","~1.0.0"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '~1.0.0',
+98 verbose parsed url   path: '~1.0.0',
+98 verbose parsed url   href: '~1.0.0' }
+99 verbose addNamed [ 'auto-correct', '~1.0.0' ]
+100 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+101 silly lockFile c7d3141c-auto-correct-1-0-0 auto-correct@~1.0.0
+102 verbose lock auto-correct@~1.0.0 /Users/leo/.npm/.cache/tnpm/c7d3141c-auto-correct-1-0-0.lock
+103 verbose cache add [ 'bagpipe@~0.3.5', null ]
+104 verbose cache add name=undefined spec="bagpipe@~0.3.5" args=["bagpipe@~0.3.5",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'bagpipe@~0.3.5',
+105 verbose parsed url   path: 'bagpipe@~0.3.5',
+105 verbose parsed url   href: 'bagpipe@~0.3.5' }
+106 verbose cache add name="bagpipe" spec="~0.3.5" args=["bagpipe","~0.3.5"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '~0.3.5',
+107 verbose parsed url   path: '~0.3.5',
+107 verbose parsed url   href: '~0.3.5' }
+108 verbose addNamed [ 'bagpipe', '~0.3.5' ]
+109 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+110 silly lockFile 74ee92da-bagpipe-0-3-5 bagpipe@~0.3.5
+111 verbose lock bagpipe@~0.3.5 /Users/leo/.npm/.cache/tnpm/74ee92da-bagpipe-0-3-5.lock
+112 silly addNameRange { name: 'ali-npm', range: '>=1.0.3-0 <1.1.0-0', hasData: false }
+113 silly addNameRange { name: 'auto-correct',
+113 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+113 silly addNameRange   hasData: false }
+114 verbose cache add [ 'commander@~2.3.0', null ]
+115 verbose cache add name=undefined spec="commander@~2.3.0" args=["commander@~2.3.0",null]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: 'commander@~2.3.0',
+116 verbose parsed url   path: 'commander@~2.3.0',
+116 verbose parsed url   href: 'commander@~2.3.0' }
+117 verbose cache add [ 'colors@~0.6.2', null ]
+118 verbose cache add name=undefined spec="colors@~0.6.2" args=["colors@~0.6.2",null]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: 'colors@~0.6.2',
+119 verbose parsed url   path: 'colors@~0.6.2',
+119 verbose parsed url   href: 'colors@~0.6.2' }
+120 verbose cache add name="commander" spec="~2.3.0" args=["commander","~2.3.0"]
+121 verbose parsed url { protocol: null,
+121 verbose parsed url   slashes: null,
+121 verbose parsed url   auth: null,
+121 verbose parsed url   host: null,
+121 verbose parsed url   port: null,
+121 verbose parsed url   hostname: null,
+121 verbose parsed url   hash: null,
+121 verbose parsed url   search: null,
+121 verbose parsed url   query: null,
+121 verbose parsed url   pathname: '~2.3.0',
+121 verbose parsed url   path: '~2.3.0',
+121 verbose parsed url   href: '~2.3.0' }
+122 verbose addNamed [ 'commander', '~2.3.0' ]
+123 verbose addNamed [ null, '>=2.3.0-0 <2.4.0-0' ]
+124 silly lockFile f073cdc2-commander-2-3-0 commander@~2.3.0
+125 verbose lock commander@~2.3.0 /Users/leo/.npm/.cache/tnpm/f073cdc2-commander-2-3-0.lock
+126 verbose cache add name="colors" spec="~0.6.2" args=["colors","~0.6.2"]
+127 verbose parsed url { protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: '~0.6.2',
+127 verbose parsed url   path: '~0.6.2',
+127 verbose parsed url   href: '~0.6.2' }
+128 verbose addNamed [ 'colors', '~0.6.2' ]
+129 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+130 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+131 verbose lock colors@~0.6.2 /Users/leo/.npm/.cache/tnpm/f2380b4d-colors-0-6-2.lock
+132 silly addNameRange { name: 'bagpipe', range: '>=0.3.5-0 <0.4.0-0', hasData: false }
+133 verbose request where is /ali-npm
+134 verbose request registry http://registry.npm.taobao.net/
+135 verbose url raw /ali-npm
+136 verbose url resolving [ 'http://registry.npm.taobao.net/', './ali-npm' ]
+137 verbose url resolved http://registry.npm.taobao.net/ali-npm
+138 verbose request where is http://registry.npm.taobao.net/ali-npm
+139 info trying registry request attempt 1 at 20:24:26
+140 http GET http://registry.npm.taobao.net/ali-npm
+141 verbose cache add [ 'debug@~1.0.4', null ]
+142 verbose cache add name=undefined spec="debug@~1.0.4" args=["debug@~1.0.4",null]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: 'debug@~1.0.4',
+143 verbose parsed url   path: 'debug@~1.0.4',
+143 verbose parsed url   href: 'debug@~1.0.4' }
+144 verbose cache add [ 'cross-spawn@~0.1.7', null ]
+145 verbose cache add name=undefined spec="cross-spawn@~0.1.7" args=["cross-spawn@~0.1.7",null]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: 'cross-spawn@~0.1.7',
+146 verbose parsed url   path: 'cross-spawn@~0.1.7',
+146 verbose parsed url   href: 'cross-spawn@~0.1.7' }
+147 verbose cache add name="debug" spec="~1.0.4" args=["debug","~1.0.4"]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: '~1.0.4',
+148 verbose parsed url   path: '~1.0.4',
+148 verbose parsed url   href: '~1.0.4' }
+149 verbose addNamed [ 'debug', '~1.0.4' ]
+150 verbose addNamed [ null, '>=1.0.4-0 <1.1.0-0' ]
+151 silly lockFile 0bd7c3a1-debug-1-0-4 debug@~1.0.4
+152 verbose lock debug@~1.0.4 /Users/leo/.npm/.cache/tnpm/0bd7c3a1-debug-1-0-4.lock
+153 verbose cache add [ 'npm-request@~0.0.4', null ]
+154 verbose cache add name=undefined spec="npm-request@~0.0.4" args=["npm-request@~0.0.4",null]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: 'npm-request@~0.0.4',
+155 verbose parsed url   path: 'npm-request@~0.0.4',
+155 verbose parsed url   href: 'npm-request@~0.0.4' }
+156 verbose cache add name="cross-spawn" spec="~0.1.7" args=["cross-spawn","~0.1.7"]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: '~0.1.7',
+157 verbose parsed url   path: '~0.1.7',
+157 verbose parsed url   href: '~0.1.7' }
+158 verbose addNamed [ 'cross-spawn', '~0.1.7' ]
+159 verbose addNamed [ null, '>=0.1.7-0 <0.2.0-0' ]
+160 silly lockFile f63daf7b-cross-spawn-0-1-7 cross-spawn@~0.1.7
+161 verbose lock cross-spawn@~0.1.7 /Users/leo/.npm/.cache/tnpm/f63daf7b-cross-spawn-0-1-7.lock
+162 silly addNameRange { name: 'commander',
+162 silly addNameRange   range: '>=2.3.0-0 <2.4.0-0',
+162 silly addNameRange   hasData: false }
+163 silly addNameRange { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: false }
+164 verbose cache add [ 'open@~0.0.5', null ]
+165 verbose cache add name=undefined spec="open@~0.0.5" args=["open@~0.0.5",null]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: 'open@~0.0.5',
+166 verbose parsed url   path: 'open@~0.0.5',
+166 verbose parsed url   href: 'open@~0.0.5' }
+167 verbose cache add [ 'rmdir-recursive@~0.0.0', null ]
+168 verbose cache add name=undefined spec="rmdir-recursive@~0.0.0" args=["rmdir-recursive@~0.0.0",null]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: 'rmdir-recursive@~0.0.0',
+169 verbose parsed url   path: 'rmdir-recursive@~0.0.0',
+169 verbose parsed url   href: 'rmdir-recursive@~0.0.0' }
+170 verbose cache add name="npm-request" spec="~0.0.4" args=["npm-request","~0.0.4"]
+171 verbose parsed url { protocol: null,
+171 verbose parsed url   slashes: null,
+171 verbose parsed url   auth: null,
+171 verbose parsed url   host: null,
+171 verbose parsed url   port: null,
+171 verbose parsed url   hostname: null,
+171 verbose parsed url   hash: null,
+171 verbose parsed url   search: null,
+171 verbose parsed url   query: null,
+171 verbose parsed url   pathname: '~0.0.4',
+171 verbose parsed url   path: '~0.0.4',
+171 verbose parsed url   href: '~0.0.4' }
+172 verbose addNamed [ 'npm-request', '~0.0.4' ]
+173 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+174 silly lockFile 7b01ea40-npm-request-0-0-4 npm-request@~0.0.4
+175 verbose lock npm-request@~0.0.4 /Users/leo/.npm/.cache/tnpm/7b01ea40-npm-request-0-0-4.lock
+176 silly addNameRange { name: 'debug', range: '>=1.0.4-0 <1.1.0-0', hasData: false }
+177 verbose cache add name="open" spec="~0.0.5" args=["open","~0.0.5"]
+178 verbose parsed url { protocol: null,
+178 verbose parsed url   slashes: null,
+178 verbose parsed url   auth: null,
+178 verbose parsed url   host: null,
+178 verbose parsed url   port: null,
+178 verbose parsed url   hostname: null,
+178 verbose parsed url   hash: null,
+178 verbose parsed url   search: null,
+178 verbose parsed url   query: null,
+178 verbose parsed url   pathname: '~0.0.5',
+178 verbose parsed url   path: '~0.0.5',
+178 verbose parsed url   href: '~0.0.5' }
+179 verbose addNamed [ 'open', '~0.0.5' ]
+180 verbose addNamed [ null, '>=0.0.5-0 <0.1.0-0' ]
+181 silly lockFile 989989ea-open-0-0-5 open@~0.0.5
+182 verbose lock open@~0.0.5 /Users/leo/.npm/.cache/tnpm/989989ea-open-0-0-5.lock
+183 verbose cache add [ 'urllib@~0.5.16', null ]
+184 verbose cache add name=undefined spec="urllib@~0.5.16" args=["urllib@~0.5.16",null]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: 'urllib@~0.5.16',
+185 verbose parsed url   path: 'urllib@~0.5.16',
+185 verbose parsed url   href: 'urllib@~0.5.16' }
+186 verbose cache add name="rmdir-recursive" spec="~0.0.0" args=["rmdir-recursive","~0.0.0"]
+187 verbose parsed url { protocol: null,
+187 verbose parsed url   slashes: null,
+187 verbose parsed url   auth: null,
+187 verbose parsed url   host: null,
+187 verbose parsed url   port: null,
+187 verbose parsed url   hostname: null,
+187 verbose parsed url   hash: null,
+187 verbose parsed url   search: null,
+187 verbose parsed url   query: null,
+187 verbose parsed url   pathname: '~0.0.0',
+187 verbose parsed url   path: '~0.0.0',
+187 verbose parsed url   href: '~0.0.0' }
+188 verbose addNamed [ 'rmdir-recursive', '~0.0.0' ]
+189 verbose addNamed [ null, '>=0.0.0-0 <0.1.0-0' ]
+190 silly lockFile 31057fe6-rmdir-recursive-0-0-0 rmdir-recursive@~0.0.0
+191 verbose lock rmdir-recursive@~0.0.0 /Users/leo/.npm/.cache/tnpm/31057fe6-rmdir-recursive-0-0-0.lock
+192 silly addNameRange { name: 'cross-spawn',
+192 silly addNameRange   range: '>=0.1.7-0 <0.2.0-0',
+192 silly addNameRange   hasData: false }
+193 verbose cache add name="urllib" spec="~0.5.16" args=["urllib","~0.5.16"]
+194 verbose parsed url { protocol: null,
+194 verbose parsed url   slashes: null,
+194 verbose parsed url   auth: null,
+194 verbose parsed url   host: null,
+194 verbose parsed url   port: null,
+194 verbose parsed url   hostname: null,
+194 verbose parsed url   hash: null,
+194 verbose parsed url   search: null,
+194 verbose parsed url   query: null,
+194 verbose parsed url   pathname: '~0.5.16',
+194 verbose parsed url   path: '~0.5.16',
+194 verbose parsed url   href: '~0.5.16' }
+195 verbose addNamed [ 'urllib', '~0.5.16' ]
+196 verbose addNamed [ null, '>=0.5.16-0 <0.6.0-0' ]
+197 silly lockFile 446993e9-urllib-0-5-16 urllib@~0.5.16
+198 verbose lock urllib@~0.5.16 /Users/leo/.npm/.cache/tnpm/446993e9-urllib-0-5-16.lock
+199 silly addNameRange { name: 'npm-request',
+199 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+199 silly addNameRange   hasData: false }
+200 silly addNameRange { name: 'open', range: '>=0.0.5-0 <0.1.0-0', hasData: false }
+201 verbose request where is /auto-correct
+202 verbose request registry http://registry.npm.taobao.net/
+203 verbose url raw /auto-correct
+204 verbose url resolving [ 'http://registry.npm.taobao.net/', './auto-correct' ]
+205 verbose url resolved http://registry.npm.taobao.net/auto-correct
+206 verbose request where is http://registry.npm.taobao.net/auto-correct
+207 info trying registry request attempt 1 at 20:24:26
+208 verbose etag "1397840460000"
+209 http GET http://registry.npm.taobao.net/auto-correct
+210 verbose request where is /bagpipe
+211 verbose request registry http://registry.npm.taobao.net/
+212 verbose url raw /bagpipe
+213 verbose url resolving [ 'http://registry.npm.taobao.net/', './bagpipe' ]
+214 verbose url resolved http://registry.npm.taobao.net/bagpipe
+215 verbose request where is http://registry.npm.taobao.net/bagpipe
+216 info trying registry request attempt 1 at 20:24:26
+217 verbose etag "1389699631000"
+218 http GET http://registry.npm.taobao.net/bagpipe
+219 silly addNameRange { name: 'rmdir-recursive',
+219 silly addNameRange   range: '>=0.0.0-0 <0.1.0-0',
+219 silly addNameRange   hasData: false }
+220 verbose request where is /rmdir-recursive
+221 verbose request registry http://registry.npm.taobao.net/
+222 verbose url raw /rmdir-recursive
+223 verbose url resolving [ 'http://registry.npm.taobao.net/', './rmdir-recursive' ]
+224 verbose url resolved http://registry.npm.taobao.net/rmdir-recursive
+225 verbose request where is http://registry.npm.taobao.net/rmdir-recursive
+226 info trying registry request attempt 1 at 20:24:26
+227 http GET http://registry.npm.taobao.net/rmdir-recursive
+228 silly addNameRange { name: 'urllib', range: '>=0.5.16-0 <0.6.0-0', hasData: false }
+229 verbose request where is /colors
+230 verbose request registry http://registry.npm.taobao.net/
+231 verbose url raw /colors
+232 verbose url resolving [ 'http://registry.npm.taobao.net/', './colors' ]
+233 verbose url resolved http://registry.npm.taobao.net/colors
+234 verbose request where is http://registry.npm.taobao.net/colors
+235 info trying registry request attempt 1 at 20:24:26
+236 verbose etag "1389699822000"
+237 http GET http://registry.npm.taobao.net/colors
+238 verbose request where is /commander
+239 verbose request registry http://registry.npm.taobao.net/
+240 verbose url raw /commander
+241 verbose url resolving [ 'http://registry.npm.taobao.net/', './commander' ]
+242 verbose url resolved http://registry.npm.taobao.net/commander
+243 verbose request where is http://registry.npm.taobao.net/commander
+244 info trying registry request attempt 1 at 20:24:26
+245 verbose etag "1405477667000"
+246 http GET http://registry.npm.taobao.net/commander
+247 verbose request where is /debug
+248 verbose request registry http://registry.npm.taobao.net/
+249 verbose url raw /debug
+250 verbose url resolving [ 'http://registry.npm.taobao.net/', './debug' ]
+251 verbose url resolved http://registry.npm.taobao.net/debug
+252 verbose request where is http://registry.npm.taobao.net/debug
+253 info trying registry request attempt 1 at 20:24:26
+254 verbose etag "1405466867000"
+255 http GET http://registry.npm.taobao.net/debug
+256 verbose request where is /npm-request
+257 verbose request registry http://registry.npm.taobao.net/
+258 verbose url raw /npm-request
+259 verbose url resolving [ 'http://registry.npm.taobao.net/', './npm-request' ]
+260 verbose url resolved http://registry.npm.taobao.net/npm-request
+261 verbose request where is http://registry.npm.taobao.net/npm-request
+262 info trying registry request attempt 1 at 20:24:26
+263 verbose etag "1395111997000"
+264 http GET http://registry.npm.taobao.net/npm-request
+265 verbose request where is /cross-spawn
+266 verbose request registry http://registry.npm.taobao.net/
+267 verbose url raw /cross-spawn
+268 verbose url resolving [ 'http://registry.npm.taobao.net/', './cross-spawn' ]
+269 verbose url resolved http://registry.npm.taobao.net/cross-spawn
+270 verbose request where is http://registry.npm.taobao.net/cross-spawn
+271 info trying registry request attempt 1 at 20:24:26
+272 verbose etag "1404377768000"
+273 http GET http://registry.npm.taobao.net/cross-spawn
+274 verbose request where is /open
+275 verbose request registry http://registry.npm.taobao.net/
+276 verbose url raw /open
+277 verbose url resolving [ 'http://registry.npm.taobao.net/', './open' ]
+278 verbose url resolved http://registry.npm.taobao.net/open
+279 verbose request where is http://registry.npm.taobao.net/open
+280 info trying registry request attempt 1 at 20:24:26
+281 verbose etag "1397132834000"
+282 http GET http://registry.npm.taobao.net/open
+283 verbose request where is /urllib
+284 verbose request registry http://registry.npm.taobao.net/
+285 verbose url raw /urllib
+286 verbose url resolving [ 'http://registry.npm.taobao.net/', './urllib' ]
+287 verbose url resolved http://registry.npm.taobao.net/urllib
+288 verbose request where is http://registry.npm.taobao.net/urllib
+289 info trying registry request attempt 1 at 20:24:26
+290 verbose etag "1400131933000"
+291 http GET http://registry.npm.taobao.net/urllib
+292 http 304 http://registry.npm.taobao.net/bagpipe
+293 silly registry.get cb [ 304,
+293 silly registry.get   { server: 'Tengine',
+293 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+293 silly registry.get     connection: 'close',
+293 silly registry.get     'x-powered-by': 'koa',
+293 silly registry.get     etag: '"1389699631000"',
+293 silly registry.get     'x-readtime': '6' } ]
+294 verbose etag http://registry.npm.taobao.net/bagpipe from cache
+295 http 304 http://registry.npm.taobao.net/auto-correct
+296 silly registry.get cb [ 304,
+296 silly registry.get   { server: 'Tengine',
+296 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+296 silly registry.get     connection: 'close',
+296 silly registry.get     'x-powered-by': 'koa',
+296 silly registry.get     etag: '"1397840460000"',
+296 silly registry.get     'x-readtime': '6' } ]
+297 verbose etag http://registry.npm.taobao.net/auto-correct from cache
+298 silly addNameRange number 2 { name: 'bagpipe', range: '>=0.3.5-0 <0.4.0-0', hasData: true }
+299 silly addNameRange versions [ 'bagpipe',
+299 silly addNameRange   [ '0.3.5',
+299 silly addNameRange     '0.3.4',
+299 silly addNameRange     '0.3.3',
+299 silly addNameRange     '0.3.2',
+299 silly addNameRange     '0.3.1',
+299 silly addNameRange     '0.3.0',
+299 silly addNameRange     '0.2.0',
+299 silly addNameRange     '0.0.1' ] ]
+300 verbose addNamed [ 'bagpipe', '0.3.5' ]
+301 verbose addNamed [ '0.3.5', '0.3.5' ]
+302 silly lockFile de0f094e-bagpipe-0-3-5 bagpipe@0.3.5
+303 verbose lock bagpipe@0.3.5 /Users/leo/.npm/.cache/tnpm/de0f094e-bagpipe-0-3-5.lock
+304 silly addNameRange number 2 { name: 'auto-correct',
+304 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+304 silly addNameRange   hasData: true }
+305 silly addNameRange versions [ 'auto-correct', [ '1.0.0' ] ]
+306 verbose addNamed [ 'auto-correct', '1.0.0' ]
+307 verbose addNamed [ '1.0.0', '1.0.0' ]
+308 silly lockFile 69bd5604-auto-correct-1-0-0 auto-correct@1.0.0
+309 verbose lock auto-correct@1.0.0 /Users/leo/.npm/.cache/tnpm/69bd5604-auto-correct-1-0-0.lock
+310 silly lockFile a8e7971a-gpipe-download-bagpipe-0-3-5-tgz http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+311 verbose lock http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz /Users/leo/.npm/.cache/tnpm/a8e7971a-gpipe-download-bagpipe-0-3-5-tgz.lock
+312 http 304 http://registry.npm.taobao.net/colors
+313 silly registry.get cb [ 304,
+313 silly registry.get   { server: 'Tengine',
+313 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+313 silly registry.get     connection: 'close',
+313 silly registry.get     'x-powered-by': 'koa',
+313 silly registry.get     etag: '"1389699822000"',
+313 silly registry.get     'x-readtime': '7' } ]
+314 verbose etag http://registry.npm.taobao.net/colors from cache
+315 silly lockFile efd0473d--download-auto-correct-1-0-0-tgz http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+316 verbose lock http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz /Users/leo/.npm/.cache/tnpm/efd0473d--download-auto-correct-1-0-0-tgz.lock
+317 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz',
+317 verbose addRemoteTarball   'e341d164fcb24cdf04ea7e05b765ec10c8aea6a1' ]
+318 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz',
+318 verbose addRemoteTarball   '9865d9a2c1a7118421f5f0654f685fbeb41b034b' ]
+319 info retry fetch attempt 1 at 20:24:26
+320 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+321 http GET http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+322 info retry fetch attempt 1 at 20:24:26
+323 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+324 silly addNameRange number 2 { name: 'colors', range: '>=0.6.2-0 <0.7.0-0', hasData: true }
+325 silly addNameRange versions [ 'colors',
+325 silly addNameRange   [ '0.6.2', '0.6.1', '0.6.0-1', '0.6.0', '0.5.1', '0.5.0', '0.3.0' ] ]
+326 verbose addNamed [ 'colors', '0.6.2' ]
+327 verbose addNamed [ '0.6.2', '0.6.2' ]
+328 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+329 verbose lock colors@0.6.2 /Users/leo/.npm/.cache/tnpm/1ce149d5-colors-0-6-2.lock
+330 http 200 http://registry.npm.taobao.net/rmdir-recursive
+331 silly registry.get cb [ 200,
+331 silly registry.get   { server: 'Tengine',
+331 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+331 silly registry.get     'content-type': 'application/json; charset=utf-8',
+331 silly registry.get     connection: 'close',
+331 silly registry.get     'x-powered-by': 'koa',
+331 silly registry.get     etag: '"1401940270000"',
+331 silly registry.get     'x-readtime': '11',
+331 silly registry.get     'content-length': '3666' } ]
+332 http GET http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+333 silly lockFile be826d2a-colors-download-colors-0-6-2-tgz http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+334 verbose lock http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz /Users/leo/.npm/.cache/tnpm/be826d2a-colors-download-colors-0-6-2-tgz.lock
+335 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz',
+335 verbose addRemoteTarball   '2423fe6678ac0c5dae8852e5d0e5be08c997abcc' ]
+336 info retry fetch attempt 1 at 20:24:26
+337 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+338 silly addNameRange number 2 { name: 'rmdir-recursive',
+338 silly addNameRange   range: '>=0.0.0-0 <0.1.0-0',
+338 silly addNameRange   hasData: true }
+339 silly addNameRange versions [ 'rmdir-recursive', [ '0.0.0' ] ]
+340 verbose addNamed [ 'rmdir-recursive', '0.0.0' ]
+341 verbose addNamed [ '0.0.0', '0.0.0' ]
+342 silly lockFile 59dd0100-rmdir-recursive-0-0-0 rmdir-recursive@0.0.0
+343 verbose lock rmdir-recursive@0.0.0 /Users/leo/.npm/.cache/tnpm/59dd0100-rmdir-recursive-0-0-0.lock
+344 http GET http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+345 silly lockFile 3435b3b0-wnload-rmdir-recursive-0-0-0-tgz http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+346 verbose lock http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz /Users/leo/.npm/.cache/tnpm/3435b3b0-wnload-rmdir-recursive-0-0-0-tgz.lock
+347 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz',
+347 verbose addRemoteTarball   '967fceb291dee9a281ea92ad5d4d09c2128156df' ]
+348 info retry fetch attempt 1 at 20:24:26
+349 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+350 http GET http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+351 http 304 http://registry.npm.taobao.net/debug
+352 silly registry.get cb [ 304,
+352 silly registry.get   { server: 'Tengine',
+352 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+352 silly registry.get     connection: 'close',
+352 silly registry.get     'x-powered-by': 'koa',
+352 silly registry.get     etag: '"1405466867000"',
+352 silly registry.get     'x-readtime': '6' } ]
+353 verbose etag http://registry.npm.taobao.net/debug from cache
+354 silly addNameRange number 2 { name: 'debug', range: '>=1.0.4-0 <1.1.0-0', hasData: true }
+355 silly addNameRange versions [ 'debug',
+355 silly addNameRange   [ '1.0.4',
+355 silly addNameRange     '1.0.3',
+355 silly addNameRange     '1.0.2',
+355 silly addNameRange     '1.0.1',
+355 silly addNameRange     '1.0.0',
+355 silly addNameRange     '0.8.1',
+355 silly addNameRange     '0.8.0',
+355 silly addNameRange     '0.7.4',
+355 silly addNameRange     '0.7.3',
+355 silly addNameRange     '0.7.2',
+355 silly addNameRange     '0.7.1',
+355 silly addNameRange     '0.7.0',
+355 silly addNameRange     '0.6.0',
+355 silly addNameRange     '0.5.0',
+355 silly addNameRange     '0.4.1',
+355 silly addNameRange     '0.4.0',
+355 silly addNameRange     '0.3.0',
+355 silly addNameRange     '0.2.0',
+355 silly addNameRange     '0.1.0',
+355 silly addNameRange     '0.0.1' ] ]
+356 verbose addNamed [ 'debug', '1.0.4' ]
+357 verbose addNamed [ '1.0.4', '1.0.4' ]
+358 silly lockFile 4b7cd263-debug-1-0-4 debug@1.0.4
+359 verbose lock debug@1.0.4 /Users/leo/.npm/.cache/tnpm/4b7cd263-debug-1-0-4.lock
+360 silly lockFile e908cbc8-t-debug-download-debug-1-0-4-tgz http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+361 verbose lock http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz /Users/leo/.npm/.cache/tnpm/e908cbc8-t-debug-download-debug-1-0-4-tgz.lock
+362 http 304 http://registry.npm.taobao.net/commander
+363 silly registry.get cb [ 304,
+363 silly registry.get   { server: 'Tengine',
+363 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+363 silly registry.get     connection: 'close',
+363 silly registry.get     'x-powered-by': 'koa',
+363 silly registry.get     etag: '"1405477667000"',
+363 silly registry.get     'x-readtime': '6' } ]
+364 verbose etag http://registry.npm.taobao.net/commander from cache
+365 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz',
+365 verbose addRemoteTarball   '5b9c256bd54b6ec02283176fa8a0ede6d154cbf8' ]
+366 http 304 http://registry.npm.taobao.net/npm-request
+367 silly registry.get cb [ 304,
+367 silly registry.get   { server: 'Tengine',
+367 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+367 silly registry.get     connection: 'close',
+367 silly registry.get     'x-powered-by': 'koa',
+367 silly registry.get     etag: '"1395111997000"',
+367 silly registry.get     'x-readtime': '5' } ]
+368 verbose etag http://registry.npm.taobao.net/npm-request from cache
+369 info retry fetch attempt 1 at 20:24:26
+370 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+371 http GET http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+372 silly addNameRange number 2 { name: 'commander', range: '>=2.3.0-0 <2.4.0-0', hasData: true }
+373 silly addNameRange versions [ 'commander',
+373 silly addNameRange   [ '2.3.0',
+373 silly addNameRange     '2.2.0',
+373 silly addNameRange     '2.1.0',
+373 silly addNameRange     '2.0.0',
+373 silly addNameRange     '1.3.2',
+373 silly addNameRange     '1.3.1',
+373 silly addNameRange     '1.3.0',
+373 silly addNameRange     '1.2.0',
+373 silly addNameRange     '1.1.1',
+373 silly addNameRange     '1.1.0',
+373 silly addNameRange     '1.0.5',
+373 silly addNameRange     '1.0.4',
+373 silly addNameRange     '1.0.3',
+373 silly addNameRange     '1.0.2',
+373 silly addNameRange     '1.0.1',
+373 silly addNameRange     '1.0.0',
+373 silly addNameRange     '0.5.2',
+373 silly addNameRange     '0.6.1',
+373 silly addNameRange     '0.6.0',
+373 silly addNameRange     '0.5.1',
+373 silly addNameRange     '0.5.0',
+373 silly addNameRange     '0.4.3',
+373 silly addNameRange     '0.4.2',
+373 silly addNameRange     '0.4.1',
+373 silly addNameRange     '0.4.0',
+373 silly addNameRange     '0.3.3',
+373 silly addNameRange     '0.3.2',
+373 silly addNameRange     '0.3.1',
+373 silly addNameRange     '0.3.0',
+373 silly addNameRange     '0.2.1',
+373 silly addNameRange     '0.2.0',
+373 silly addNameRange     '0.1.0',
+373 silly addNameRange     '0.0.5',
+373 silly addNameRange     '0.0.4',
+373 silly addNameRange     '0.0.3',
+373 silly addNameRange     '0.0.1' ] ]
+374 verbose addNamed [ 'commander', '2.3.0' ]
+375 verbose addNamed [ '2.3.0', '2.3.0' ]
+376 silly lockFile 14f83df2-commander-2-3-0 commander@2.3.0
+377 verbose lock commander@2.3.0 /Users/leo/.npm/.cache/tnpm/14f83df2-commander-2-3-0.lock
+378 silly addNameRange number 2 { name: 'npm-request',
+378 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+378 silly addNameRange   hasData: true }
+379 silly addNameRange versions [ 'npm-request', [ '0.0.4', '0.0.3', '0.0.1' ] ]
+380 verbose addNamed [ 'npm-request', '0.0.4' ]
+381 verbose addNamed [ '0.0.4', '0.0.4' ]
+382 silly lockFile 901ac6b5-npm-request-0-0-4 npm-request@0.0.4
+383 verbose lock npm-request@0.0.4 /Users/leo/.npm/.cache/tnpm/901ac6b5-npm-request-0-0-4.lock
+384 silly lockFile cf23d42f-der-download-commander-2-3-0-tgz http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+385 verbose lock http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz /Users/leo/.npm/.cache/tnpm/cf23d42f-der-download-commander-2-3-0-tgz.lock
+386 silly lockFile 269adb18-t-download-npm-request-0-0-4-tgz http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+387 verbose lock http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz /Users/leo/.npm/.cache/tnpm/269adb18-t-download-npm-request-0-0-4-tgz.lock
+388 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz',
+388 verbose addRemoteTarball   'fd430e889832ec353b9acd1de217c11cb3eef873' ]
+389 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz',
+389 verbose addRemoteTarball   'bd8734e1bac1ec943a86ed8ee0bba8a969c28965' ]
+390 info retry fetch attempt 1 at 20:24:26
+391 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+392 http GET http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+393 info retry fetch attempt 1 at 20:24:26
+394 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+395 http GET http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+396 http 200 http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+397 http 304 http://registry.npm.taobao.net/urllib
+398 silly registry.get cb [ 304,
+398 silly registry.get   { server: 'Tengine',
+398 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+398 silly registry.get     connection: 'close',
+398 silly registry.get     'x-powered-by': 'koa',
+398 silly registry.get     etag: '"1400131933000"',
+398 silly registry.get     'x-readtime': '5' } ]
+399 verbose etag http://registry.npm.taobao.net/urllib from cache
+400 http 304 http://registry.npm.taobao.net/open
+401 silly registry.get cb [ 304,
+401 silly registry.get   { server: 'Tengine',
+401 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+401 silly registry.get     connection: 'close',
+401 silly registry.get     'x-powered-by': 'koa',
+401 silly registry.get     etag: '"1397132834000"',
+401 silly registry.get     'x-readtime': '7' } ]
+402 verbose etag http://registry.npm.taobao.net/open from cache
+403 http 200 http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+404 http 200 http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+405 silly addNameRange number 2 { name: 'urllib', range: '>=0.5.16-0 <0.6.0-0', hasData: true }
+406 silly addNameRange versions [ 'urllib',
+406 silly addNameRange   [ '0.5.16',
+406 silly addNameRange     '0.5.15',
+406 silly addNameRange     '0.5.14',
+406 silly addNameRange     '0.5.13',
+406 silly addNameRange     '0.5.12',
+406 silly addNameRange     '0.5.11',
+406 silly addNameRange     '0.5.10',
+406 silly addNameRange     '0.5.9',
+406 silly addNameRange     '0.5.8',
+406 silly addNameRange     '0.5.6',
+406 silly addNameRange     '0.5.5',
+406 silly addNameRange     '0.5.4',
+406 silly addNameRange     '0.5.3',
+406 silly addNameRange     '0.5.2',
+406 silly addNameRange     '0.5.1',
+406 silly addNameRange     '0.5.0',
+406 silly addNameRange     '0.4.4',
+406 silly addNameRange     '0.4.3',
+406 silly addNameRange     '0.4.2',
+406 silly addNameRange     '0.4.1',
+406 silly addNameRange     '0.4.0',
+406 silly addNameRange     '0.3.8',
+406 silly addNameRange     '0.3.7',
+406 silly addNameRange     '0.3.6',
+406 silly addNameRange     '0.3.5',
+406 silly addNameRange     '0.3.4',
+406 silly addNameRange     '0.3.3',
+406 silly addNameRange     '0.3.2',
+406 silly addNameRange     '0.3.1',
+406 silly addNameRange     '0.3.0',
+406 silly addNameRange     '0.2.9',
+406 silly addNameRange     '0.2.8',
+406 silly addNameRange     '0.2.7',
+406 silly addNameRange     '0.2.6',
+406 silly addNameRange     '0.2.5',
+406 silly addNameRange     '0.2.4',
+406 silly addNameRange     '0.2.3',
+406 silly addNameRange     '0.2.2',
+406 silly addNameRange     '0.2.1',
+406 silly addNameRange     '0.2.0',
+406 silly addNameRange     '0.1.0',
+406 silly addNameRange     '0.0.1' ] ]
+407 verbose addNamed [ 'urllib', '0.5.16' ]
+408 verbose addNamed [ '0.5.16', '0.5.16' ]
+409 silly lockFile a38d019e-urllib-0-5-16 urllib@0.5.16
+410 verbose lock urllib@0.5.16 /Users/leo/.npm/.cache/tnpm/a38d019e-urllib-0-5-16.lock
+411 silly addNameRange number 2 { name: 'open', range: '>=0.0.5-0 <0.1.0-0', hasData: true }
+412 silly addNameRange versions [ 'open', [ '0.0.5', '0.0.4', '0.0.3', '0.0.2', '0.0.0' ] ]
+413 verbose addNamed [ 'open', '0.0.5' ]
+414 verbose addNamed [ '0.0.5', '0.0.5' ]
+415 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+416 verbose lock open@0.0.5 /Users/leo/.npm/.cache/tnpm/c6d41519-open-0-0-5.lock
+417 silly lockFile c630f9c0-rllib-download-urllib-0-5-16-tgz http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+418 verbose lock http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz /Users/leo/.npm/.cache/tnpm/c630f9c0-rllib-download-urllib-0-5-16-tgz.lock
+419 http 200 http://registry.npm.taobao.net/cross-spawn
+420 silly registry.get cb [ 200,
+420 silly registry.get   { server: 'Tengine',
+420 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+420 silly registry.get     'content-type': 'application/json; charset=utf-8',
+420 silly registry.get     connection: 'close',
+420 silly registry.get     'x-powered-by': 'koa',
+420 silly registry.get     etag: '"1405096670000"',
+420 silly registry.get     'x-readtime': '16',
+420 silly registry.get     'content-length': '11479' } ]
+421 silly lockFile ea07f151-net-open-download-open-0-0-5-tgz http://registry.npm.taobao.net/open/download/open-0.0.5.tgz
+422 verbose lock http://registry.npm.taobao.net/open/download/open-0.0.5.tgz /Users/leo/.npm/.cache/tnpm/ea07f151-net-open-download-open-0-0-5-tgz.lock
+423 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz',
+423 verbose addRemoteTarball   'aa76a4bc5bbd384884a1a893266dd24bced4348d' ]
+424 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/open/download/open-0.0.5.tgz',
+424 verbose addRemoteTarball   '42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc' ]
+425 silly lockFile efd0473d--download-auto-correct-1-0-0-tgz http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+426 silly lockFile efd0473d--download-auto-correct-1-0-0-tgz http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz
+427 silly lockFile 69bd5604-auto-correct-1-0-0 auto-correct@1.0.0
+428 silly lockFile 69bd5604-auto-correct-1-0-0 auto-correct@1.0.0
+429 info retry fetch attempt 1 at 20:24:26
+430 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+431 silly lockFile c7d3141c-auto-correct-1-0-0 auto-correct@~1.0.0
+432 silly lockFile c7d3141c-auto-correct-1-0-0 auto-correct@~1.0.0
+433 http 200 http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+434 info retry fetch attempt 1 at 20:24:26
+435 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/open/download/open-0.0.5.tgz
+436 silly addNameRange number 2 { name: 'cross-spawn',
+436 silly addNameRange   range: '>=0.1.7-0 <0.2.0-0',
+436 silly addNameRange   hasData: true }
+437 silly addNameRange versions [ 'cross-spawn',
+437 silly addNameRange   [ '0.1.7',
+437 silly addNameRange     '0.1.6',
+437 silly addNameRange     '0.1.5',
+437 silly addNameRange     '0.1.4',
+437 silly addNameRange     '0.1.3',
+437 silly addNameRange     '0.1.2',
+437 silly addNameRange     '0.1.1',
+437 silly addNameRange     '0.1.0' ] ]
+438 verbose addNamed [ 'cross-spawn', '0.1.7' ]
+439 verbose addNamed [ '0.1.7', '0.1.7' ]
+440 silly lockFile 6bc11181-cross-spawn-0-1-7 cross-spawn@0.1.7
+441 verbose lock cross-spawn@0.1.7 /Users/leo/.npm/.cache/tnpm/6bc11181-cross-spawn-0-1-7.lock
+442 http GET http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+443 http GET http://registry.npm.taobao.net/open/download/open-0.0.5.tgz
+444 silly lockFile bab65da5-n-download-cross-spawn-0-1-7-tgz http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+445 verbose lock http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz /Users/leo/.npm/.cache/tnpm/bab65da5-n-download-cross-spawn-0-1-7-tgz.lock
+446 http 200 http://registry.npm.taobao.net/ali-npm
+447 silly registry.get cb [ 200,
+447 silly registry.get   { server: 'Tengine',
+447 silly registry.get     date: 'Wed, 06 Aug 2014 12:24:20 GMT',
+447 silly registry.get     'content-type': 'application/json; charset=utf-8',
+447 silly registry.get     connection: 'close',
+447 silly registry.get     'x-powered-by': 'koa',
+447 silly registry.get     etag: '"1407144306000"',
+447 silly registry.get     'x-readtime': '36',
+447 silly registry.get     'content-length': '79070' } ]
+448 http 200 http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+449 http 200 http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+450 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz',
+450 verbose addRemoteTarball   '7e26c368953fd9618215f519056fca17c4c43d0e' ]
+451 silly lockFile 3435b3b0-wnload-rmdir-recursive-0-0-0-tgz http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+452 silly lockFile 3435b3b0-wnload-rmdir-recursive-0-0-0-tgz http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz
+453 info retry fetch attempt 1 at 20:24:26
+454 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+455 silly lockFile 59dd0100-rmdir-recursive-0-0-0 rmdir-recursive@0.0.0
+456 silly lockFile 59dd0100-rmdir-recursive-0-0-0 rmdir-recursive@0.0.0
+457 silly lockFile 31057fe6-rmdir-recursive-0-0-0 rmdir-recursive@~0.0.0
+458 silly lockFile 31057fe6-rmdir-recursive-0-0-0 rmdir-recursive@~0.0.0
+459 http GET http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+460 silly addNameRange number 2 { name: 'ali-npm', range: '>=1.0.3-0 <1.1.0-0', hasData: true }
+461 silly addNameRange versions [ 'ali-npm', [ '1.0.3', '1.0.2', '1.0.1', '1.0.0' ] ]
+462 verbose addNamed [ 'ali-npm', '1.0.3' ]
+463 verbose addNamed [ '1.0.3', '1.0.3' ]
+464 silly lockFile 53bd5fa6-ali-npm-1-0-3 ali-npm@1.0.3
+465 verbose lock ali-npm@1.0.3 /Users/leo/.npm/.cache/tnpm/53bd5fa6-ali-npm-1-0-3.lock
+466 silly lockFile e7d9f34d-i-npm-download-ali-npm-1-0-3-tgz http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+467 verbose lock http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz /Users/leo/.npm/.cache/tnpm/e7d9f34d-i-npm-download-ali-npm-1-0-3-tgz.lock
+468 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz',
+468 verbose addRemoteTarball   '03f18f7a0bc8859e3f9f835572d10f2220c8ec60' ]
+469 info retry fetch attempt 1 at 20:24:26
+470 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+471 silly lockFile be826d2a-colors-download-colors-0-6-2-tgz http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+472 silly lockFile be826d2a-colors-download-colors-0-6-2-tgz http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz
+473 silly lockFile cf23d42f-der-download-commander-2-3-0-tgz http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+474 silly lockFile cf23d42f-der-download-commander-2-3-0-tgz http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz
+475 http GET http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+476 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+477 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+478 silly lockFile e908cbc8-t-debug-download-debug-1-0-4-tgz http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+479 silly lockFile e908cbc8-t-debug-download-debug-1-0-4-tgz http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz
+480 silly lockFile 14f83df2-commander-2-3-0 commander@2.3.0
+481 silly lockFile 14f83df2-commander-2-3-0 commander@2.3.0
+482 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+483 silly lockFile f2380b4d-colors-0-6-2 colors@~0.6.2
+484 silly lockFile 4b7cd263-debug-1-0-4 debug@1.0.4
+485 silly lockFile 4b7cd263-debug-1-0-4 debug@1.0.4
+486 silly lockFile f073cdc2-commander-2-3-0 commander@~2.3.0
+487 silly lockFile f073cdc2-commander-2-3-0 commander@~2.3.0
+488 silly lockFile a8e7971a-gpipe-download-bagpipe-0-3-5-tgz http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+489 silly lockFile a8e7971a-gpipe-download-bagpipe-0-3-5-tgz http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz
+490 silly lockFile 0bd7c3a1-debug-1-0-4 debug@~1.0.4
+491 silly lockFile 0bd7c3a1-debug-1-0-4 debug@~1.0.4
+492 silly lockFile de0f094e-bagpipe-0-3-5 bagpipe@0.3.5
+493 silly lockFile de0f094e-bagpipe-0-3-5 bagpipe@0.3.5
+494 silly lockFile 74ee92da-bagpipe-0-3-5 bagpipe@~0.3.5
+495 silly lockFile 74ee92da-bagpipe-0-3-5 bagpipe@~0.3.5
+496 http 200 http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+497 silly lockFile 269adb18-t-download-npm-request-0-0-4-tgz http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+498 silly lockFile 269adb18-t-download-npm-request-0-0-4-tgz http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz
+499 silly lockFile 901ac6b5-npm-request-0-0-4 npm-request@0.0.4
+500 silly lockFile 901ac6b5-npm-request-0-0-4 npm-request@0.0.4
+501 silly lockFile 7b01ea40-npm-request-0-0-4 npm-request@~0.0.4
+502 silly lockFile 7b01ea40-npm-request-0-0-4 npm-request@~0.0.4
+503 http 200 http://registry.npm.taobao.net/open/download/open-0.0.5.tgz
+504 http 200 http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+505 silly lockFile ea07f151-net-open-download-open-0-0-5-tgz http://registry.npm.taobao.net/open/download/open-0.0.5.tgz
+506 silly lockFile ea07f151-net-open-download-open-0-0-5-tgz http://registry.npm.taobao.net/open/download/open-0.0.5.tgz
+507 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+508 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+509 silly lockFile bab65da5-n-download-cross-spawn-0-1-7-tgz http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+510 silly lockFile bab65da5-n-download-cross-spawn-0-1-7-tgz http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz
+511 silly lockFile 989989ea-open-0-0-5 open@~0.0.5
+512 silly lockFile 989989ea-open-0-0-5 open@~0.0.5
+513 silly lockFile 6bc11181-cross-spawn-0-1-7 cross-spawn@0.1.7
+514 silly lockFile 6bc11181-cross-spawn-0-1-7 cross-spawn@0.1.7
+515 silly lockFile f63daf7b-cross-spawn-0-1-7 cross-spawn@~0.1.7
+516 silly lockFile f63daf7b-cross-spawn-0-1-7 cross-spawn@~0.1.7
+517 http 200 http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+518 silly lockFile c630f9c0-rllib-download-urllib-0-5-16-tgz http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+519 silly lockFile c630f9c0-rllib-download-urllib-0-5-16-tgz http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz
+520 silly lockFile a38d019e-urllib-0-5-16 urllib@0.5.16
+521 silly lockFile a38d019e-urllib-0-5-16 urllib@0.5.16
+522 silly lockFile 446993e9-urllib-0-5-16 urllib@~0.5.16
+523 silly lockFile 446993e9-urllib-0-5-16 urllib@~0.5.16
+524 http 200 http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+525 silly lockFile e7d9f34d-i-npm-download-ali-npm-1-0-3-tgz http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+526 silly lockFile e7d9f34d-i-npm-download-ali-npm-1-0-3-tgz http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz
+527 silly lockFile 53bd5fa6-ali-npm-1-0-3 ali-npm@1.0.3
+528 silly lockFile 53bd5fa6-ali-npm-1-0-3 ali-npm@1.0.3
+529 silly lockFile 42f5dda2-ali-npm-1-0-3 ali-npm@~1.0.3
+530 silly lockFile 42f5dda2-ali-npm-1-0-3 ali-npm@~1.0.3
+531 silly resolved [ { name: 'auto-correct',
+531 silly resolved     version: '1.0.0',
+531 silly resolved     description: 'auto correct for command line tools ',
+531 silly resolved     main: 'index.js',
+531 silly resolved     scripts: { test: 'node test' },
+531 silly resolved     repository:
+531 silly resolved      { type: 'git',
+531 silly resolved        url: 'git://github.com/node-modules/auto-correct.git' },
+531 silly resolved     keywords: [ 'client', 'command', 'auto-correct', 'typo' ],
+531 silly resolved     author: { name: 'dead_horse', email: 'dead_horse@qq.com' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     bugs: { url: 'https://github.com/node-modules/auto-correct/issues' },
+531 silly resolved     homepage: 'https://github.com/node-modules/auto-correct',
+531 silly resolved     _id: 'auto-correct@1.0.0',
+531 silly resolved     dist:
+531 silly resolved      { shasum: '9865d9a2c1a7118421f5f0654f685fbeb41b034b',
+531 silly resolved        size: 2194,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'auto-correct/-/auto-correct-1.0.0.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz' },
+531 silly resolved     _from: 'auto-correct@~1.0.0',
+531 silly resolved     _npmVersion: '1.4.3',
+531 silly resolved     _npmUser: { name: 'dead_horse', email: 'dead_horse@qq.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1397835700203,
+531 silly resolved     _cnpm_publish_time: 1397835700203,
+531 silly resolved     _shasum: '9865d9a2c1a7118421f5f0654f685fbeb41b034b',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/auto-correct/download/auto-correct-1.0.0.tgz' },
+531 silly resolved   { name: 'rmdir-recursive',
+531 silly resolved     version: '0.0.0',
+531 silly resolved     description: 'Recursively rmdir, like `rmdir -r` and yieldable/thunkified for `co`',
+531 silly resolved     main: 'lib/rmdir-recursive.js',
+531 silly resolved     dependencies: {},
+531 silly resolved     devDependencies: { co: '>=3.0.5' },
+531 silly resolved     keywords: [ 'rmdir', 'co', 'thunkify' ],
+531 silly resolved     directories: { lib: 'lib', example: 'examples', test: 'test' },
+531 silly resolved     author: { name: 'LightSpeedC' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     repository:
+531 silly resolved      { type: 'git',
+531 silly resolved        url: 'https://github.com/LightSpeedWorks/rmdir-recursive.git' },
+531 silly resolved     bugs: { url: 'https://github.com/LightSpeedWorks/rmdir-recursive/issues' },
+531 silly resolved     homepage: 'https://github.com/LightSpeedWorks/rmdir-recursive#readme',
+531 silly resolved     scripts: { test: 'cd test && node rmdir-recursive-test' },
+531 silly resolved     _id: 'rmdir-recursive@0.0.0',
+531 silly resolved     dist:
+531 silly resolved      { shasum: '967fceb291dee9a281ea92ad5d4d09c2128156df',
+531 silly resolved        size: 3708,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'rmdir-recursive/-/rmdir-recursive-0.0.0.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz' },
+531 silly resolved     _from: 'rmdir-recursive@~0.0.0',
+531 silly resolved     _npmVersion: '1.4.3',
+531 silly resolved     _npmUser: { name: 'lightspeedc', email: 'Kazuaki.Nishizawa@gmail.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     publish_time: 1396430560061,
+531 silly resolved     _cnpm_publish_time: 1396430560061,
+531 silly resolved     _shasum: '967fceb291dee9a281ea92ad5d4d09c2128156df',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/rmdir-recursive/download/rmdir-recursive-0.0.0.tgz' },
+531 silly resolved   { name: 'colors',
+531 silly resolved     description: 'get colors in your node.js console like what',
+531 silly resolved     version: '0.6.2',
+531 silly resolved     author: { name: 'Marak Squires' },
+531 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+531 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+531 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+531 silly resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+531 silly resolved     engines: { node: '>=0.1.90' },
+531 silly resolved     main: 'colors',
+531 silly resolved     readmeFilename: 'ReadMe.md',
+531 silly resolved     _id: 'colors@0.6.2',
+531 silly resolved     dist:
+531 silly resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+531 silly resolved        size: 6289,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: '/colors/-/colors-0.6.2.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz' },
+531 silly resolved     _from: 'colors@~0.6.2',
+531 silly resolved     _npmVersion: '1.2.30',
+531 silly resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1377126895906,
+531 silly resolved     _cnpm_publish_time: 1377126895906,
+531 silly resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/colors/download/colors-0.6.2.tgz' },
+531 silly resolved   { name: 'debug',
+531 silly resolved     version: '1.0.4',
+531 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+531 silly resolved     description: 'small debugging utility',
+531 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+531 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+531 silly resolved     contributors: [ [Object] ],
+531 silly resolved     dependencies: { ms: '0.6.2' },
+531 silly resolved     devDependencies: { browserify: '4.1.6', mocha: '*' },
+531 silly resolved     main: './node.js',
+531 silly resolved     browser: './browser.js',
+531 silly resolved     component: { scripts: [Object] },
+531 silly resolved     gitHead: 'abc10a5912f79d251752d18350e269fe0b0fbbf9',
+531 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+531 silly resolved     homepage: 'https://github.com/visionmedia/debug',
+531 silly resolved     _id: 'debug@1.0.4',
+531 silly resolved     scripts: {},
+531 silly resolved     _shasum: '5b9c256bd54b6ec02283176fa8a0ede6d154cbf8',
+531 silly resolved     _from: 'debug@~1.0.4',
+531 silly resolved     _npmVersion: '1.4.14',
+531 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+531 silly resolved     maintainers: [ [Object], [Object] ],
+531 silly resolved     dist:
+531 silly resolved      { shasum: '5b9c256bd54b6ec02283176fa8a0ede6d154cbf8',
+531 silly resolved        size: 8420,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'debug/-/debug-1.0.4.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz' },
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1405466168284,
+531 silly resolved     _cnpm_publish_time: 1405466168284,
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/debug/download/debug-1.0.4.tgz' },
+531 silly resolved   { name: 'commander',
+531 silly resolved     version: '2.3.0',
+531 silly resolved     description: 'the complete solution for node.js command-line programs',
+531 silly resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+531 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+531 silly resolved     repository:
+531 silly resolved      { type: 'git',
+531 silly resolved        url: 'https://github.com/visionmedia/commander.js.git' },
+531 silly resolved     devDependencies: { should: '>= 0.0.1' },
+531 silly resolved     scripts: { test: 'make test' },
+531 silly resolved     main: 'index',
+531 silly resolved     engines: { node: '>= 0.6.x' },
+531 silly resolved     files: [ 'index.js' ],
+531 silly resolved     gitHead: '7e9f407ec03d4371a478c2fe417db4998ecb6169',
+531 silly resolved     bugs: { url: 'https://github.com/visionmedia/commander.js/issues' },
+531 silly resolved     homepage: 'https://github.com/visionmedia/commander.js',
+531 silly resolved     _id: 'commander@2.3.0',
+531 silly resolved     _shasum: 'fd430e889832ec353b9acd1de217c11cb3eef873',
+531 silly resolved     _from: 'commander@~2.3.0',
+531 silly resolved     _npmVersion: '1.4.21',
+531 silly resolved     _npmUser: { name: 'somekittens', email: 'rkoutnik@gmail.com' },
+531 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+531 silly resolved     dist:
+531 silly resolved      { shasum: 'fd430e889832ec353b9acd1de217c11cb3eef873',
+531 silly resolved        size: 8042,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'commander/-/commander-2.3.0.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz' },
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1405476883461,
+531 silly resolved     _cnpm_publish_time: 1405476883461,
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/commander/download/commander-2.3.0.tgz' },
+531 silly resolved   { name: 'bagpipe',
+531 silly resolved     version: '0.3.5',
+531 silly resolved     description: 'Concurrency limit',
+531 silly resolved     keywords: [ 'limiter', 'concurrency limit', 'parallel limit' ],
+531 silly resolved     main: 'index.js',
+531 silly resolved     scripts:
+531 silly resolved      { test: 'make test-all',
+531 silly resolved        blanket: [Object],
+531 silly resolved        'travis-cov': [Object] },
+531 silly resolved     author: { name: 'Jackson Tian' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     readmeFilename: 'README.md',
+531 silly resolved     gitHead: '75269c60fdbb897be14575e70a2b86cf43999500',
+531 silly resolved     directories: { doc: 'doc', test: 'test' },
+531 silly resolved     devDependencies:
+531 silly resolved      { pedding: '*',
+531 silly resolved        should: '*',
+531 silly resolved        blanket: '*',
+531 silly resolved        mocha: '*',
+531 silly resolved        'travis-cov': '*' },
+531 silly resolved     repository: { type: 'git', url: 'git://github.com/JacksonTian/bagpipe.git' },
+531 silly resolved     bugs: { url: 'https://github.com/JacksonTian/bagpipe/issues' },
+531 silly resolved     _id: 'bagpipe@0.3.5',
+531 silly resolved     dist:
+531 silly resolved      { shasum: 'e341d164fcb24cdf04ea7e05b765ec10c8aea6a1',
+531 silly resolved        size: 8357,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: '/bagpipe/-/bagpipe-0.3.5.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz' },
+531 silly resolved     _from: 'bagpipe@~0.3.5',
+531 silly resolved     _npmVersion: '1.2.32',
+531 silly resolved     _npmUser: { name: 'jacksontian', email: 'shyvo1987@gmail.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     publish_time: 1374466153843,
+531 silly resolved     _cnpm_publish_time: 1374466153843,
+531 silly resolved     _shasum: 'e341d164fcb24cdf04ea7e05b765ec10c8aea6a1',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/bagpipe/download/bagpipe-0.3.5.tgz' },
+531 silly resolved   { name: 'npm-request',
+531 silly resolved     description: 'request with npmrc\'s auth',
+531 silly resolved     repository: { type: 'git', url: 'git://github.com/dead-horse/npm-request' },
+531 silly resolved     version: '0.0.4',
+531 silly resolved     keywords: [ 'npm', 'request', 'auth' ],
+531 silly resolved     author: { name: 'dead_horse', email: 'dead_horse@qq.com' },
+531 silly resolved     files: [ 'index.js' ],
+531 silly resolved     dependencies: { urllib: '0.5.11' },
+531 silly resolved     devDependencies: { autod: '*' },
+531 silly resolved     scripts: { autod: 'autod -w' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     bugs: { url: 'https://github.com/dead-horse/npm-request/issues' },
+531 silly resolved     homepage: 'https://github.com/dead-horse/npm-request',
+531 silly resolved     _id: 'npm-request@0.0.4',
+531 silly resolved     dist:
+531 silly resolved      { shasum: 'bd8734e1bac1ec943a86ed8ee0bba8a969c28965',
+531 silly resolved        size: 1449,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: '/npm-request/-/npm-request-0.0.4.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz' },
+531 silly resolved     _from: 'npm-request@~0.0.4',
+531 silly resolved     _npmVersion: '1.4.3',
+531 silly resolved     _npmUser: { name: 'dead_horse', email: 'dead_horse@qq.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1395110585605,
+531 silly resolved     _cnpm_publish_time: 1395110585605,
+531 silly resolved     _shasum: 'bd8734e1bac1ec943a86ed8ee0bba8a969c28965',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/npm-request/download/npm-request-0.0.4.tgz' },
+531 silly resolved   { name: 'open',
+531 silly resolved     version: '0.0.5',
+531 silly resolved     description: 'open a file or url in the user\'s preferred application',
+531 silly resolved     keywords: [ 'start', 'open', 'browser', 'editor', 'default' ],
+531 silly resolved     homepage: 'https://github.com/jjrdn/node-open',
+531 silly resolved     author: { name: 'J Jordan', email: 'jjrdn@styosis.com' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     contributors: [ [Object] ],
+531 silly resolved     repository: { type: 'git', url: 'https://github.com/pwnall/node-open.git' },
+531 silly resolved     bugs: { url: 'https://github.com/pwnall/node-open/issues' },
+531 silly resolved     engines: { node: '>= 0.6.0' },
+531 silly resolved     dependencies: {},
+531 silly resolved     devDependencies: { mocha: '*' },
+531 silly resolved     optionalDependencies: {},
+531 silly resolved     main: 'lib/open.js',
+531 silly resolved     scripts: { test: 'node_modules/mocha/bin/mocha' },
+531 silly resolved     _id: 'open@0.0.5',
+531 silly resolved     dist:
+531 silly resolved      { shasum: '42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc',
+531 silly resolved        size: 7489,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: '/open/-/open-0.0.5.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/open/download/open-0.0.5.tgz' },
+531 silly resolved     _from: 'open@~0.0.5',
+531 silly resolved     _npmVersion: '1.4.3',
+531 silly resolved     _npmUser: { name: 'pwnall', email: 'costan@gmail.com' },
+531 silly resolved     maintainers: [ [Object], [Object] ],
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1397130379980,
+531 silly resolved     _cnpm_publish_time: 1397130379980,
+531 silly resolved     _shasum: '42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/open/download/open-0.0.5.tgz' },
+531 silly resolved   { name: 'cross-spawn',
+531 silly resolved     version: '0.1.7',
+531 silly resolved     description: 'Cross platform child_process#spawn',
+531 silly resolved     main: 'index.js',
+531 silly resolved     scripts: { test: 'mocha -R spec' },
+531 silly resolved     bugs: { url: 'https://github.com/IndigoUnited/node-cross-spawn/issues/' },
+531 silly resolved     repository:
+531 silly resolved      { type: 'git',
+531 silly resolved        url: 'git://github.com/IndigoUnited/node-cross-spawn.git' },
+531 silly resolved     keywords:
+531 silly resolved      [ 'spawn',
+531 silly resolved        'windows',
+531 silly resolved        'cross',
+531 silly resolved        'platform',
+531 silly resolved        'path',
+531 silly resolved        'ext',
+531 silly resolved        'path-ext',
+531 silly resolved        'path_ext',
+531 silly resolved        'cmd',
+531 silly resolved        'execute' ],
+531 silly resolved     author:
+531 silly resolved      { name: 'IndigoUnited',
+531 silly resolved        email: 'hello@indigounited.com',
+531 silly resolved        url: 'http://indigounited.com' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     devDependencies: { 'expect.js': '^0.3.0', mocha: '^1.20.1' },
+531 silly resolved     homepage: 'https://github.com/IndigoUnited/node-cross-spawn',
+531 silly resolved     _id: 'cross-spawn@0.1.7',
+531 silly resolved     _shasum: '7e26c368953fd9618215f519056fca17c4c43d0e',
+531 silly resolved     _from: 'cross-spawn@~0.1.7',
+531 silly resolved     _npmVersion: '1.4.9',
+531 silly resolved     _npmUser: { name: 'satazor', email: 'andremiguelcruz@msn.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     dist:
+531 silly resolved      { shasum: '7e26c368953fd9618215f519056fca17c4c43d0e',
+531 silly resolved        size: 2970,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'cross-spawn/-/cross-spawn-0.1.7.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz' },
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1405096085858,
+531 silly resolved     _cnpm_publish_time: 1405096085858,
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/cross-spawn/download/cross-spawn-0.1.7.tgz' },
+531 silly resolved   { name: 'urllib',
+531 silly resolved     version: '0.5.16',
+531 silly resolved     description: 'Help in opening URLs (mostly HTTP) in a complex world — basic and digest authentication, redirections, cookies and more.',
+531 silly resolved     keywords: [ 'urllib', 'http', 'urlopen', 'curl', 'wget', 'request', 'https' ],
+531 silly resolved     author:
+531 silly resolved      { name: 'fengmk2',
+531 silly resolved        email: 'fengmk2@gmail.com',
+531 silly resolved        url: 'http://fengmk2.github.com' },
+531 silly resolved     homepage: 'http://github.com/node-modules/urllib',
+531 silly resolved     main: 'index.js',
+531 silly resolved     repository: { type: 'git', url: 'git://github.com/node-modules/urllib.git' },
+531 silly resolved     scripts: { test: 'make test-all' },
+531 silly resolved     config: { 'travis-cov': [Object] },
+531 silly resolved     dependencies:
+531 silly resolved      { debug: '0.8.1',
+531 silly resolved        'default-user-agent': '0.0.1',
+531 silly resolved        'digest-header': '0.0.1' },
+531 silly resolved     devDependencies:
+531 silly resolved      { agentkeepalive: '0.2.2',
+531 silly resolved        autod: '*',
+531 silly resolved        formstream: '0.0.8',
+531 silly resolved        istanbul: '*',
+531 silly resolved        jshint: '*',
+531 silly resolved        mocha: '>=0.14.1',
+531 silly resolved        pedding: '0.0.3',
+531 silly resolved        should: '3.3.1' },
+531 silly resolved     engines: { node: '>= 0.8.0' },
+531 silly resolved     license: 'MIT',
+531 silly resolved     contributors:
+531 silly resolved      [ [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object] ],
+531 silly resolved     bugs: { url: 'https://github.com/node-modules/urllib/issues' },
+531 silly resolved     _id: 'urllib@0.5.16',
+531 silly resolved     dist:
+531 silly resolved      { shasum: 'aa76a4bc5bbd384884a1a893266dd24bced4348d',
+531 silly resolved        size: 10462,
+531 silly resolved        noattachment: false,
+531 silly resolved        key: 'urllib/-/urllib-0.5.16.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz' },
+531 silly resolved     _from: 'urllib@~0.5.16',
+531 silly resolved     _npmVersion: '1.4.6',
+531 silly resolved     _npmUser: { name: 'fengmk2', email: 'fengmk2@gmail.com' },
+531 silly resolved     maintainers: [ [Object] ],
+531 silly resolved     directories: {},
+531 silly resolved     publish_time: 1400131861842,
+531 silly resolved     _cnpm_publish_time: 1400131861842,
+531 silly resolved     _shasum: 'aa76a4bc5bbd384884a1a893266dd24bced4348d',
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/urllib/download/urllib-0.5.16.tgz' },
+531 silly resolved   { version: '1.0.3',
+531 silly resolved     npmVersion: '2.0.0-alpha-5',
+531 silly resolved     name: 'ali-npm',
+531 silly resolved     description: 'A package manager for node',
+531 silly resolved     keywords: [ 'package manager', 'modules', 'install', 'package.json' ],
+531 silly resolved     preferGlobal: true,
+531 silly resolved     config: { publishtest: false },
+531 silly resolved     publishConfig:
+531 silly resolved      { tag: 'v1.5rc',
+531 silly resolved        registry: 'http://registry.npm.alibaba-inc.com' },
+531 silly resolved     homepage: 'https://npmjs.org/doc/',
+531 silly resolved     author:
+531 silly resolved      { name: 'Isaac Z. Schlueter',
+531 silly resolved        email: 'i@izs.me',
+531 silly resolved        url: 'http://blog.izs.me' },
+531 silly resolved     repository: { type: 'git', url: 'https://github.com/npm/npm' },
+531 silly resolved     bugs:
+531 silly resolved      { url: 'http://github.com/npm/npm/issues',
+531 silly resolved        email: 'npm-@googlegroups.com' },
+531 silly resolved     directories: { doc: './doc', man: './man', lib: './lib', bin: './bin' },
+531 silly resolved     main: './lib/npm.js',
+531 silly resolved     bin: { 'ali-npm': './bin/npm-cli.js' },
+531 silly resolved     dependencies:
+531 silly resolved      { abbrev: '~1.0.5',
+531 silly resolved        ansi: '~0.3.0',
+531 silly resolved        ansicolors: '~0.3.2',
+531 silly resolved        ansistyles: '~0.1.3',
+531 silly resolved        archy: '0',
+531 silly resolved        'async-some': '~1.0.0',
+531 silly resolved        'block-stream': '0.0.7',
+531 silly resolved        'char-spinner': '~1.0.1',
+531 silly resolved        'child-process-close': '~0.1.1',
+531 silly resolved        chmodr: '~0.1.0',
+531 silly resolved        chownr: '0',
+531 silly resolved        'cmd-shim': '~1.1.1',
+531 silly resolved        columnify: '~1.1.0',
+531 silly resolved        editor: '~0.1.0',
+531 silly resolved        'fs-vacuum': '~1.2.1',
+531 silly resolved        fstream: '~0.1.29',
+531 silly resolved        'fstream-npm': '~0.1.7',
+531 silly resolved        'github-url-from-git': '~1.2.0',
+531 silly resolved        'github-url-from-username-repo': '~0.2.0',
+531 silly resolved        glob: '~4.0.3',
+531 silly resolved        'graceful-fs': '~3.0.0',
+531 silly resolved        inflight: '~1.0.1',
+531 silly resolved        ini: '~1.2.0',
+531 silly resolved        'init-package-json': '~0.1.1',
+531 silly resolved        lockfile: '~0.4.0',
+531 silly resolved        'lru-cache': '~2.5.0',
+531 silly resolved        minimatch: '~0.3.0',
+531 silly resolved        mkdirp: '~0.5.0',
+531 silly resolved        'node-gyp': '~0.13.0',
+531 silly resolved        nopt: '~3.0.1',
+531 silly resolved        'npm-cache-filename': '~1.0.1',
+531 silly resolved        'npm-install-checks': '~1.0.2',
+531 silly resolved        'npm-package-arg': '~2.0.0',
+531 silly resolved        'npm-registry-client': '~3.0.2',
+531 silly resolved        'npm-user-validate': '~0.1.0',
+531 silly resolved        npmconf: '~2.0.3',
+531 silly resolved        npmlog: '~0.1.1',
+531 silly resolved        once: '~1.3.0',
+531 silly resolved        opener: '~1.3.0',
+531 silly resolved        osenv: '~0.1.0',
+531 silly resolved        'path-is-inside': '~1.0.0',
+531 silly resolved        read: '~1.0.4',
+531 silly resolved        'read-installed': '~2.0.5',
+531 silly resolved        'read-package-json': '~1.2.3',
+531 silly resolved        request: '~2.30.0',
+531 silly resolved        retry: '~0.6.0',
+531 silly resolved        rimraf: '~2.2.8',
+531 silly resolved        semver: '~2.3.0',
+531 silly resolved        sha: '~1.2.1',
+531 silly resolved        slide: '~1.1.5',
+531 silly resolved        'sorted-object': '~1.0.0',
+531 silly resolved        tar: '~0.1.20',
+531 silly resolved        'text-table': '~0.2.0',
+531 silly resolved        'uid-number': '0.0.5',
+531 silly resolved        which: '1' },
+531 silly resolved     bundleDependencies:
+531 silly resolved      [ 'abbrev',
+531 silly resolved        'ansi',
+531 silly resolved        'ansicolors',
+531 silly resolved        'ansistyles',
+531 silly resolved        'archy',
+531 silly resolved        'async-some',
+531 silly resolved        'block-stream',
+531 silly resolved        'char-spinner',
+531 silly resolved        'child-process-close',
+531 silly resolved        'chmodr',
+531 silly resolved        'chownr',
+531 silly resolved        'cmd-shim',
+531 silly resolved        'columnify',
+531 silly resolved        'editor',
+531 silly resolved        'fs-vacuum',
+531 silly resolved        'fstream',
+531 silly resolved        'fstream-npm',
+531 silly resolved        'github-url-from-git',
+531 silly resolved        'github-url-from-username-repo',
+531 silly resolved        'glob',
+531 silly resolved        'graceful-fs',
+531 silly resolved        'inflight',
+531 silly resolved        'inherits',
+531 silly resolved        'ini',
+531 silly resolved        'init-package-json',
+531 silly resolved        'lockfile',
+531 silly resolved        'lru-cache',
+531 silly resolved        'minimatch',
+531 silly resolved        'mkdirp',
+531 silly resolved        'node-gyp',
+531 silly resolved        'nopt',
+531 silly resolved        'normalize-package-data',
+531 silly resolved        'npm-cache-filename',
+531 silly resolved        'npm-install-checks',
+531 silly resolved        'npm-package-arg',
+531 silly resolved        'npm-registry-client',
+531 silly resolved        'npm-user-validate',
+531 silly resolved        'npmconf',
+531 silly resolved        'npmlog',
+531 silly resolved        'once',
+531 silly resolved        'opener',
+531 silly resolved        'osenv',
+531 silly resolved        'path-is-inside',
+531 silly resolved        'read',
+531 silly resolved        'read-installed',
+531 silly resolved        'read-package-json',
+531 silly resolved        'request',
+531 silly resolved        'retry',
+531 silly resolved        'rimraf',
+531 silly resolved        'semver',
+531 silly resolved        'sha',
+531 silly resolved        'slide',
+531 silly resolved        'sorted-object',
+531 silly resolved        'tar',
+531 silly resolved        'text-table',
+531 silly resolved        'uid-number',
+531 silly resolved        'which' ],
+531 silly resolved     devDependencies:
+531 silly resolved      { marked: '~0.3.2',
+531 silly resolved        nock: '~0.34.1',
+531 silly resolved        'npm-registry-couchapp': '~2.4.3',
+531 silly resolved        'npm-registry-mock': '~0.6.3',
+531 silly resolved        ronn: '~0.3.6',
+531 silly resolved        tap: '~0.4.9' },
+531 silly resolved     engines: { node: '>=0.8', npm: '1' },
+531 silly resolved     scripts:
+531 silly resolved      { 'test-legacy': 'node ./test/run.js',
+531 silly resolved        test: 'tap --timeout 120 test/tap/*.js',
+531 silly resolved        tap: 'tap --timeout 120 test/tap/*.js',
+531 silly resolved        'test-all': 'node ./test/run.js && tap test/tap/*.js',
+531 silly resolved        prepublish: 'node bin/npm-cli.js prune --prefix=. --no-global && rm -rf test/*/*/node_modules && make -j8 doc',
+531 silly resolved        dumpconf: 'env | grep npm | sort | uniq' },
+531 silly resolved     license: 'Artistic-2.0',
+531 silly resolved     contributors:
+531 silly resolved      [ [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object],
+531 silly resolved        [Object] ],
+531 silly resolved     man:
+531 silly resolved      [ '/Users/deadhorse/git/npm/man/man1/npm-README.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-adduser.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-bin.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-bugs.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-build.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-bundle.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-cache.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-completion.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-config.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-dedupe.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-deprecate.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-docs.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-edit.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-explore.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-help-search.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-help.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-init.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-install.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-link.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-ls.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-outdated.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-owner.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-pack.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-prefix.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-prune.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-publish.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-rebuild.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-repo.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-restart.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-rm.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-root.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-run-script.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-search.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-shrinkwrap.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-star.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-stars.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-start.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-stop.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-submodule.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-tag.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-test.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-uninstall.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-unpublish.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-update.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-version.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-view.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm-whoami.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man1/npm.1',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-bin.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-bugs.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-cache.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-commands.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-config.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-deprecate.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-docs.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-edit.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-explore.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-help-search.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-init.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-install.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-link.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-load.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-ls.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-outdated.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-owner.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-pack.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-prefix.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-prune.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-publish.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-rebuild.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-repo.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-restart.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-root.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-run-script.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-search.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-shrinkwrap.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-start.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-stop.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-submodule.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-tag.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-test.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-uninstall.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-unpublish.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-update.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-version.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-view.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm-whoami.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man3/npm.3',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man5/npm-folders.5',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man5/npm-global.5',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man5/npm-json.5',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man5/npmrc.5',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man5/package.json.5',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-coding-style.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-config.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-developers.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-disputes.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-faq.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-index.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-registry.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/npm-scripts.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/removing-npm.7',
+531 silly resolved        '/Users/deadhorse/git/npm/man/man7/semver.7' ],
+531 silly resolved     readmeFilename: 'README.md',
+531 silly resolved     gitHead: 'af14ad941c9da9bced3fff70f5414a1aaf445370',
+531 silly resolved     _id: 'ali-npm@1.0.3',
+531 silly resolved     _shasum: '03f18f7a0bc8859e3f9f835572d10f2220c8ec60',
+531 silly resolved     _from: 'ali-npm@~1.0.3',
+531 silly resolved     _npmVersion: '1.0.2',
+531 silly resolved     _npmUser: { name: 'busi.hyy', email: 'busi.hyy@alibaba-inc.com' },
+531 silly resolved     maintainers: [ [Object], [Object] ],
+531 silly resolved     dist:
+531 silly resolved      { shasum: '03f18f7a0bc8859e3f9f835572d10f2220c8ec60',
+531 silly resolved        size: 1658885,
+531 silly resolved        key: 'ali-npm/-/ali-npm-1.0.3.tgz',
+531 silly resolved        tarball: 'http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz' },
+531 silly resolved     _publish_on_cnpm: true,
+531 silly resolved     _cnpm_publish_time: 1407144306715,
+531 silly resolved     _resolved: 'http://registry.npm.taobao.net/ali-npm/download/ali-npm-1.0.3.tgz' } ]
+532 info install auto-correct@1.0.0 into /usr/local/lib/node_modules/tnpm
+533 info install rmdir-recursive@0.0.0 into /usr/local/lib/node_modules/tnpm
+534 info install colors@0.6.2 into /usr/local/lib/node_modules/tnpm
+535 info install debug@1.0.4 into /usr/local/lib/node_modules/tnpm
+536 info install commander@2.3.0 into /usr/local/lib/node_modules/tnpm
+537 info install bagpipe@0.3.5 into /usr/local/lib/node_modules/tnpm
+538 info install npm-request@0.0.4 into /usr/local/lib/node_modules/tnpm
+539 info install open@0.0.5 into /usr/local/lib/node_modules/tnpm
+540 info install cross-spawn@0.1.7 into /usr/local/lib/node_modules/tnpm
+541 info install urllib@0.5.16 into /usr/local/lib/node_modules/tnpm
+542 info install ali-npm@1.0.3 into /usr/local/lib/node_modules/tnpm
+543 info installOne auto-correct@1.0.0
+544 info installOne rmdir-recursive@0.0.0
+545 info installOne colors@0.6.2
+546 info installOne debug@1.0.4
+547 info installOne commander@2.3.0
+548 info installOne bagpipe@0.3.5
+549 info installOne npm-request@0.0.4
+550 info installOne open@0.0.5
+551 info installOne cross-spawn@0.1.7
+552 info installOne urllib@0.5.16
+553 info installOne ali-npm@1.0.3
+554 verbose lib/node_modules/tnpm/node_modules/rmdir-recursive unbuild
+555 verbose lib/node_modules/tnpm/node_modules/debug unbuild
+556 verbose lib/node_modules/tnpm/node_modules/commander unbuild
+557 verbose lib/node_modules/tnpm/node_modules/cross-spawn unbuild
+558 verbose lib/node_modules/tnpm/node_modules/ali-npm unbuild
+559 verbose tar unpack /Users/leo/.npm/.cache/tnpm/rmdir-recursive/0.0.0/package.tgz
+560 silly lockFile bf0c93c7-npm-node-modules-rmdir-recursive tar:///usr/local/lib/node_modules/tnpm/node_modules/rmdir-recursive
+561 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/rmdir-recursive /Users/leo/.npm/.cache/tnpm/bf0c93c7-npm-node-modules-rmdir-recursive.lock
+562 silly lockFile 4e19f558-mdir-recursive-0-0-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/rmdir-recursive/0.0.0/package.tgz
+563 verbose lock tar:///Users/leo/.npm/.cache/tnpm/rmdir-recursive/0.0.0/package.tgz /Users/leo/.npm/.cache/tnpm/4e19f558-mdir-recursive-0-0-0-package-tgz.lock
+564 verbose tar unpack /Users/leo/.npm/.cache/tnpm/debug/1.0.4/package.tgz
+565 silly lockFile 3240055a--modules-tnpm-node-modules-debug tar:///usr/local/lib/node_modules/tnpm/node_modules/debug
+566 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/debug /Users/leo/.npm/.cache/tnpm/3240055a--modules-tnpm-node-modules-debug.lock
+567 silly lockFile 32a22ccc-che-tnpm-debug-1-0-4-package-tgz tar:///Users/leo/.npm/.cache/tnpm/debug/1.0.4/package.tgz
+568 verbose lock tar:///Users/leo/.npm/.cache/tnpm/debug/1.0.4/package.tgz /Users/leo/.npm/.cache/tnpm/32a22ccc-che-tnpm-debug-1-0-4-package-tgz.lock
+569 verbose tar unpack /Users/leo/.npm/.cache/tnpm/commander/2.3.0/package.tgz
+570 silly lockFile a26d7bea-ules-tnpm-node-modules-commander tar:///usr/local/lib/node_modules/tnpm/node_modules/commander
+571 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/commander /Users/leo/.npm/.cache/tnpm/a26d7bea-ules-tnpm-node-modules-commander.lock
+572 silly lockFile 858d24d6-tnpm-commander-2-3-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/commander/2.3.0/package.tgz
+573 verbose lock tar:///Users/leo/.npm/.cache/tnpm/commander/2.3.0/package.tgz /Users/leo/.npm/.cache/tnpm/858d24d6-tnpm-commander-2-3-0-package-tgz.lock
+574 verbose tar unpack /Users/leo/.npm/.cache/tnpm/cross-spawn/0.1.7/package.tgz
+575 silly lockFile 18ed9569-es-tnpm-node-modules-cross-spawn tar:///usr/local/lib/node_modules/tnpm/node_modules/cross-spawn
+576 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/cross-spawn /Users/leo/.npm/.cache/tnpm/18ed9569-es-tnpm-node-modules-cross-spawn.lock
+577 silly lockFile 86b70168-pm-cross-spawn-0-1-7-package-tgz tar:///Users/leo/.npm/.cache/tnpm/cross-spawn/0.1.7/package.tgz
+578 verbose lock tar:///Users/leo/.npm/.cache/tnpm/cross-spawn/0.1.7/package.tgz /Users/leo/.npm/.cache/tnpm/86b70168-pm-cross-spawn-0-1-7-package-tgz.lock
+579 verbose tar unpack /Users/leo/.npm/.cache/tnpm/ali-npm/1.0.3/package.tgz
+580 silly lockFile 43d08de4-odules-tnpm-node-modules-ali-npm tar:///usr/local/lib/node_modules/tnpm/node_modules/ali-npm
+581 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/ali-npm /Users/leo/.npm/.cache/tnpm/43d08de4-odules-tnpm-node-modules-ali-npm.lock
+582 silly lockFile 599c09a4-e-tnpm-ali-npm-1-0-3-package-tgz tar:///Users/leo/.npm/.cache/tnpm/ali-npm/1.0.3/package.tgz
+583 verbose lock tar:///Users/leo/.npm/.cache/tnpm/ali-npm/1.0.3/package.tgz /Users/leo/.npm/.cache/tnpm/599c09a4-e-tnpm-ali-npm-1-0-3-package-tgz.lock
+584 verbose lib/node_modules/tnpm/node_modules/auto-correct unbuild
+585 verbose lib/node_modules/tnpm/node_modules/colors unbuild
+586 verbose lib/node_modules/tnpm/node_modules/bagpipe unbuild
+587 verbose lib/node_modules/tnpm/node_modules/npm-request unbuild
+588 verbose lib/node_modules/tnpm/node_modules/open unbuild
+589 silly gunzTarPerm modes [ '755', '644' ]
+590 silly gunzTarPerm modes [ '755', '644' ]
+591 verbose lib/node_modules/tnpm/node_modules/urllib unbuild
+592 silly gunzTarPerm modes [ '755', '644' ]
+593 silly gunzTarPerm modes [ '755', '644' ]
+594 silly gunzTarPerm modes [ '755', '644' ]
+595 verbose tar unpack /Users/leo/.npm/.cache/tnpm/auto-correct/1.0.0/package.tgz
+596 silly lockFile d184e69a-s-tnpm-node-modules-auto-correct tar:///usr/local/lib/node_modules/tnpm/node_modules/auto-correct
+597 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/auto-correct /Users/leo/.npm/.cache/tnpm/d184e69a-s-tnpm-node-modules-auto-correct.lock
+598 silly lockFile 04f688c6-m-auto-correct-1-0-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/auto-correct/1.0.0/package.tgz
+599 verbose lock tar:///Users/leo/.npm/.cache/tnpm/auto-correct/1.0.0/package.tgz /Users/leo/.npm/.cache/tnpm/04f688c6-m-auto-correct-1-0-0-package-tgz.lock
+600 verbose tar unpack /Users/leo/.npm/.cache/tnpm/colors/0.6.2/package.tgz
+601 silly lockFile 036a2b24-modules-tnpm-node-modules-colors tar:///usr/local/lib/node_modules/tnpm/node_modules/colors
+602 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/colors /Users/leo/.npm/.cache/tnpm/036a2b24-modules-tnpm-node-modules-colors.lock
+603 silly lockFile d7f128e6-he-tnpm-colors-0-6-2-package-tgz tar:///Users/leo/.npm/.cache/tnpm/colors/0.6.2/package.tgz
+604 verbose lock tar:///Users/leo/.npm/.cache/tnpm/colors/0.6.2/package.tgz /Users/leo/.npm/.cache/tnpm/d7f128e6-he-tnpm-colors-0-6-2-package-tgz.lock
+605 verbose tar unpack /Users/leo/.npm/.cache/tnpm/bagpipe/0.3.5/package.tgz
+606 silly lockFile fe2be882-odules-tnpm-node-modules-bagpipe tar:///usr/local/lib/node_modules/tnpm/node_modules/bagpipe
+607 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/bagpipe /Users/leo/.npm/.cache/tnpm/fe2be882-odules-tnpm-node-modules-bagpipe.lock
+608 silly lockFile a9649290-e-tnpm-bagpipe-0-3-5-package-tgz tar:///Users/leo/.npm/.cache/tnpm/bagpipe/0.3.5/package.tgz
+609 verbose lock tar:///Users/leo/.npm/.cache/tnpm/bagpipe/0.3.5/package.tgz /Users/leo/.npm/.cache/tnpm/a9649290-e-tnpm-bagpipe-0-3-5-package-tgz.lock
+610 verbose tar unpack /Users/leo/.npm/.cache/tnpm/npm-request/0.0.4/package.tgz
+611 silly lockFile 3902d4eb-es-tnpm-node-modules-npm-request tar:///usr/local/lib/node_modules/tnpm/node_modules/npm-request
+612 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/npm-request /Users/leo/.npm/.cache/tnpm/3902d4eb-es-tnpm-node-modules-npm-request.lock
+613 silly lockFile 7846b77b-pm-npm-request-0-0-4-package-tgz tar:///Users/leo/.npm/.cache/tnpm/npm-request/0.0.4/package.tgz
+614 verbose lock tar:///Users/leo/.npm/.cache/tnpm/npm-request/0.0.4/package.tgz /Users/leo/.npm/.cache/tnpm/7846b77b-pm-npm-request-0-0-4-package-tgz.lock
+615 verbose tar unpack /Users/leo/.npm/.cache/tnpm/open/0.0.5/package.tgz
+616 silly lockFile 388f5074-e-modules-tnpm-node-modules-open tar:///usr/local/lib/node_modules/tnpm/node_modules/open
+617 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/open /Users/leo/.npm/.cache/tnpm/388f5074-e-modules-tnpm-node-modules-open.lock
+618 silly lockFile 06ab9d86-ache-tnpm-open-0-0-5-package-tgz tar:///Users/leo/.npm/.cache/tnpm/open/0.0.5/package.tgz
+619 verbose lock tar:///Users/leo/.npm/.cache/tnpm/open/0.0.5/package.tgz /Users/leo/.npm/.cache/tnpm/06ab9d86-ache-tnpm-open-0-0-5-package-tgz.lock
+620 verbose tar unpack /Users/leo/.npm/.cache/tnpm/urllib/0.5.16/package.tgz
+621 silly lockFile b32f2eb8-modules-tnpm-node-modules-urllib tar:///usr/local/lib/node_modules/tnpm/node_modules/urllib
+622 verbose lock tar:///usr/local/lib/node_modules/tnpm/node_modules/urllib /Users/leo/.npm/.cache/tnpm/b32f2eb8-modules-tnpm-node-modules-urllib.lock
+623 silly lockFile ff0da3d5-e-tnpm-urllib-0-5-16-package-tgz tar:///Users/leo/.npm/.cache/tnpm/urllib/0.5.16/package.tgz
+624 verbose lock tar:///Users/leo/.npm/.cache/tnpm/urllib/0.5.16/package.tgz /Users/leo/.npm/.cache/tnpm/ff0da3d5-e-tnpm-urllib-0-5-16-package-tgz.lock
+625 silly gunzTarPerm modes [ '755', '644' ]
+626 silly gunzTarPerm extractEntry package.json
+627 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+628 silly gunzTarPerm modes [ '755', '644' ]
+629 silly gunzTarPerm modes [ '755', '644' ]
+630 silly gunzTarPerm modes [ '755', '644' ]
+631 silly gunzTarPerm modes [ '755', '644' ]
+632 silly gunzTarPerm extractEntry package.json
+633 silly gunzTarPerm extractEntry package.json
+634 silly gunzTarPerm modes [ '755', '644' ]
+635 silly gunzTarPerm extractEntry package.json
+636 silly gunzTarPerm extractEntry package.json
+637 silly gunzTarPerm extractEntry .npmignore
+638 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+639 silly gunzTarPerm extractEntry README.md
+640 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+641 silly gunzTarPerm extractEntry .npmignore
+642 silly gunzTarPerm extractEntry node.js
+643 silly gunzTarPerm extractEntry index.js
+644 silly gunzTarPerm extractEntry Readme.md
+645 silly gunzTarPerm extractEntry .npmignore
+646 silly gunzTarPerm extractEntry README.md
+647 silly gunzTarPerm extractEntry package.json
+648 silly gunzTarPerm extractEntry package.json
+649 silly gunzTarPerm extractEntry package.json
+650 silly gunzTarPerm extractEntry package.json
+651 silly gunzTarPerm extractEntry package.json
+652 silly gunzTarPerm extractEntry .npmignore
+653 silly gunzTarPerm extractEntry README.md
+654 silly gunzTarPerm extractEntry package.json
+655 silly gunzTarPerm extractEntry .npmignore
+656 silly gunzTarPerm extractEntry README.md
+657 silly gunzTarPerm extractEntry colors.js
+658 silly gunzTarPerm extractEntry example.js
+659 silly gunzTarPerm extractEntry .npmignore
+660 silly gunzTarPerm extractEntry README.md
+661 silly gunzTarPerm extractEntry README.md
+662 silly gunzTarPerm extractEntry index.js
+663 silly gunzTarPerm extractEntry .npmignore
+664 silly gunzTarPerm extractEntry README.md
+665 silly gunzTarPerm extractEntry .npmignore
+666 silly gunzTarPerm extractEntry README.md
+667 silly gunzTarPerm extractEntry .gitattributes
+668 silly gunzTarPerm modified mode [ '.gitattributes', 438, 420 ]
+669 silly gunzTarPerm extractEntry examples/rmdir-r-async-ex.js
+670 silly gunzTarPerm modified mode [ 'examples/rmdir-r-async-ex.js', 438, 420 ]
+671 silly gunzTarPerm extractEntry debug.js
+672 silly gunzTarPerm extractEntry browser.js
+673 silly gunzTarPerm extractEntry LICENSE
+674 silly gunzTarPerm extractEntry index.js
+675 silly gunzTarPerm extractEntry test.js
+676 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+677 silly gunzTarPerm extractEntry ReadMe.md
+678 silly gunzTarPerm extractEntry example.html
+679 silly gunzTarPerm extractEntry themes/winston-dark.js
+680 silly gunzTarPerm extractEntry themes/winston-light.js
+681 silly gunzTarPerm extractEntry LICENSE
+682 silly gunzTarPerm extractEntry index.js
+683 silly gunzTarPerm extractEntry index.js
+684 silly gunzTarPerm extractEntry Makefile
+685 silly gunzTarPerm extractEntry LICENSE
+686 silly gunzTarPerm extractEntry .jshintignore
+687 silly gunzTarPerm extractEntry LICENSE
+688 silly gunzTarPerm extractEntry index.js
+689 silly gunzTarPerm extractEntry LICENSE
+690 silly gunzTarPerm extractEntry Readme.md
+691 silly gunzTarPerm extractEntry component.json
+692 silly gunzTarPerm extractEntry Makefile
+693 silly gunzTarPerm extractEntry History.md
+694 silly gunzTarPerm extractEntry .jshintrc
+695 silly gunzTarPerm extractEntry cli.js
+696 silly gunzTarPerm extractEntry .jshintrc
+697 silly gunzTarPerm extractEntry .editorconfig
+698 silly gunzTarPerm extractEntry examples/rmdir-r-co-ex.js
+699 silly gunzTarPerm modified mode [ 'examples/rmdir-r-co-ex.js', 438, 420 ]
+700 silly gunzTarPerm extractEntry examples/rmdir-r-sync-ex.js
+701 silly gunzTarPerm modified mode [ 'examples/rmdir-r-sync-ex.js', 438, 420 ]
+702 silly gunzTarPerm extractEntry .jshintrc
+703 silly gunzTarPerm extractEntry README_CN.md
+704 silly gunzTarPerm extractEntry test.js
+705 silly gunzTarPerm extractEntry .travis.yml
+706 silly gunzTarPerm extractEntry .jshintrc
+707 silly gunzTarPerm extractEntry lib/open.js
+708 silly gunzTarPerm extractEntry AUTHORS
+709 silly gunzTarPerm extractEntry wercker.yml
+710 silly gunzTarPerm extractEntry Makefile
+711 silly gunzTarPerm extractEntry .travis.yml
+712 silly gunzTarPerm extractEntry History.md
+713 silly gunzTarPerm extractEntry vendor/xdg-open
+714 silly gunzTarPerm extractEntry lib/rmdir-recursive.js
+715 silly gunzTarPerm modified mode [ 'lib/rmdir-recursive.js', 438, 420 ]
+716 silly gunzTarPerm extractEntry test/rmdir-recursive-test.js
+717 silly gunzTarPerm modified mode [ 'test/rmdir-recursive-test.js', 438, 420 ]
+718 silly gunzTarPerm extractEntry .travis.yml
+719 silly lockFile 3902d4eb-es-tnpm-node-modules-npm-request tar:///usr/local/lib/node_modules/tnpm/node_modules/npm-request
+720 silly lockFile 3902d4eb-es-tnpm-node-modules-npm-request tar:///usr/local/lib/node_modules/tnpm/node_modules/npm-request
+721 silly lockFile 7846b77b-pm-npm-request-0-0-4-package-tgz tar:///Users/leo/.npm/.cache/tnpm/npm-request/0.0.4/package.tgz
+722 silly lockFile 7846b77b-pm-npm-request-0-0-4-package-tgz tar:///Users/leo/.npm/.cache/tnpm/npm-request/0.0.4/package.tgz
+723 silly gunzTarPerm extractEntry .travis.yml
+724 silly gunzTarPerm extractEntry bin/npm-cli.js
+725 info preinstall npm-request@0.0.4
+726 silly gunzTarPerm extractEntry lib/bagpipe.js
+727 silly gunzTarPerm extractEntry MIT-License
+728 silly gunzTarPerm extractEntry History.md
+729 silly gunzTarPerm extractEntry lib/urllib.js
+730 verbose readDependencies using package.json deps
+731 verbose readDependencies using package.json deps
+732 verbose cache add [ 'urllib@0.5.11', null ]
+733 verbose cache add name=undefined spec="urllib@0.5.11" args=["urllib@0.5.11",null]
+734 verbose parsed url { protocol: null,
+734 verbose parsed url   slashes: null,
+734 verbose parsed url   auth: null,
+734 verbose parsed url   host: null,
+734 verbose parsed url   port: null,
+734 verbose parsed url   hostname: null,
+734 verbose parsed url   hash: null,
+734 verbose parsed url   search: null,
+734 verbose parsed url   query: null,
+734 verbose parsed url   pathname: 'urllib@0.5.11',
+734 verbose parsed url   path: 'urllib@0.5.11',
+734 verbose parsed url   href: 'urllib@0.5.11' }
+735 verbose cache add name="urllib" spec="0.5.11" args=["urllib","0.5.11"]
+736 verbose parsed url { protocol: null,
+736 verbose parsed url   slashes: null,
+736 verbose parsed url   auth: null,
+736 verbose parsed url   host: null,
+736 verbose parsed url   port: null,
+736 verbose parsed url   hostname: null,
+736 verbose parsed url   hash: null,
+736 verbose parsed url   search: null,
+736 verbose parsed url   query: null,
+736 verbose parsed url   pathname: '0.5.11',
+736 verbose parsed url   path: '0.5.11',
+736 verbose parsed url   href: '0.5.11' }
+737 verbose addNamed [ 'urllib', '0.5.11' ]
+738 verbose addNamed [ '0.5.11', '0.5.11' ]
+739 silly lockFile e53360e1-urllib-0-5-11 urllib@0.5.11
+740 verbose lock urllib@0.5.11 /Users/leo/.npm/.cache/tnpm/e53360e1-urllib-0-5-11.lock
+741 silly gunzTarPerm extractEntry test/bagpipe.test.js
+742 verbose registry.get http://registry.npm.taobao.net/urllib not expired, no request
+743 silly lockFile 847ef77f-rllib-download-urllib-0-5-11-tgz http://registry.npm.taobao.net/urllib/download/urllib-0.5.11.tgz
+744 verbose lock http://registry.npm.taobao.net/urllib/download/urllib-0.5.11.tgz /Users/leo/.npm/.cache/tnpm/847ef77f-rllib-download-urllib-0-5-11-tgz.lock
+745 verbose addRemoteTarball [ 'http://registry.npm.taobao.net/urllib/download/urllib-0.5.11.tgz',
+745 verbose addRemoteTarball   'ad444ec5fadc02bab03b047f487271214cbd6842' ]
+746 info retry fetch attempt 1 at 20:24:26
+747 verbose fetch to= /var/folders/8l/s57tygkj5cb3st1c8lg35d340000gn/T/npm-20805-HZBvACrF/registry.npm.taobao.net/urllib/download/urllib-0.5.11.tgz
+748 http GET http://registry.npm.taobao.net/urllib/download/urllib-0.5.11.tgz
+749 silly gunzTarPerm extractEntry bin/read-package-json.js
+750 silly gunzTarPerm extractEntry bin/node-gyp-bin/node-gyp
+751 silly lockFile a26d7bea-ules-tnpm-node-modules-commander tar:///usr/local/lib/node_modules/tnpm/node_modules/commander
+752 silly lockFile a26d7bea-ules-tnpm-node-modules-commander tar:///usr/local/lib/node_modules/tnpm/node_modules/commander
+753 silly lockFile 858d24d6-tnpm-commander-2-3-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/commander/2.3.0/package.tgz
+754 silly lockFile 858d24d6-tnpm-commander-2-3-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/commander/2.3.0/package.tgz
+755 silly gunzTarPerm extractEntry bin/node-gyp-bin/node-gyp.cmd
+756 silly gunzTarPerm extractEntry bin/npm
+757 silly lockFile d184e69a-s-tnpm-node-modules-auto-correct tar:///usr/local/lib/node_modules/tnpm/node_modules/auto-correct
+758 silly lockFile d184e69a-s-tnpm-node-modules-auto-correct tar:///usr/local/lib/node_modules/tnpm/node_modules/auto-correct
+759 silly lockFile 18ed9569-es-tnpm-node-modules-cross-spawn tar:///usr/local/lib/node_modules/tnpm/node_modules/cross-spawn
+760 silly lockFile 18ed9569-es-tnpm-node-modules-cross-spawn tar:///usr/local/lib/node_modules/tnpm/node_modules/cross-spawn
+761 info preinstall commander@2.3.0
+762 silly lockFile 04f688c6-m-auto-correct-1-0-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/auto-correct/1.0.0/package.tgz
+763 silly lockFile 04f688c6-m-auto-correct-1-0-0-package-tgz tar:///Users/leo/.npm/.cache/tnpm/auto-correct/1.0.0/package.tgz
+764 silly lockFile 86b70168-pm-cross-spawn-0-1-7-package-tgz tar:///Users/leo/.npm/.cache/tnpm/cross-spawn/0.1.7/package.tgz
+765 silly lockFile 86b70168-pm-cross-spawn-0-1-7-package-tgz tar:///Users/leo/.npm/.cache/tnpm/cross-spawn/0.1.7/package.tgz
+766 verbose readDependencies using package.json deps
+767 verbose readDependencies using package.json deps
+768 silly resolved []
+769 verbose about to build /usr/local/lib/node_modules/tnpm/node_modules/commander
+770 error Error: Cannot find module '/usr/local/lib/node_modules/tnpm/node_modules/npm/lib/build.js'
+770 error     at Function.Module._resolveFilename (module.js:338:15)
+770 error     at Function.Module._load (module.js:280:25)
+770 error     at Module.require (module.js:364:17)
+770 error     at require (module.js:380:17)
+770 error     at Object.defineProperty.get (/usr/local/lib/node_modules/tnpm/node_modules/npm/lib/npm.js:195:15)
+770 error     at /usr/local/lib/node_modules/tnpm/node_modules/npm/lib/install.js:950:18
+770 error     at asyncMap (/usr/local/lib/node_modules/tnpm/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+770 error     at /usr/local/lib/node_modules/tnpm/node_modules/npm/lib/install.js:600:7
+770 error     at asyncMap (/usr/local/lib/node_modules/tnpm/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+770 error     at /usr/local/lib/node_modules/tnpm/node_modules/npm/lib/install.js:579:5
+771 error If you need help, you may report this *entire* log,
+771 error including the npm and node versions, at:
+771 error     <http://github.com/npm/npm/issues>
+772 error System Darwin 13.3.0
+773 error command "node" "/usr/local/lib/node_modules/tnpm/node_modules/.bin/npm" "--force" "--no-proxy" "--disturl=http://npm.taobao.net/dist" "--userconfig=/Users/leo/.tnpmrc" "--cache=/Users/leo/.npm/.cache/tnpm" "--registry=http://registry.npm.taobao.net" "install" "-g" "tnpm"
+774 error cwd /Users/leo/projects/daily/grunt
+775 error node -v v0.10.28
+776 error npm -v 1.4.20
+777 error code MODULE_NOT_FOUND
+778 verbose exit [ 1, true ]
