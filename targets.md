@@ -785,6 +785,7 @@ vim
 <https://github.com/github/gitignore> github gitignore files collection
 <http://git-scm.com/docs/gitattributes> gitattributes
 <http://git-scm.com/docs/gitignore.html>  gitignore
+<https://help.github.com/articles/ignoring-files> github help ignore
 vim python
 <https://wiki.python.org/moin/Vim>
 <http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide>
