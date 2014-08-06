@@ -1,0 +1,1 @@
+Vim文件类型----## 参考资料<http://vimdoc.sourceforge.net/htmldoc/filetype.html>
