@@ -1,1 +1,1 @@
-Vim文件类型----## 参考资料<http://vimdoc.sourceforge.net/htmldoc/filetype.html><http://vim.wikia.com/wiki/Filetype.vim>
+Vim文件类型----## 参考资料<http://vimdoc.sourceforge.net/htmldoc/filetype.html><http://vim.wikia.com/wiki/Filetype.vim><https://stackoverflow.com/questions/2576687/vim-highlight-bash-scripts><https://stackoverflow.com/questions/7450395/vim-inconsistently-syntax-highlighting-bash-files>
