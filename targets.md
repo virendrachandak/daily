@@ -988,3 +988,10 @@ javascript error detection
 
 ### web performance
 <https://developer.chrome.com/devtools/docs/network>
+
+### loading gifs | loading animations
+<http://satans17.github.io/fragment/loading/>
+<https://github.com/rendro/SVG-Spinner>
+<http://james.padolsey.com/javascript/sonic-the-state-of-spinners/>
+<http://tobiasahlin.com/spinkit/>
+<https://github.com/tobiasahlin/SpinKit>    this github is worth following and forking
