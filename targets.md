@@ -1001,3 +1001,6 @@ javascript error detection
 ### blogrolls
 <http://antimatter15.com/wp/>
 <http://james.padolsey.com/>
+
+### bash
+<http://www.tldp.org/LDP/Bash-Beginners-Guide/html/>
