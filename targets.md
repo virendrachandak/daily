@@ -985,3 +985,6 @@ javascript error detection
 
 ### nodejs
 <http://nodejs.org/docs/v0.10.28/api/all.html>
+
+### web performance
+<https://developer.chrome.com/devtools/docs/network>
