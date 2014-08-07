@@ -858,6 +858,7 @@ donald knuth
 <http://en.wikipedia.org/wiki/Z_shell>  wikipedia zshell
 <https://linuxtoy.org/archives/the-perfect-linux-desktop-arch-linux-2007-08-2-1.html> archlinux installation guide
 shell glob pattern
+<http://www.cyberciti.biz/faq/>
 
 ### style样式
 <http://oocss.org/>
