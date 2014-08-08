@@ -792,6 +792,7 @@ vim python
 python 
 <https://wiki.python.org/moin/BeginnersGuide/Programmers>
 digraphs and how to enter digraphs or print all of them
+how to customize hlsearch ctermfg and ctermbg color
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
