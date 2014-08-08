@@ -791,6 +791,7 @@ vim python
 <http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide>
 python 
 <https://wiki.python.org/moin/BeginnersGuide/Programmers>
+digraphs and how to enter digraphs or print all of them
 
 ### leisure and hobby
 <http://en.wikipedia.org/wiki/Rubik's_Cube>
