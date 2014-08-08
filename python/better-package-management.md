@@ -1,0 +1,1 @@
+<http://nvie.com/posts/better-package-management/>
