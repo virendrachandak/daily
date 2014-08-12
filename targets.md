@@ -991,6 +991,8 @@ javascript error detection
 
 ### web performance
 <https://developer.chrome.com/devtools/docs/network>
+<http://devtoolsecrets.com/>  browser developer tools
+<http://jankfree.org/>
 
 ### loading gifs | loading animations
 <http://satans17.github.io/fragment/loading/>
