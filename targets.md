@@ -1012,3 +1012,4 @@ javascript error detection
 
 ### practises and resources
 <http://tympanus.net/codrops/>
+<https://github.com/codrops>
