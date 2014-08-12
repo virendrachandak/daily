@@ -1,13 +1,22 @@
 1. CSS
 CSS2.1, CSS3等规范
+<http://modernweb.com/2014/05/28/dynamic-css-with-dyncss/>
+<http://modernweb.com/2014/07/30/5-things-wont-believe-built-css/>
 2. JavaScript 
 ECMAScript规范
 > [http://dailyjs.com/](http://dailyjs.com/)
+<http://modernweb.com/2014/05/05/replacing-jquery-with-vanilla-javascript/>
+<http://modernweb.com/2014/05/12/rethinking-dom-traversal/>
 3.  Web Performance
 4.  编程方法
 design patterns， unit test
 5.  工程方法
 git, grunt, gulp等等
+<http://modernweb.com/2014/02/24/using-grunt-consider-fez/>
+<http://modernweb.com/2014/05/05/slush-a-better-web-app-scaffolding-tool/>
+<http://modernweb.com/2014/05/12/roll-your-own-asset-pipeline-with-gulp/>
+<http://modernweb.com/2014/05/29/building-your-first-grunt-plugin/>
+<http://modernweb.com/2014/08/04/choose-grunt-gulp-npm/>!important
 6.  类库
 jquery, kissy, polymer, angularjs等
 <http://www.sitepoint.com/5-little-known-details-jquery-methods/>
@@ -20,6 +29,7 @@ greasemonkey, chrome extension, firefox addon等
 nodeconf, jsconf, cssconf, html5 conf, google io, velocity
 <https://developers.google.com/events/io/>
 10. html5, css3, mobile development
+<http://modernweb.com/2014/06/25/creating-particles-in-html5-canvas/>
 11. podcasts
 * [http://fripfrap.io/](http://fripfrap.io/)
 12. slideshare, speaker deck
@@ -31,6 +41,10 @@ nodeconf, jsconf, cssconf, html5 conf, google io, velocity
 * nodejs -- substack
   * [http://nodeschool.io/](http://nodeschool.io/)
   * <http://nodeup.com/>
+      <http://modernweb.com/2014/04/21/code-protection-and-packaging-for-node-js-projects-with-jxcore/>
+      <http://modernweb.com/2014/05/05/simple-content-management-with-node-js-and-markdown/>
+      <http://modernweb.com/2014/06/11/convention-based-modular-mvc-with-shared-rendering-in-node-js/>
+      <http://modernweb.com/2014/06/23/using-node-js-in-production/>
 * smashing magazine
 * [http://tympanus.net/codrops/](http://tympanus.net/codrops/)
 * //[http://www.the-haystack.com/](http://www.the-haystack.com/) 
@@ -102,6 +116,11 @@ adobe [http://html.adobe.com/](http://html.adobe.com/)
 * [http://stackoverflow.com/questions/tagged/css](http://stackoverflow.com/questions/tagged/css)
 > 社交网站，类似可以使用github和reddit查看
 * [Six Months of voxel.js](https://medium.com/@deathcap1/six-months-of-voxel-js-494be64dd1cc)
+<http://www.sitepoint.com/pure-css-off-screen-navigation-menu/>
+<http://modernweb.com/2014/03/03/grids-in-css3/>
+<http://modernweb.com/2014/03/03/getting-into-sass-control-directives/> sass
+<http://modernweb.com/2014/04/14/organizing-your-css-code-for-preprocessors/>
+<http://modernweb.com/2014/06/18/ordering-css-for-everyone/>
 
 KISSY的S.log不支持console.log的自定义样式功能，例如：
 `console.log('%c wangpu/init', 'font-size: 2em; color: red;');`
@@ -259,6 +278,7 @@ if (evt && evt.halt) {
 ### 项目工具
 1.  grunt
 <http://www.elijahmanor.com/grunt-away-those-pesky-console-log-statements/>
+<http://modernweb.com/2014/03/17/creating-modular-view-components-with-react-and-grunt/>
 
 ### web security
 The Ultimate XSS Protection Cheatsheet for Developers
@@ -406,6 +426,7 @@ connect:<http://www.senchalabs.org/connect/>
 <https://github.com/visionmedia/express>
 npm
 <https://www.npmjs.org/doc/package.json.html>   package.json
+<http://www.sitepoint.com/creating-sentiment-analysis-application-using-node-js/>
 
 ### commonjs
 <http://wiki.commonjs.org/wiki/CommonJS>
@@ -415,6 +436,7 @@ npm
 ### Git
 git协议
 git命令
+<http://www.sitepoint.com/debugging-git-blame-bisect/>
 
 ### tools
 <http://runnable.com/>
@@ -892,6 +914,7 @@ shell glob pattern
 重绘、回流（repaint，reflow）24帧、30帧、60帧
 <https://hacks.mozilla.org/2014/07/resources-for-html5-game-developers/>
 <http://www.sitepoint.com/introduction-resource-timing-api/>
+<http://modernweb.com/2014/05/20/frame-by-frame-animation-with-html-and-javascript/>
 
 ### 行业会议
 <http://velocity.oreilly.com.cn/>
@@ -903,6 +926,7 @@ shell glob pattern
 ### Web Components
 <https://speakerdeck.com/zenorocha/web-components-a-chance-to-create-the-future>
 <http://www.html5rocks.com/en/tutorials/webcomponents/imports/>
+<http://www.sitepoint.com/thinking-components/>
 前端组件化
 
 20140801
@@ -1024,6 +1048,8 @@ javascript error detection
 <http://css-tricks.com/>
 <http://www.sitepoint.com/>
 <http://bem.info/>
+<http://modernweb.com/>
+<http://www.sitepoint.com/>
 
 ### animation performance
 <http://css-tricks.com/tale-of-animation-performance/>
@@ -1036,6 +1062,17 @@ javascript error detection
 <http://www.sitepoint.com/unit-testing-guzzlephp/>
 <http://www.sitepoint.com/what-learn-front-end-development-8-2014/>
 <http://www.sitepoint.com/build-online-store-rails/>
+<http://www.sitepoint.com/7-mistakes-commonly-made-php-developers/>
+<http://www.sitepoint.com/introduction-wai-aria/> WAI-ARIA
+<http://www.sitepoint.com/3-essential-saas-metrics-save-sanity/>
+<http://www.sitepoint.com/conduct-fair-meaningful-technical-interview/> technical interview
+<http://www.sitepoint.com/3-new-javascript-apis-may-want-follow/>
+<http://www.sitepoint.com/10-web-predictions-2014/>
+<http://www.sitepoint.com/browser-trends-august-2014-massive-mobile-migration/>
+<http://www.sitepoint.com/revealing-magic-javascript/>
+<http://modernweb.com/2014/04/07/improving-browser-detection/>
+<http://modernweb.com/2014/05/27/introduction-to-the-ambient-light-api/>
+<http://modernweb.com/2014/04/28/expose-yourself-with-ngrok/>
 
 ### 黑客工具hack tools
 <http://www.fastandeasyhacking.com/>  Armitage
@@ -1050,3 +1087,32 @@ javascript error detection
 
 ### documents
 <http://mozdef.readthedocs.org/en/latest/>
+
+### resource timing
+<http://www.sitepoint.com/introduction-resource-timing-api/>
+
+### engineering
+<http://www.sitepoint.com/golden-master-testing-refactoring-understanding/>
+<http://www.sitepoint.com/not-get-overwhelmed-web-developer/>
+<http://www.sitepoint.com/mvc-problem-solution/>
+
+### REST
+<http://www.sitepoint.com/best-practices-rest-api-scratch-implementation/>
+
+### website
+<http://www.sitepoint.com/craft-perfect-404-page/>
+
+### mobile web, mobile development, h5, media queries, responsive, single page application, opoa
+<http://www.sitepoint.com/media-queries-look-different-media-features/>
+<http://www.sitepoint.com/5-javascript-apis-empower-mobile-web-pages/>
+<http://www.sitepoint.com/responsive-fluid-width-variable-item-navigation-css/>
+<http://modernweb.com/2014/04/28/single-page-applications-with-the-page-micro-library/>
+
+### SEO
+<http://www.sitepoint.com/5-seo-guidelines-for-developers/>
+
+### SVG, svg
+<http://modernweb.com/2014/06/03/animating-inline-svg-icons/>
+
+### test
+<http://modernweb.com/2014/07/07/testing-web-apps-ground/>
