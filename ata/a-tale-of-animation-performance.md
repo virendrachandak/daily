@@ -1,0 +1,1 @@
+动画性能---> `translate()`性能比`top/right/bottom/left`要好？为什么？## 移动元素的两种不同方法* 指定元素位置为`relative`，`absolute`或者`fixed`。然后可以使用`top`，`right`，`left`和`bottom`（或者任何组合）来移动元素；* 确保元素的`display`值为`block`或者`inline-block`，然后使用`trasform`值`translate()`，`translateX()`或者`translateY()`来移动元素。## 更好的性能V1更好？应该等于更适用。“不要混淆定位和设计动作”。<http://css-tricks.com/tale-of-animation-performance/>

@@ -10,6 +10,8 @@ design patterns， unit test
 git, grunt, gulp等等
 6.  类库
 jquery, kissy, polymer, angularjs等
+<http://www.sitepoint.com/5-little-known-details-jquery-methods/>
+<http://www.sitepoint.com/dynamic-geo-maps-svg-jquery/>
 7.  生活
 greasemonkey, chrome extension, firefox addon等
 <https://developer.chrome.com/extensions/devguide>
@@ -236,6 +238,7 @@ HTML5 clipboard API
 
 ### learning by practice
 <http://codepen.io/>
+<http://lea.verou.me/css3patterns/>
 
 ### JavaScript Events
 halt, preventdefault, fire, on, live, customize event
@@ -428,6 +431,7 @@ git命令
 <http://hiltmon.com/blog/2013/02/13/make-iterm-2-more-mac-like/>
 <http://lifehacker.com/302197/useful-command-line-tricks-for-mac-users>
 <http://www.michael-noll.com/blog/2007/01/04/word-movement-shortcuts-for-iterm-on-mac-os-x/>
+<http://bem.info/tools/>
 
 from jquery to angularjs
 <https://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background/15012542#15012542>
@@ -749,6 +753,8 @@ from jquery to angularjs
   </tr>
 </tbody></table>
 
+<http://book.douban.com/subject/5407246/> 深入理解计算机系统
+
 ### downloads
 <http://kickass.to/>
 
@@ -865,12 +871,13 @@ shell glob pattern
 ### style样式
 <http://oocss.org/>
 <http://sass-lang.com/>
+<http://www.sitepoint.com/rapid-responsive-development-sass-flint/>   sass and flint
 <http://css-tricks.com/custom-user-mixins/>   mixins
 <http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code>  sass mixin
 <http://compass-style.org/reference/compass/css3/>  compass css3
 <http://learnboost.github.io/stylus/docs/mixins.html> stylus mixin
 
-### 动画
+### 动画animation
 缓动easing（三角函数）
 <easing.net>
 碰撞collision detect
@@ -1013,3 +1020,33 @@ javascript error detection
 ### practises and resources
 <http://tympanus.net/codrops/>
 <https://github.com/codrops>
+<http://codepen.io/Zeaklous/>
+<http://css-tricks.com/>
+<http://www.sitepoint.com/>
+<http://bem.info/>
+
+### animation performance
+<http://css-tricks.com/tale-of-animation-performance/>
+<http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/>
+<http://css-tricks.com/css-animation-tricks/> !important
+
+### interesting
+<http://www.sitepoint.com/8-essential-skills-developers-can-learn-in-a-weekend/>
+<http://www.sitepoint.com/preventing-code-rot-101-unit-testing/>  unit testing
+<http://www.sitepoint.com/unit-testing-guzzlephp/>
+<http://www.sitepoint.com/what-learn-front-end-development-8-2014/>
+<http://www.sitepoint.com/build-online-store-rails/>
+
+### 黑客工具hack tools
+<http://www.fastandeasyhacking.com/>  Armitage
+<https://github.com/rsmudge/cortana-scripts>
+<http://sleep.dashnine.org/>  sleep
+<http://www.metasploit.com/>
+
+### 知名黑客hackers
+<http://en.wikipedia.org/wiki/George_Hotz>  geo hot
+<http://geohot.com/>  geo hot's personal web site
+<http://geohot.com/activeroot/> ge hot's xxx
+
+### documents
+<http://mozdef.readthedocs.org/en/latest/>
