@@ -1009,3 +1009,6 @@ javascript error detection
 ### bash
 <http://www.tldp.org/LDP/Bash-Beginners-Guide/html/>
 <http://www.tldp.org/>
+
+### practises and resources
+<http://tympanus.net/codrops/>
