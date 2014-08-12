@@ -454,6 +454,7 @@ git命令
 <http://lifehacker.com/302197/useful-command-line-tricks-for-mac-users>
 <http://www.michael-noll.com/blog/2007/01/04/word-movement-shortcuts-for-iterm-on-mac-os-x/>
 <http://bem.info/tools/>
+<http://modernweb.com/2014/07/30/5-things-wont-believe-built-css/>  oh my zsh
 
 from jquery to angularjs
 <https://stackoverflow.com/questions/14994391/how-do-i-think-in-angularjs-if-i-have-a-jquery-background/15012542#15012542>
