@@ -1033,6 +1033,7 @@ javascript error detection
 <http://tobiasahlin.com/spinkit/>
 <https://github.com/tobiasahlin/SpinKit>    this github is worth following and forking
 <http://james.padolsey.com/javascript/sonic-the-state-of-spinners/>   all collection !important
+<http://img02.taobaocdn.com/tps/i2/T16WJqXaXeXXXXXXXX-32-32.gif>
 
 ### blogrolls
 <http://antimatter15.com/wp/>
