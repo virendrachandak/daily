@@ -313,6 +313,7 @@ The Ultimate XSS Protection Cheatsheet for Developers
 <https://en.wikipedia.org/wiki/Moxie_Marlinspike>
 <https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security>  HSTS
 <http://convergence.io/>
+<https://mathiasbynens.be/>
 vunlerabilities
 "Hole 196" // wpa2 vulnerability
 mozilla security
@@ -1118,3 +1119,13 @@ javascript error detection
 
 ### test
 <http://modernweb.com/2014/07/07/testing-web-apps-ground/>
+
+### encoding and decoding problem, utf8
+html javascript unicode encode and decode
+<http://www.smashingmagazine.com/2012/06/06/all-about-unicode-utf8-character-sets/>
+<https://mathiasbynens.be/notes/javascript-unicode>
+<http://www.2ality.com/2013/09/javascript-unicode.html>
+
+### eval
+<http://perfectionkills.com/global-eval-what-are-the-options/>
+<http://dmitrysoshnikov.com/ecmascript/chapter-4-scope-chain/>
