@@ -1173,3 +1173,8 @@ cdata
 
 ### shim shiv and polyfill
 <http://www.hongkiat.com/blog/html5-shiv-polyfills/>
+
+### firefox
+dump
+<https://developer.mozilla.org/en-US/docs/Web/API/Window.dump>
+<https://developer.mozilla.org/en/docs/Debugging_JavaScript>
