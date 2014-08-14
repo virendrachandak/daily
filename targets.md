@@ -402,6 +402,8 @@ quic
 <http://www.chromium.org/spdy/spdy-whitepaper>
 <https://en.wikipedia.org/wiki/QUIC>
 <https://news.ycombinator.com/item?id=7227255>
+cors
+ssl stripping
 
 ### nodejs
 globals--<http://nodejs.org/docs/latest/api/globals.html>
