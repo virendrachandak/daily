@@ -30,6 +30,10 @@ nodeconf, jsconf, cssconf, html5 conf, google io, velocity
 <https://developers.google.com/events/io/>
 10. html5, css3, mobile development
 <http://modernweb.com/2014/06/25/creating-particles-in-html5-canvas/>
+<http://html5labs.interoperabilitybridges.com/>   HTML5labs interoperabilitybridges
+<http://blogs.msdn.com/b/interoperability/archive/2010/12/21/prototyping-early-w3c-html5-specifications.aspx>
+<http://blogs.msdn.com/b/interoperability/>   Interoperability of miscrosoft
+<http://msdn.microsoft.com/library/ie/hh673546.aspx>  IE html5
 11. podcasts
 * [http://fripfrap.io/](http://fripfrap.io/)
 12. slideshare, speaker deck
@@ -59,6 +63,7 @@ nodeconf, jsconf, cssconf, html5 conf, google io, velocity
 * reddit, phdcomics.com, xkcd
 22. 工具
 * vim, chrome dev tools, charles, fiddler等
+<http://blogs.telerik.com/>   收购了fiddler的公司的博客
 23. 安全
 前端安全，web安全，linux安全，爬虫和SEO
 
@@ -200,6 +205,10 @@ how to differ a page from pre-render and rendered
 ### vim
 ctrlp
 ag
+<http://vim.wikia.com/wiki/Easier_buffer_switching> easier buffer switching, check opened bufers in vim
+<http://stackoverflow.com/questions/4865132/an-alternative-to-minibufexplorer-vim>
+<https://github.com/fholgado/minibufexpl.vim>
+<http://vim.wikia.com/wiki/Get_the_name_of_the_current_file>Get the name of the current file
 
 ### javascript-plugins
 datalazyload优化
@@ -221,7 +230,12 @@ responsive web design
 4.1 <http://www.w3.org/TR/html401/>
 
 ### XMLHttpRequest
-<http://www.w3.org/TR/XMLHttpRequest/>
+<http://www.w3.org/TR/XMLHttpRequest/>  !important todo
+<http://www.w3.org/TR/2012/WD-XMLHttpRequest-20120117/> xmlhttprequest level 2
+<https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest>
+<http://www.w3.org/TR/XMLHttpRequest2/>  xmlhttprequest level 2
+ajax in mdn
+<https://developer.mozilla.org/en-US/docs/AJAX> !important todo
 
 ### client-side storage
 [web storage specification](http://dev.w3.org/html5/webstorage/)
@@ -361,6 +375,13 @@ IE 9 security
 <http://blogs.msdn.com/b/ie/archive/2011/03/07/internet-explorer-9-security-part-1-enhanced-memory-protections.aspx>
 Firefox Developer Tools
 <https://developer.mozilla.org/en-US/docs/Tools>
+IEBlog
+<http://blogs.msdn.com/b/ie/>
+IE status modern ie
+<http://status.modern.ie/>
+<https://github.com/InternetExplorer/Status.IE> status modern ie github
+IE internals
+<http://blogs.msdn.com/b/ieinternals/>
 HTTPS
 <http://www.cs.cornell.edu/wya/papers/ALA-2003.php>
 <https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet>
@@ -403,6 +424,10 @@ quic
 <https://en.wikipedia.org/wiki/QUIC>
 <https://news.ycombinator.com/item?id=7227255>
 cors
+<https://bugzilla.mozilla.org/show_bug.cgi?id=692677>
+<http://www.w3.org/TR/cors/>
+<http://webblaze.cs.berkeley.edu/2009/origin/origin.txt>
+<http://blogs.telerik.com/kendoui/posts/11-10-03/using_cors_with_all_modern_browsers>
 ssl stripping
 
 ### nodejs
@@ -893,6 +918,8 @@ donald knuth
 <https://linuxtoy.org/archives/the-perfect-linux-desktop-arch-linux-2007-08-2-1.html> archlinux installation guide
 shell glob pattern
 <http://www.cyberciti.biz/faq/>
+nix craft
+<http://www.cyberciti.biz/faq/>
 
 ### style样式
 <http://oocss.org/>
@@ -1131,3 +1158,18 @@ html javascript unicode encode and decode
 ### eval
 <http://perfectionkills.com/global-eval-what-are-the-options/>
 <http://dmitrysoshnikov.com/ecmascript/chapter-4-scope-chain/>
+
+### miscellaneous
+cdata
+<http://baike.baidu.com/view/1792941.htm>
+<http://stackoverflow.com/questions/2784183/what-does-cdata-in-xml-mean>
+<http://msdn.microsoft.com/en-us/library/ms256076(v=vs.110).aspx>
+
+### comet
+<http://blogs.msdn.com/b/ieinternals/archive/2010/04/06/comet-streaming-in-internet-explorer-with-xmlhttprequest-and-xdomainrequest.aspx>
+
+### javascript patterns
+<https://speakerdeck.com/lijing00333/javascript-patterns>
+
+### shim shiv and polyfill
+<http://www.hongkiat.com/blog/html5-shiv-polyfills/>
