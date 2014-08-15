@@ -216,7 +216,12 @@ modeline security vulnerability
 <http://vim.1045645.n5.nabble.com/BUG-ada-txt-sets-encoding-by-modeline-which-may-cause-dataloss-in-some-cases-td1164893.html>
 <http://usevim.com/2012/03/28/modelines/>
 scripting the vim editor(on ibm developer works)
+<http://lists.alioth.debian.org/pipermail/pkg-vim-maintainers/2007-June/004020.html>
+<http://www.techrepublic.com/blog/it-security/turn-off-modeline-support-in-vim/>
+<http://lwn.net/Articles/20249/>
 <http://learnvimscriptthehardway.stevelosh.com/>
+<http://leonard.io/blog/2011/10/editing-less-and-css3-with-vim/>
+<https://coderwall.com/p/2g0jya>
 
 ### javascript-plugins
 datalazyload优化
