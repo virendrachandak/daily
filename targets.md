@@ -209,6 +209,9 @@ ag
 <http://stackoverflow.com/questions/4865132/an-alternative-to-minibufexplorer-vim>
 <https://github.com/fholgado/minibufexpl.vim>
 <http://vim.wikia.com/wiki/Get_the_name_of_the_current_file>Get the name of the current file
+modeline security vulnerability
+scripting the vim editor(on ibm developer works)
+<http://learnvimscriptthehardway.stevelosh.com/>
 
 ### javascript-plugins
 datalazyload优化
