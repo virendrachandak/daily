@@ -210,6 +210,11 @@ ag
 <https://github.com/fholgado/minibufexpl.vim>
 <http://vim.wikia.com/wiki/Get_the_name_of_the_current_file>Get the name of the current file
 modeline security vulnerability
+<http://www.cvedetails.com/vulnerability-list/vendor_id-8218/opec-1/VIM.html>	vim vulnerabilities
+<http://www.iss.net/security_center/reference/vuln/vim-modeline-command-execution.htm>
+<http://vim.wikia.com/wiki/Modeline_magic>
+<http://vim.1045645.n5.nabble.com/BUG-ada-txt-sets-encoding-by-modeline-which-may-cause-dataloss-in-some-cases-td1164893.html>
+<http://usevim.com/2012/03/28/modelines/>
 scripting the vim editor(on ibm developer works)
 <http://learnvimscriptthehardway.stevelosh.com/>
 
@@ -298,6 +303,8 @@ if (evt && evt.halt) {
 <http://modernweb.com/2014/03/17/creating-modular-view-components-with-react-and-grunt/>
 
 ### web security
+各种漏洞库：cvs,cnnvd，wooyun等
+<http://www.cvedetails.com/>
 The Ultimate XSS Protection Cheatsheet for Developers
 <http://www.reddit.com/r/netsec/>
 <http://opensecurity.in/>
@@ -847,6 +854,7 @@ vim
 <http://git-scm.com/docs/gitignore.html>  gitignore
 <https://help.github.com/articles/ignoring-files> github help ignore
 vim python
+<http://dailyvim.blogspot.com/>
 <https://wiki.python.org/moin/Vim>
 <http://sontek.net/blog/detail/turning-vim-into-a-modern-python-ide>
 python 
