@@ -62,7 +62,7 @@ nodeconf, jsconf, cssconf, html5 conf, google io, velocity
 21. comics and interesting stuff
 * reddit, phdcomics.com, xkcd
 22. 工具
-* vim, chrome dev tools, charles, fiddler等
+* vim, chrome dev tools, charles, fiddler, tmux, zsh, oh-my-zshell, iterm2等
 <http://blogs.telerik.com/>   收购了fiddler的公司的博客
 23. 安全
 前端安全，web安全，linux安全，爬虫和SEO
