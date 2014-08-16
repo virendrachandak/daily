@@ -1,0 +1,1 @@
+<http://code.tutsplus.com/tutorials/how-to-write-testable-and-maintainable-code-in-php--net-31726>
