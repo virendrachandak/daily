@@ -1,0 +1,1 @@
+# Vundle and Plugins(or Bundles)## 'gmarik/Vundle.vim':vundle name collision problem1.  checkout whether your .vimrc file contains the same plugin name for more than one time;2.  if step 1 is ok, then config .vimrc file as following:    `Plugin 'git_URI', {'name':'newPluginName'}`## 'bling/airline':
