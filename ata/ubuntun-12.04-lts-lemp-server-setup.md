@@ -1,0 +1,1 @@
+<http://fideloper.com/ubuntu-12-04-lemp-nginx-setup>
