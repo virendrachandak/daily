@@ -210,11 +210,6 @@ console.log('Elapsed time is:' + elapsedTime + ' milliseconds.');
 
 ![](http://upload.wikimedia.org/wikipedia/commons/d/d8/Sorting_shellsort_anim.gif)
 
-希尔排序实质是分组插入排序，也成为“缩小增量排序”。因为其创建者DL.Shell而得名。
-
-### merge sort(归并排序)
-
-![](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 ### 参考资料
 1. [Bubble_sort -- wikipedia](http://en.wikipedia.org/wiki/Bubble_sort)
@@ -225,7 +220,3 @@ console.log('Elapsed time is:' + elapsedTime + ' milliseconds.');
 6. [Sorting Algorithm -- wikipedia](http://en.wikipedia.org/wiki/Sorting_algorithm)
 7. [Sorting algorithms](http://www.sorting-algorithms.com/)
 8. [Shell Sort](http://en.wikipedia.org/wiki/Shellsort)
-9. [Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
-10. [javascript-sorting-table](http://blog.vjeux.com/2010/javascript/javascript-sorting-table.html)
-11. [merge sort -- javascript](http://en.literateprograms.org/Merge_sort_%28JavaScript%29)
-12. [jsperf:sort-algorithms](http://jsperf.com/sort-algorithms/28)
