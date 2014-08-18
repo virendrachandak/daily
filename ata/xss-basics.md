@@ -8,13 +8,13 @@ WEB安全基础知识
 ServerTokens ProductOnly
 ServerSignature Off
 ```
-> 关于**Servertokens**和**Serversignature**的更多信息，请参考[这里](http://techtalk.virendrachandak.com/how-to-hide-apache-information-with-servertokens-and-serversignature-directives/)
+> 关于**Servertokens**和**Serversignature**的更多信息，请参考[这里](http://www.virendrachandak.com/techtalk/how-to-hide-apache-information-with-servertokens-and-serversignature-directives/)
 
 #### 隐藏nginx版本信息
 在nginx.confg文件中加入一行内容
 
 `server_tokens off;`
-> [参考链接](http://techtalk.virendrachandak.com/how-to-hide-nginx-version-number-in-headers-and-errors-pages)
+> [参考链接](http://www.virendrachandak.com/techtalk/how-to-hide-nginx-version-number-in-headers-and-errors-pages)
 > [windows版本nginx的基础使用说明](http://nginx.org/en/docs/windows.html)
 
 #### 隐藏php版本信息
@@ -22,7 +22,7 @@ ServerSignature Off
 
 修改php.ini中的**expose_php**值为**Off**
 
-> [参考链接](http://techtalk.virendrachandak.com/how-to-hide-php-version-in-the-http-headers)
+> [参考链接](http://www.virendrachandak.com/techtalk/how-to-hide-php-version-in-the-http-headers)
 
 ####  x-xss-protection头信息
 适用于IE8+
@@ -40,7 +40,7 @@ ServerSignature Off
 )
 
 #### .htaccess访问控制
-> [参考链接](http://techtalk.virendrachandak.com/htaccess-tips)
+> [参考链接](http://www.virendrachandak.com/techtalk/htaccess-tips)
 > [隐藏敏感文件](https://www.golemtechnologies.com/articles/sensitive-files)
 > [List_of_useful_HTTP_headers](https://www.owasp.org/index.php/List_of_usefu)
 
@@ -59,7 +59,7 @@ ServerSignature Off
 > 本地文件：localhost/test/security/CTF/
 
 ### 参考资料
-1.  [隐藏Apache服务器版本信息](http://techtalk.virendrachandak.com/how-to-hide-apache-information-with-servertokens-and-serversignature-directives/)
+1.  [隐藏Apache服务器版本信息](http://www.virendrachandak.com/techtalk/how-to-hide-apache-information-with-servertokens-and-serversignature-directives/)
 
 1.	[x-xss-Protection](x-xss-Protection)
 >	[http://wangye.org/blog/archives/596/](http://wangye.org/blog/archives/596/)
